@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog', ({ data }) => !data.draft);
+const sortedPosts = posts.sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const dateFmt = new Intl.DateTimeFormat('fr-FR', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+---
+
+<BaseLayout
+  title="Blog - SEO, GEO et Content Management"
+  description="Articles, guides et veille sur l'évolution du Search en 2026."
+>
+  <section class="section">
+    <h1>Blog</h1>
+    <p class="section__intro">
+      Analyses et méthodes sur le SEO classique, le GEO (Generative Engine Optimization) 
+      et la stratégie de contenu.
+    </p>
+
+    {sortedPosts.length === 0 ? (
+      <p>Aucun article pour le moment.</p>
+    ) : (
+      <ul class="article-list">
+        {sortedPosts.map((post) => (
+          <li class="article-card">
+            <p class="article-card__category">{post.data.category.toUpperCase()}</p>
+            <h3 class="article-card__title">
+              <a href={`/blog/${post.id}`}>{post.data.title}</a>
+            </h3>
+            <p class="article-card__desc">{post.data.description}</p>
+            <p class="article-card__meta">
+              <time datetime={post.data.pubDate.toISOString()}>
+                {dateFmt.format(post.data.pubDate)}
+              </time>
+            </p>
+          </li>
+        ))}
+      </ul>
+    )}
+  </section>
+</BaseLayout>
+
+<style>
+  .section { margin-top: var(--space-xl); }
+  .section__intro { margin-bottom: var(--space-lg); color: var(--color-muted); font-size: 1.2rem; }
+  .article-list { list-style: none; padding: 0; }
+  .article-card { margin-bottom: var(--space-lg); padding-bottom: var(--space-lg); border-bottom: 1px solid var(--color-rule); }
+  .article-card__category { font-size: 0.8rem; color: var(--color-accent); font-weight: bold; }
+  .article-card__title { margin: 0.5rem 0; }
+  .article-card__title a { text-decoration: none; color: inherit; }
+  .article-card__title a:hover { color: var(--color-accent); }
+  .article-card__desc { color: var(--color-muted); margin-bottom: 0.5rem; }
+  .article-card__meta { font-size: 0.9rem; color: var(--color-muted); }
+</style>
