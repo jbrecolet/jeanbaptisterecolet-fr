@@ -128,4 +128,18 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
     font-style: italic;
     padding: var(--space-md) 0;
   }
+/* Supprime la bordure basse de la dernière section avant le footer */
+  .section { 
+    border-bottom: none !important; 
+  }
+
+  /* Supprime les lignes horizontales classiques */
+  hr { 
+    display: none; 
+  }
+  
+  /* Supprime la bordure haute du footer si elle vient de là */
+  .site-footer {
+    border-top: none !important;
+  }
 </style>
