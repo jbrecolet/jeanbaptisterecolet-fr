@@ -129,19 +129,3 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
     padding: var(--space-md) 0;
   }
 </style>
-<style is:global>
-  /* 1. On supprime la bordure haute du footer qui crée cette ligne */
-  .site-footer {
-    border-top: none !important;
-  }
-
-  /* 2. On supprime la bordure basse du header au cas où elle créerait un décalage visuel */
-  .site-header {
-    border-bottom: none !important;
-  }
-
-  /* 3. Sécurité : on cache tout trait horizontal parasite */
-  hr {
-    display: none !important;
-  }
-</style>
