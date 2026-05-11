@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "type": "module",
   "private": true,
-  "description": "Site éditorial GEO et SEO francophone — Jean-Baptiste Recolet",
+  "description": "Site editorial GEO et SEO francophone - Jean-Baptiste Recolet",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro build",
+    "check": "astro check",
     "preview": "astro preview",
     "astro": "astro"
   },
