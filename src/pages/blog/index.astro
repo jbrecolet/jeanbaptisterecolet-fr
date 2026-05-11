@@ -1,9 +1,9 @@
 ---
-import BaseLayout from '~/layouts/BaseLayout.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
-const allPosts = await getCollection('blog', ({ data }) => !data.draft);
-const sorted = allPosts.sort(
+const posts = await getCollection('blog', ({ data }) => !data.draft);
+const sortedPosts = posts.sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
@@ -15,45 +15,48 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
 ---
 
 <BaseLayout
-  title="Blog - Articles SEO et GEO"
-  description="Tous les articles sur le GEO, le SEO, la transition entre les deux, et la veille sur les annonces des moteurs IA et de Google Search."
+  title="Blog - SEO, GEO et Content Management"
+  description="Articles, guides et veille sur l'évolution du Search en 2026."
 >
-  <header class="page-header">
-    <h1>Le blog</h1>
-    <p>
-      Articles de fond, retours d'experience et analyses d'actualite sur le SEO,
-      le GEO et la transition entre les deux.
+  <section class="section">
+    <h1>Blog</h1>
+    <p class="section__intro">
+      Analyses et méthodes sur le SEO classique, le GEO (Generative Engine Optimization) 
+      et la stratégie de contenu.
     </p>
-  </header>
 
-  {sorted.length === 0 ? (
-    <p class="empty-state">Le premier article arrive tres bientot.</p>
-  ) : (
-    <ul class="article-list">
-      {sorted.map((post) => (
-        <li class="article-card">
-          <p class="article-card__category">{post.data.category.toUpperCase()}</p>
-          <h2 class="article-card__title">
-            <a href={`/blog/${post.id}`}>{post.data.title}</a>
-          </h2>
-          <p class="article-card__desc">{post.data.description}</p>
-          <p class="article-card__meta">
-            <time datetime={post.data.pubDate.toISOString()}>
-              {dateFmt.format(post.data.pubDate)}
-            </time>
-            {' - '}
-            {post.data.tags.slice(0, 3).join(' - ')}
-          </p>
-        </li>
-      ))}
-    </ul>
-  )}
+    {sortedPosts.length === 0 ? (
+      <p>Aucun article pour le moment.</p>
+    ) : (
+      <ul class="article-list">
+        {sortedPosts.map((post) => (
+          <li class="article-card">
+            <p class="article-card__category">{post.data.category.toUpperCase()}</p>
+            <h3 class="article-card__title">
+              <a href={`/blog/${post.id}`}>{post.data.title}</a>
+            </h3>
+            <p class="article-card__desc">{post.data.description}</p>
+            <p class="article-card__meta">
+              <time datetime={post.data.pubDate.toISOString()}>
+                {dateFmt.format(post.data.pubDate)}
+              </time>
+            </p>
+          </li>
+        ))}
+      </ul>
+    )}
+  </section>
 </BaseLayout>
 
 <style>
-  .page-header { padding: var(--space-lg) 0; border-bottom: 1px solid var(--color-rule); margin-bottom: var(--space-lg); }
-  .page-header h1 { margin-bottom: var(--space-sm); }
-  .page-header p { color: var(--color-muted); font-size: 1.125rem; }
+  .section { margin-top: var(--space-xl); }
+  .section__intro { margin-bottom: var(--space-lg); color: var(--color-muted); font-size: 1.2rem; }
   .article-list { list-style: none; padding: 0; }
-  .empty-state { color: var(--color-muted); font-style: italic; }
+  .article-card { margin-bottom: var(--space-lg); padding-bottom: var(--space-lg); border-bottom: 1px solid var(--color-rule); }
+  .article-card__category { font-size: 0.8rem; color: var(--color-accent); font-weight: bold; }
+  .article-card__title { margin: 0.5rem 0; }
+  .article-card__title a { text-decoration: none; color: inherit; }
+  .article-card__title a:hover { color: var(--color-accent); }
+  .article-card__desc { color: var(--color-muted); margin-bottom: 0.5rem; }
+  .article-card__meta { font-size: 0.9rem; color: var(--color-muted); }
 </style>
