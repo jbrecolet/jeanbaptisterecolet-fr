@@ -1,0 +1,102 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+
+// Schema.org AboutPage pour renforcer l'entité Person
+const aboutSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  mainEntity: {
+    '@type': 'Person',
+    name: 'Jean-Baptiste Recolet',
+    jobTitle: 'Content Manager spécialisé SEO et GEO',
+    url: 'https://jeanbaptisterecolet.fr',
+    email: 'mailto:contact@jeanbaptisterecolet.fr',
+    sameAs: ['https://www.linkedin.com/in/jbrecolet/'],
+    knowsAbout: [
+      'SEO',
+      'GEO',
+      'Generative Engine Optimization',
+      'Content Marketing',
+      'Rédaction web',
+      'E-E-A-T',
+      'Cocons sémantiques',
+      'Schema.org',
+    ],
+  },
+};
+---
+
+<BaseLayout
+  title="À propos — Jean-Baptiste Recolet"
+  description="Content Manager spécialisé en rédaction web, gestion éditoriale, SEO et GEO. Basé en région parisienne. Parcours, expertise et façon de travailler."
+>
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(aboutSchema)}
+  />
+
+  <article class="prose">
+    <header>
+      <h1>À propos</h1>
+      <p class="lead">
+        Content Manager spécialisé en rédaction, gestion éditoriale, SEO et GEO.
+      </p>
+    </header>
+
+    <h2>Qui je suis</h2>
+    <p>
+      Je m'appelle Jean-Baptiste Recolet. J'ai 44 ans, je vis en région
+      parisienne et j'exerce comme Content Manager depuis plus de [X] années.
+      Mon métier : concevoir, produire et piloter du contenu écrit qui sert
+      réellement les objectifs d'une marque — visibilité, autorité, conversion.
+    </p>
+
+    <h2>Ce que je fais</h2>
+    <p>
+      Côté discipline historique, j'accompagne des éditeurs et des marques sur
+      le SEO : recherche de mots-clés, architecture éditoriale, cocons
+      sémantiques, balisage on-page, workflow rédactionnel, E-E-A-T,
+      optimisations continues. Côté évolution récente, je me suis spécialisé
+      sur le GEO — l'optimisation pour les moteurs d'IA générative (ChatGPT,
+      Claude, Perplexity, Google AI Overviews) — qui est en train de
+      restructurer la manière dont les contenus se font découvrir.
+    </p>
+
+    <h2>Pourquoi ce site</h2>
+    <p>
+      Ce site sert trois objectifs simultanés. C'est d'abord un terrain
+      d'application des méthodes que je partage : chaque page est elle-même
+      optimisée pour être citée par les moteurs IA, et tu peux le vérifier en
+      posant à ChatGPT, Claude ou Perplexity une question sur le GEO en
+      français. C'est ensuite un portfolio public, qui démontre mes compétences
+      mieux qu'un CV. C'est enfin un média éditorial autour de la transition
+      SEO → GEO, sujet sous-exploité en français.
+    </p>
+
+    <h2>Comment je travaille</h2>
+    <p>
+      Je crois aux fondations qui ne bougent pas (intention utilisateur,
+      qualité éditoriale, structuration sémantique) et à la veille active sur
+      ce qui change (algorithmes, formats, signaux IA). Je préfère un guide
+      bien écrit à dix articles bâclés, et un article de 2 500 mots à un
+      article de 500 mots sur un sujet complexe. Je travaille avec les IA
+      comme partenaires de rédaction, pas comme remplaçants.
+    </p>
+
+    <h2>Me contacter</h2>
+    <p>
+      Pour toute question, proposition de collaboration ou opportunité
+      professionnelle : <a href="mailto:contact@jeanbaptisterecolet.fr"
+        >contact@jeanbaptisterecolet.fr</a
+      > ou via <a href="https://www.linkedin.com/in/jbrecolet/">LinkedIn</a>.
+    </p>
+  </article>
+</BaseLayout>
+
+<style>
+  .prose { max-width: var(--max-w-text); margin: var(--space-lg) auto; }
+  .prose .lead { font-size: 1.25rem; color: var(--color-muted); margin-bottom: var(--space-lg); }
+  .prose h2 { margin-top: var(--space-lg); }
+  .prose p { margin-top: var(--space-sm); }
+</style>

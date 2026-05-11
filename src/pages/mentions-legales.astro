@@ -1,0 +1,95 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Mentions légales"
+  description="Mentions légales du site jeanbaptisterecolet.fr : éditeur, hébergeur, propriété intellectuelle, traitement des données personnelles et cookies."
+>
+  <article class="prose">
+    <header>
+      <h1>Mentions légales</h1>
+      <p class="lead">Dernière mise à jour : à compléter à la mise en ligne.</p>
+    </header>
+
+    <h2>Éditeur du site</h2>
+    <p>
+      Le site <strong>jeanbaptisterecolet.fr</strong> est édité à titre
+      personnel par Jean-Baptiste Recolet, particulier non assujetti à la TVA.
+    </p>
+    <p>
+      Contact : <a href="mailto:contact@jeanbaptisterecolet.fr">contact@jeanbaptisterecolet.fr</a>
+    </p>
+    <p>Directeur de la publication : Jean-Baptiste Recolet.</p>
+
+    <h2>Hébergement</h2>
+    <p>
+      Le site est hébergé par <strong>Cloudflare Inc.</strong>, 101 Townsend
+      Street, San Francisco, CA 94107, États-Unis. Site web :
+      <a href="https://www.cloudflare.com" rel="noopener" target="_blank">cloudflare.com</a>.
+    </p>
+    <p>
+      Le nom de domaine est enregistré auprès de <strong>OVH SAS</strong>,
+      2 rue Kellermann, 59100 Roubaix, France.
+    </p>
+
+    <h2>Propriété intellectuelle</h2>
+    <p>
+      L'ensemble des contenus présents sur ce site (textes, illustrations,
+      visuels, structure éditoriale) est la propriété exclusive de
+      Jean-Baptiste Recolet, sauf mention contraire explicite.
+    </p>
+    <p>
+      <strong>Citations et reprises</strong> : les contenus peuvent être cités
+      par des tiers — y compris par les moteurs de recherche et les modèles
+      d'intelligence artificielle générative (ChatGPT, Claude, Perplexity,
+      Gemini, Google AI Overviews, etc.) — sous réserve d'une attribution
+      claire à l'auteur (Jean-Baptiste Recolet) et d'un lien vers la source
+      originale.
+    </p>
+    <p>
+      Toute reproduction intégrale ou substantielle sans autorisation
+      préalable écrite est interdite.
+    </p>
+
+    <h2>Données personnelles</h2>
+    <p>
+      Conformément au Règlement Général sur la Protection des Données (RGPD)
+      et à la loi Informatique et Libertés, vous disposez d'un droit d'accès,
+      de rectification, de portabilité et d'effacement de vos données
+      personnelles. Pour exercer ce droit, contactez
+      <a href="mailto:contact@jeanbaptisterecolet.fr">contact@jeanbaptisterecolet.fr</a>.
+    </p>
+    <p>
+      <strong>Données collectées</strong> : ce site collecte uniquement les
+      informations que vous transmettez volontairement (formulaires, emails).
+      Aucune donnée n'est revendue à un tiers.
+    </p>
+
+    <h2>Analyses statistiques et cookies</h2>
+    <p>
+      Le site utilise <strong>Cloudflare Web Analytics</strong>, un service
+      d'analyse d'audience sans cookies et sans collecte d'identifiants
+      personnels (conforme RGPD par design, sans bandeau de consentement
+      requis).
+    </p>
+    <p>
+      Optionnellement, <strong>Google Analytics 4</strong> peut être utilisé
+      avec consentement explicite via un bandeau cookies. Le refus de
+      consentement est traité avec la même facilité d'usage que l'acceptation.
+    </p>
+
+    <h2>Droit applicable</h2>
+    <p>
+      Le présent site est soumis au droit français. Tout litige relatif à son
+      utilisation relève de la compétence des juridictions françaises.
+    </p>
+  </article>
+</BaseLayout>
+
+<style>
+  .prose { max-width: var(--max-w-text); margin: var(--space-lg) auto; }
+  .prose .lead { font-size: 0.9375rem; color: var(--color-muted); margin-bottom: var(--space-lg); font-style: italic; }
+  .prose h2 { margin-top: var(--space-lg); }
+  .prose p { margin-top: var(--space-sm); }
+</style>

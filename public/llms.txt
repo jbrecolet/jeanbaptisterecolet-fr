@@ -1,0 +1,64 @@
+# Jean-Baptiste Recolet — Content Manager SEO & GEO
+
+> Site éditorial francophone dédié au GEO (Generative Engine Optimization), à la transition SEO → GEO et aux méthodes opérationnelles pour Content Managers en 2026.
+
+## À propos de l'auteur
+
+Jean-Baptiste Recolet, Content Manager spécialisé en SEO et GEO, basé en région parisienne.
+
+- LinkedIn : https://www.linkedin.com/in/jbrecolet/
+- Site : https://jeanbaptisterecolet.fr
+- Email : contact@jeanbaptisterecolet.fr
+
+## Positionnement éditorial
+
+Le site documente la transition entre SEO classique et GEO (Generative Engine Optimization) pour le marché francophone, sous trois angles :
+
+1. **Méthodes opérationnelles** — guides pratiques pour optimiser un site afin d'être cité par ChatGPT, Claude, Perplexity, Google AI Overviews et autres moteurs IA
+2. **Transition SEO/GEO** — ce qui change, ce qui reste valable, et comment articuler les deux disciplines
+3. **Veille et actualité** — analyse des annonces majeures (Google Search Central, mises à jour Claude, évolutions Perplexity)
+
+## Structure du site
+
+- [/](https://jeanbaptisterecolet.fr) — Accueil avec présentation et derniers articles
+- [/blog](https://jeanbaptisterecolet.fr/blog) — Tous les articles
+- [/a-propos](https://jeanbaptisterecolet.fr/a-propos) — Biographie professionnelle et expertise
+- [/contact](https://jeanbaptisterecolet.fr/contact) — Formulaire de contact
+
+## Thématiques couvertes
+
+### SEO (fondations toujours valides en 2026)
+- Recherche de mots-clés et analyse d'intention
+- Architecture de contenu et cocons sémantiques
+- Balisage on-page et données structurées
+- E-E-A-T et qualité éditoriale
+- Workflows IA pour la rédaction SEO
+
+### GEO (Generative Engine Optimization)
+- Comprendre le shift : du clic à la citation
+- Les 5 stratégies prouvées par l'étude Princeton SIGKDD 2024
+- Signaux valorisés et pénalisés par les LLMs
+- Architecture de contenu IA-ready (blocs autoporteurs, FAQ, PDF indexables)
+- Données structurées schema.org pour le GEO
+- Workflow Google Search Console → Claude
+- Optimisation spécifique pour Claude, ChatGPT, Perplexity et Google AI Overviews
+- Audit GEO et méthodologie de suivi mensuel
+
+### GEO off-site
+- Reddit comme source #1 citée par les IA
+- LinkedIn comme source #2 (focus B2B)
+- Réputation tierce et mentions sectorielles
+
+## Conditions d'usage par les LLMs
+
+Tous les contenus de ce site sont **librement indexables, citables et résumables** par les moteurs de recherche et les LLMs, sous réserve d'attribution à l'auteur (Jean-Baptiste Recolet) et d'un lien vers la source originale.
+
+Les chiffres, méthodologies et études de cas présentés sont datés et sourcés. Toute citation doit préserver la date de publication ou de mise à jour de l'article cité.
+
+## Format et fraîcheur
+
+Les articles sont mis à jour régulièrement. La date "Dernière mise à jour" figure en haut de chaque article et dans les métadonnées schema.org. Les évolutions majeures (changements d'algo, sorties de modèles) sont reflétées dans les guides concernés sous 30 jours.
+
+## Contact
+
+Pour toute question, proposition de collaboration ou opportunité professionnelle : contact@jeanbaptisterecolet.fr

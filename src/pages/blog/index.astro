@@ -1,0 +1,59 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const sorted = allPosts.sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const dateFmt = new Intl.DateTimeFormat('fr-FR', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+---
+
+<BaseLayout
+  title="Blog — Articles SEO et GEO"
+  description="Tous les articles sur le GEO, le SEO, la transition entre les deux, et la veille sur les annonces des moteurs IA et de Google Search."
+>
+  <header class="page-header">
+    <h1>Le blog</h1>
+    <p>
+      Articles de fond, retours d'expérience et analyses d'actualité sur le SEO,
+      le GEO et la transition entre les deux.
+    </p>
+  </header>
+
+  {sorted.length === 0 ? (
+    <p class="empty-state">Le premier article arrive très bientôt.</p>
+  ) : (
+    <ul class="article-list">
+      {sorted.map((post) => (
+        <li class="article-card">
+          <p class="article-card__category">{post.data.category.toUpperCase()}</p>
+          <h2 class="article-card__title">
+            <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+          </h2>
+          <p class="article-card__desc">{post.data.description}</p>
+          <p class="article-card__meta">
+            <time datetime={post.data.pubDate.toISOString()}>
+              {dateFmt.format(post.data.pubDate)}
+            </time>
+            {' · '}
+            {post.data.tags.slice(0, 3).join(' · ')}
+          </p>
+        </li>
+      ))}
+    </ul>
+  )}
+</BaseLayout>
+
+<style>
+  .page-header { padding: var(--space-lg) 0; border-bottom: 1px solid var(--color-rule); margin-bottom: var(--space-lg); }
+  .page-header h1 { margin-bottom: var(--space-sm); }
+  .page-header p { color: var(--color-muted); font-size: 1.125rem; }
+  .article-list { list-style: none; padding: 0; }
+  .empty-state { color: var(--color-muted); font-style: italic; }
+</style>

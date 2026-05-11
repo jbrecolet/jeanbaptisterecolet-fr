@@ -1,0 +1,148 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const sorted = allPosts.sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+const featured = sorted.filter((p) => p.data.featured).slice(0, 3);
+const recent = sorted.slice(0, 6);
+
+const dateFmt = new Intl.DateTimeFormat('fr-FR', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+---
+
+<BaseLayout
+  title="GEO et SEO en français — Jean-Baptiste Recolet"
+  description="Méthodes, retours d'expérience et veille pour Content Managers en 2026. Comprendre, mettre en œuvre et mesurer le GEO en français."
+>
+  <section class="hero">
+    <p class="hero__kicker">Content Manager · SEO · GEO</p>
+    <h1>Le GEO en français : méthodes, transition SEO et veille pour Content Managers</h1>
+    <p>
+      Je documente la transition entre SEO classique et Generative Engine
+      Optimization sur le marché francophone. Méthodes opérationnelles, retours
+      d'expérience et analyse des annonces qui comptent.
+    </p>
+    <p class="hero__cta">
+      <a href="/le-guide-du-geo-en-2026" class="btn">Lire le guide GEO 2026</a>
+      <a href="/blog" class="btn btn--ghost">Tous les articles</a>
+    </p>
+  </section>
+
+  {featured.length > 0 && (
+    <section class="section">
+      <h2>À la une</h2>
+      <ul class="article-list">
+        {featured.map((post) => (
+          <li class="article-card">
+            <p class="article-card__category">{post.data.category.toUpperCase()}</p>
+            <h3 class="article-card__title">
+              <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+            </h3>
+            <p class="article-card__desc">{post.data.description}</p>
+            <p class="article-card__meta">
+              <time datetime={post.data.pubDate.toISOString()}>
+                {dateFmt.format(post.data.pubDate)}
+              </time>
+            </p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <section class="section">
+    <h2>Derniers articles</h2>
+    {recent.length === 0 ? (
+      <p class="empty-state">
+        Le premier article arrive très bientôt. En attendant, tu peux me suivre
+        sur <a href="https://www.linkedin.com/in/jbrecolet/">LinkedIn</a>.
+      </p>
+    ) : (
+      <ul class="article-list">
+        {recent.map((post) => (
+          <li class="article-card">
+            <p class="article-card__category">{post.data.category.toUpperCase()}</p>
+            <h3 class="article-card__title">
+              <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+            </h3>
+            <p class="article-card__desc">{post.data.description}</p>
+            <p class="article-card__meta">
+              <time datetime={post.data.pubDate.toISOString()}>
+                {dateFmt.format(post.data.pubDate)}
+              </time>
+            </p>
+          </li>
+        ))}
+      </ul>
+    )}
+    <p class="section__more">
+      <a href="/blog">Voir tous les articles →</a>
+    </p>
+  </section>
+
+  <section class="section section--narrow">
+    <h2>À propos</h2>
+    <p>
+      Je m'appelle Jean-Baptiste Recolet, je suis Content Manager spécialisé en
+      rédaction, gestion éditoriale, SEO et GEO. Basé en région parisienne, je
+      construis ce site comme un terrain d'application des méthodes que je
+      partage : chaque page est elle-même optimisée pour être citée par les
+      moteurs IA.
+    </p>
+    <p>
+      <a href="/a-propos">En savoir plus →</a>
+    </p>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero__kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.8125rem;
+    color: var(--color-accent);
+    margin-bottom: var(--space-md);
+  }
+  .hero__cta {
+    margin-top: var(--space-lg);
+    display: flex;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--color-text);
+    color: var(--color-bg);
+    text-decoration: none;
+    border-radius: var(--radius);
+    font-weight: 500;
+    transition: background 0.15s;
+  }
+  .btn:hover { background: var(--color-accent); }
+  .btn--ghost {
+    background: transparent;
+    color: var(--color-text);
+    border: 1px solid var(--color-rule);
+  }
+  .btn--ghost:hover { background: var(--color-text); color: var(--color-bg); }
+
+  .section { margin-top: var(--space-xl); }
+  .section--narrow { max-width: var(--max-w-text); }
+  .section h2 { margin-bottom: var(--space-md); }
+  .section__more { margin-top: var(--space-md); font-weight: 500; }
+
+  .article-list { list-style: none; padding: 0; }
+
+  .empty-state {
+    color: var(--color-muted);
+    font-style: italic;
+    padding: var(--space-md) 0;
+  }
+</style>

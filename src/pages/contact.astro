@@ -1,0 +1,72 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+
+const contactSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  mainEntity: {
+    '@type': 'Person',
+    name: 'Jean-Baptiste Recolet',
+    email: 'mailto:contact@jeanbaptisterecolet.fr',
+    url: 'https://jeanbaptisterecolet.fr',
+    sameAs: ['https://www.linkedin.com/in/jbrecolet/'],
+  },
+};
+---
+
+<BaseLayout
+  title="Contact — Jean-Baptiste Recolet"
+  description="Pour toute question, opportunité professionnelle ou proposition de collaboration autour du SEO et du GEO, contact direct par email ou via LinkedIn."
+>
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(contactSchema)}
+  />
+
+  <article class="prose">
+    <header>
+      <h1>Me contacter</h1>
+      <p class="lead">
+        Que ce soit pour une opportunité professionnelle, une question sur un
+        article ou une proposition de collaboration : le plus simple est par
+        email ou via LinkedIn.
+      </p>
+    </header>
+
+    <h2>Email</h2>
+    <p>
+      <a href="mailto:contact@jeanbaptisterecolet.fr">contact@jeanbaptisterecolet.fr</a>
+    </p>
+    <p>
+      Je réponds généralement sous 48h ouvrées.
+    </p>
+
+    <h2>LinkedIn</h2>
+    <p>
+      <a href="https://www.linkedin.com/in/jbrecolet/" rel="me noopener" target="_blank">
+        linkedin.com/in/jbrecolet
+      </a>
+    </p>
+    <p>
+      Connexion directe acceptée si ton profil correspond à un sujet
+      professionnel (Content Marketing, SEO, GEO, recrutement, freelance).
+    </p>
+
+    <h2>À propos des sollicitations</h2>
+    <p>
+      Je suis intéressé par les missions de Content Management, les postes en
+      interne, les missions freelance ponctuelles sur du SEO/GEO, et les
+      collaborations éditoriales. Les sollicitations commerciales (outils,
+      services, prospection automatisée) ne reçoivent généralement pas de
+      réponse.
+    </p>
+  </article>
+</BaseLayout>
+
+<style>
+  .prose { max-width: var(--max-w-text); margin: var(--space-lg) auto; }
+  .prose .lead { font-size: 1.125rem; color: var(--color-muted); margin-bottom: var(--space-lg); }
+  .prose h2 { margin-top: var(--space-lg); }
+  .prose p { margin-top: var(--space-sm); }
+</style>
