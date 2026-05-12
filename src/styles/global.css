@@ -115,6 +115,8 @@ main {
 .article__title { margin-bottom: var(--space-md); }
 .article__meta { color: var(--color-muted); font-size: 0.9375rem; margin-bottom: var(--space-lg); }
 .article__meta a { color: inherit; }
+.article__cover { margin: var(--space-lg) 0; }
+.article__cover-img { width: 100%; height: auto; border-radius: var(--radius); }
 
 .article__tldr {
   background: var(--color-card);
