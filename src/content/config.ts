@@ -23,7 +23,7 @@ const blog = defineCollection({
       tier: z.enum(['pilier', 'approfondi', 'standard']).default('standard'),
 
       // Visuels
-      cover: image().optional(),
+      cover: z.string().optional(),
       coverAlt: z.string().optional(),
 
       // SEO/GEO
