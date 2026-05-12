@@ -130,13 +130,20 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
     flex-wrap: wrap;
   }
 
-  .hero__visual img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: var(--radius);
-    object-fit: cover;
-  }
+  .hero__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__visual img {
+  width: 260px;
+  height: 260px;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+}
 
   @media (max-width: 720px) {
     .hero__inner {
