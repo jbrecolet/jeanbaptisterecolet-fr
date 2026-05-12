@@ -1,14 +1,8 @@
 ---
 const year = new Date().getFullYear();
 ---
-
 <footer class="site-footer">
   <div class="site-footer__inner">
-    <div class="site-footer__col">
-      <p class="site-footer__brand"><strong>Jean-Baptiste Recolet</strong></p>
-      <p>Content Manager SEO/GEO.</p>
-      <p>Bois-Colombes, France</p>
-    </div>
 
     <nav class="site-footer__col" aria-label="Pages">
       <h2>Le site</h2>
@@ -40,8 +34,8 @@ const year = new Date().getFullYear();
         <li><a href="/mentions-legales">Mentions légales</a></li>
       </ul>
     </div>
-  </div>
 
+  </div>
   <p class="site-footer__copy">
     © {year} Jean-Baptiste Recolet. Contenus citables avec attribution et lien
     vers la source.
@@ -52,48 +46,36 @@ const year = new Date().getFullYear();
   .site-footer {
     padding: var(--space-xl) 0 var(--space-md);
     border-top: 1px solid var(--color-rule);
-    margin-top: var(--space-2xl);
+    margin-top: var(--space-xl);
   }
-
   .site-footer__inner {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* CRITIQUE : Aligne le haut des colonnes */
+    align-items: flex-start;
     gap: var(--space-lg);
     flex-wrap: wrap;
   }
-
   .site-footer__col {
     flex: 1;
     min-width: 150px;
   }
-
-  /* CRITIQUE : On aligne la ligne de base du texte */
-  .site-footer__brand,
   .site-footer__col h2 {
     margin-top: 0;
     padding-top: 0;
-    font-size: 1rem; /* Assure une taille cohérente pour l'alignement visuel */
-    line-height: 1.2;
-  }
-
-  .site-footer__col h2 {
+    font-size: 0.875rem;
     text-transform: uppercase;
     color: var(--color-muted);
     letter-spacing: 0.05em;
     margin-bottom: var(--space-sm);
   }
-
   .site-footer__col ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-
   .site-footer__col li {
     margin-bottom: var(--space-xs);
   }
-
   .site-footer__copy {
     margin-top: var(--space-xl);
     padding-top: var(--space-md);
