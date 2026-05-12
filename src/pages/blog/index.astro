@@ -31,12 +31,7 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
             {post.data.cover && (
               <div class="article-card__thumb">
                 <a href={`/blog/${post.id}`} tabindex="-1" aria-hidden="true">
-                  <Image
-                    src={post.data.cover}
-                    alt={post.data.coverAlt ?? ''}
-                    width={200}
-                    height={130}
-                  />
+                  <img src={post.data.cover} alt={post.data.coverAlt ?? ''} />
                 </a>
               </div>
             )}
