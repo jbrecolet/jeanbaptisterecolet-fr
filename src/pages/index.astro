@@ -7,8 +7,8 @@ const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const sorted = allPosts.sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
-const featured = sorted.filter((p) => p.data.featured).slice(0, 3);
-const recent = sorted.slice(0, 6);
+const featured = sorted.filter((p) => p.data.featured).slice(0, 1);
+const recent = sorted.filter((p) => !p.data.featured).slice(0, 6);
 
 const dateFmt = new Intl.DateTimeFormat('fr-FR', {
   day: 'numeric',
