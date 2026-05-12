@@ -18,22 +18,39 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
 
 <BaseLayout
   title="Content manager SEO/GEO - Jean-Baptiste Récolet"
-  description="Methodes, retours d'experience et veille pour Content Managers en 2026. Comprendre, mettre en oeuvre et mesurer le GEO en francais."
+  description="Méthodes, retours d'expérience et veille pour Content Managers en 2026. Comprendre, mettre en œuvre et mesurer le GEO en français."
 >
- <section class="hero">
-    <p class="hero__kicker">Jean-Baptiste Récolet</p>
-    <h1>Stratégie de contenu & Search : réussir la transition du SEO vers le GEO</h1>
-    <p>
-      Des contenus conçus pour être lus par les humains, les moteurs de recherche et les IA. 
-    </p>
-    <p class="hero__cta">
-      <a href="/le-guide-du-geo-en-2026" class="btn">Lire le guide GEO 2026</a>
-      <a href="/blog" class="btn btn--ghost">Tous les articles</a>
-    </p>
+  <section class="hero">
+    <div class="hero__inner">
+
+      <div class="hero__text">
+        <p class="hero__kicker">Jean-Baptiste Récolet</p>
+        <h1>Stratégie de contenu & Search : réussir la transition du SEO vers le GEO</h1>
+        <p class="hero__subtitle">
+          Des contenus conçus pour être lus par les humains, les moteurs de recherche et les IA.
+        </p>
+        <p class="hero__cta">
+          <a href="/le-guide-du-geo-en-2026" class="btn">Lire le guide GEO 2026</a>
+          <a href="/blog" class="btn btn--ghost">Tous les articles</a>
+        </p>
+      </div>
+
+      <div class="hero__visual">
+        <img
+          src="/images/hero.jpg"
+          alt="Jean-Baptiste Récolet, Content Manager SEO/GEO"
+          width="600"
+          height="600"
+          loading="eager"
+        />
+      </div>
+
+    </div>
+  </section>
 
   {featured.length > 0 && (
     <section class="section">
-      <h2>A la une</h2>
+      <h2>À la une</h2>
       <ul class="article-list">
         {featured.map((post) => (
           <li class="article-card">
@@ -57,7 +74,7 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
     <h2>Derniers articles</h2>
     {recent.length === 0 ? (
       <p class="empty-state">
-        Le premier article arrive tres bientôt. En attendant, tu peux me suivre
+        Le premier article arrive très bientôt. En attendant, vous pouvez me suivre
         sur <a href="https://www.linkedin.com/in/jbrecolet/">LinkedIn</a>.
       </p>
     ) : (
@@ -86,6 +103,14 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
 </BaseLayout>
 
 <style>
+  /* ── Hero ── */
+  .hero__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: center;
+  }
+
   .hero__kicker {
     text-transform: uppercase;
     letter-spacing: 0.12em;
@@ -93,12 +118,36 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
     color: var(--color-accent);
     margin-bottom: var(--space-md);
   }
+
+  .hero__subtitle {
+    margin-top: var(--space-sm);
+  }
+
   .hero__cta {
     margin-top: var(--space-lg);
     display: flex;
     gap: var(--space-sm);
     flex-wrap: wrap;
   }
+
+  .hero__visual img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius);
+    object-fit: cover;
+  }
+
+  @media (max-width: 720px) {
+    .hero__inner {
+      grid-template-columns: 1fr;
+    }
+    .hero__visual {
+      margin-top: var(--space-md);
+    }
+  }
+
+  /* ── Boutons ── */
   .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -117,6 +166,7 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
   }
   .btn--ghost:hover { background: var(--color-text); color: var(--color-bg); }
 
+  /* ── Sections ── */
   .section { margin-top: var(--space-xl); }
   .section--narrow { max-width: var(--max-w-text); }
   .section h2 { margin-bottom: var(--space-md); }
