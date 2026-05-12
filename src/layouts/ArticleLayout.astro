@@ -111,15 +111,11 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
         </aside>
       )}
     </header>
-  {data.cover && (
+      {data.cover && (
   <figure class="article__cover">
-      <Image
-        src={data.cover}
-        alt={data.coverAlt ?? data.title}
-        class="article__cover-img"
-      />
-    </figure>
-    )}
+    <img src={data.cover} alt={data.coverAlt ?? data.title} class="article__cover-img" />
+  </figure>
+      )}
     <div class="article__body">
       <slot />
     </div>
