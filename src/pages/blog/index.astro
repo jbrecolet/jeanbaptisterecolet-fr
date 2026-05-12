@@ -29,12 +29,12 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
         {sortedPosts.map((post) => (
           <li class="article-card">
             {post.data.cover && (
-              <div class="article-card__thumb">
-                <a href={`/blog/${post.id}`} tabindex="-1" aria-hidden="true">
-                  <img src={post.data.cover} alt={post.data.coverAlt ?? ''} />
-                </a>
-              </div>
-            )}
+  <div class="article-card__thumb">
+    <a href={`/blog/${post.id}`} tabindex="-1" aria-hidden="true">
+      <img src={post.data.cover} alt={post.data.coverAlt ?? ''} />
+    </a>
+  </div>
+)}
             <div class="article-card__body">
               <p class="article-card__category">{post.data.category.toUpperCase()}</p>
               <h3 class="article-card__title">
