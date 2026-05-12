@@ -8,7 +8,7 @@ tier: "standard"
 draft: false
 featured: true
 tldr: "Article de test pour valider le rendu du blog, des miniatures et des cartes articles avant la production éditoriale."
-cover: ../../article-test.webp
+cover: /article_test.webp
 coverAlt: "Description de l'image"
 ---
 
