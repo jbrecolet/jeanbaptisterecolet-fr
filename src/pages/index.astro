@@ -25,10 +25,11 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
     <div class="hero__inner">
 
       <div class="hero__text">
-        <h1>Du SEO au GEO : la nouvelle stratégie de contenu pour le Search</h1>
+        <p class="hero__kicker">Le Crawl</p>
         <p class="hero__subtitle hero__subtitle--accent">
           Le blog des contenus lus par les humains, indexés par Google et cités par les IA.
         </p>
+        <h1>Du SEO au GEO : la nouvelle stratégie de contenu pour le Search</h1>
       </div>
 
       <div class="hero__visual">
@@ -133,6 +134,14 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-xl);
     align-items: center;
+  }
+
+  .hero__kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.8125rem;
+    color: var(--color-accent);
+    margin-bottom: var(--space-sm);
   }
 
   .hero__subtitle {
