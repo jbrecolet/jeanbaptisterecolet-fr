@@ -3,14 +3,12 @@ const pathname = Astro.url.pathname;
 const isActive = (p: string) =>
   p === '/' ? pathname === '/' : pathname.startsWith(p);
 ---
-
 <header class="site-header">
   <div class="site-header__inner">
     <a href="/" class="site-header__brand" aria-label="Accueil">
       <span class="site-header__name">Jean-Baptiste Récolet</span>
       <span class="site-header__tag">Content Manager SEO/GEO</span>
     </a>
-
     <nav class="site-nav" aria-label="Navigation principale">
       <ul>
         <li>
@@ -19,19 +17,13 @@ const isActive = (p: string) =>
           </a>
         </li>
         <li>
-          <a
-            href="/le-guide-du-seo-en-2026"
-            aria-current={isActive('/le-guide-du-seo-en-2026') ? 'page' : undefined}
-          >
-            Guide SEO
+          <a href="/a-propos" aria-current={isActive('/a-propos') ? 'page' : undefined}>
+            À propos
           </a>
         </li>
         <li>
-          <a
-            href="/le-guide-du-geo-en-2026"
-            aria-current={isActive('/le-guide-du-geo-en-2026') ? 'page' : undefined}
-          >
-            Guide GEO
+          <a href="/contact" aria-current={isActive('/contact') ? 'page' : undefined}>
+            Contact
           </a>
         </li>
       </ul>
