@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
 
-// Schema.org AboutPage pour renforcer l'entité Person
 const aboutSchema = {
   '@context': 'https://schema.org',
   '@type': 'AboutPage',
@@ -25,7 +24,6 @@ const aboutSchema = {
   },
 };
 ---
-
 <BaseLayout
   title="À propos — Jean-Baptiste Récolet"
   description="Content Manager spécialisé en rédaction web, stratégie éditoriale, SEO et GEO. Basé en région parisienne."
@@ -35,13 +33,23 @@ const aboutSchema = {
     type="application/ld+json"
     set:html={JSON.stringify(aboutSchema)}
   />
-
   <article class="prose">
-    <header>
-      <h1>À propos</h1>
-      <p class="lead">
-        Content Manager spécialisé en rédaction, stratégie éditoriale, SEO et GEO.
-      </p>
+
+    <header class="about__header">
+      <div class="about__header-text">
+        <h1>Jean-Baptiste Récolet</h1>
+        <p class="lead">
+          Content Manager spécialisé en rédaction, stratégie éditoriale, SEO et GEO.
+        </p>
+      </div>
+      <div class="about__header-photo">
+        <img
+          src="/hero.webp"
+          alt="Jean-Baptiste Récolet, Content Manager SEO & GEO"
+          width="200"
+          height="200"
+        />
+      </div>
     </header>
 
     <h2>Qui je suis</h2>
@@ -53,27 +61,35 @@ const aboutSchema = {
 
     <h2>Pourquoi ce site</h2>
     <p>
-      Ce site sert trois objectifs. C'est avant tout une sorte de laboratoire, 
-      un terrain d'essai pour les méthodes que je partage. C'est ensuite un portfolio 
-      public, qui démontre mes compétences en complément de mon CV. C'est enfin un 
-      blog autour du SEO et de la transition vers le GEO, un sujet 
+      Ce site sert trois objectifs. C'est avant tout une sorte de laboratoire,
+      un terrain d'essai pour les méthodes que je partage. C'est ensuite un portfolio
+      public, qui démontre mes compétences en complément de mon CV. C'est enfin un
+      blog autour du SEO et de la transition vers le GEO, un sujet
       encore peu exploité en France.
     </p>
 
     <h2>Comment je travaille</h2>
     <p>
       Je crois avant tout que le GEO ne remplace pas le SEO : il en est l'évolution
-      naturelle, avec l'émergence de l'IA. Le visage du Search évolue mais les 
-      fondamentaux restent les mêmes : intention utilisateur, qualité éditoriale, 
+      naturelle, avec l'émergence de l'IA. Le visage du Search évolue mais les
+      fondamentaux restent les mêmes : intention utilisateur, qualité éditoriale,
       structuration sémantique...
+    </p>
+
+    <h2>Mon CV</h2>
+    <p>
+      <a href="/cv-jean-baptiste-recolet.pdf" download>
+        Télécharger mon CV (PDF)
+      </a>
     </p>
 
     <h2>Me contacter</h2>
     <p>
-      Pour toute question ou opportunité professionnelle : 
-      <a href="mailto:contact@jeanbaptisterecolet.fr">contact@jeanbaptisterecolet.fr</a
-      > ou via <a href="https://www.linkedin.com/in/jbrecolet/">LinkedIn</a>.
+      Pour toute question ou opportunité professionnelle :
+      <a href="mailto:contact@jeanbaptisterecolet.fr">contact@jeanbaptisterecolet.fr</a>
+      ou via <a href="https://www.linkedin.com/in/jbrecolet/">LinkedIn</a>.
     </p>
+
   </article>
 </BaseLayout>
 
@@ -82,4 +98,31 @@ const aboutSchema = {
   .prose .lead { font-size: 1.25rem; color: var(--color-muted); margin-bottom: var(--space-lg); }
   .prose h2 { margin-top: var(--space-lg); }
   .prose p { margin-top: var(--space-sm); }
+
+  .about__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-lg);
+  }
+  .about__header-text { flex: 1; }
+  .about__header-photo img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+
+  @media (max-width: 640px) {
+    .about__header {
+      flex-direction: column-reverse;
+    }
+    .about__header-photo img {
+      width: 120px;
+      height: 120px;
+    }
+  }
 </style>
