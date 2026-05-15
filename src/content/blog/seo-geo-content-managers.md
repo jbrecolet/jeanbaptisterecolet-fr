@@ -4,7 +4,7 @@ description: "AI Overviews, ChatGPT, Perplexity : la recherche synthétise des r
 tldr: "Les AI Overviews font chuter le CTR organique de 58 %. L'enjeu pour les Content Managers n'est plus d'être en première page, mais d'être cité dans la réponse synthétisée. Une bascule méthodologique autant que sémantique."
 pubDate: 2026-05-15
 tags: ["GEO", "SEO", "AI Overviews", "Content Management"]
-category: "transition"
+category: "GEO"
 tier: "approfondi"
 featured: true
 draft: false
