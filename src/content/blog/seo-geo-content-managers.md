@@ -1,6 +1,6 @@
 ---
 title: "Du SEO au GEO : ce qui change vraiment pour les Content Managers"
-description: "AI Overviews, ChatGPT, Perplexity : la recherche ne renvoie plus vers des pages, elle synthétise des réponses. Ce que ça change concrètement pour ceux qui écrivent et publient du contenu."
+description: "AI Overviews, ChatGPT, Perplexity : la recherche synthétise des réponses plutôt que des liens. Ce que ça change pour ceux qui écrivent et publient du contenu."
 tldr: "Les AI Overviews font chuter le CTR organique de 58 %. L'enjeu pour les Content Managers n'est plus d'être en première page, mais d'être cité dans la réponse synthétisée. Une bascule méthodologique autant que sémantique."
 pubDate: 2026-05-15
 tags: ["GEO", "SEO", "AI Overviews", "Content Management"]
