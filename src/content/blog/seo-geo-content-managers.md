@@ -8,6 +8,8 @@ category: "GEO"
 tier: "approfondi"
 featured: true
 draft: false
+cover: "seo-geo-content-managers.webp"
+coverAlt: "Du SEO au GEO : ce qui change pour les Content Managers"
 ---
 
 En novembre 2024, HubSpot perdait la moitié de son trafic organique. En quelques semaines, les 13,5 millions de visites mensuelles estimées par Ahrefs tombaient à moins de 7 millions. Yamini Rangan, la PDG, finissait par le reconnaître publiquement lors d'un appel aux résultats trimestriels : "La recherche organique décline à l'échelle mondiale. Les AI Overviews donnent les réponses, et moins de personnes cliquent pour accéder aux sites."
