@@ -168,7 +168,11 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
   .section h2 { margin-bottom: var(--space-md); }
   .section__more { margin-top: var(--space-md); font-weight: 500; }
 
-  .article-list { list-style: none; padding: 0; }
+  .article-list {
+    list-style: none;
+    padding: 0;
+    max-width: none;
+  }
   .empty-state {
     color: var(--color-muted);
     font-style: italic;
