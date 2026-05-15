@@ -3,16 +3,12 @@ const year = new Date().getFullYear();
 ---
 <footer class="site-footer">
   <div class="site-footer__inner">
-
     <nav class="site-footer__col" aria-label="Pages">
       <h2>Le site</h2>
       <ul>
         <li><a href="/blog">Tous les articles</a></li>
-        <li><a href="/le-guide-du-seo-en-2026">Guide SEO 2026</a></li>
-        <li><a href="/le-guide-du-geo-en-2026">Guide GEO 2026</a></li>
       </ul>
     </nav>
-
     <nav class="site-footer__col" aria-label="Présence">
       <h2>Me suivre</h2>
       <ul>
@@ -25,7 +21,6 @@ const year = new Date().getFullYear();
         <li><a href="mailto:contact@jeanbaptisterecolet.fr">Email</a></li>
       </ul>
     </nav>
-
     <div class="site-footer__col">
       <h2>Mentions</h2>
       <ul>
@@ -34,54 +29,9 @@ const year = new Date().getFullYear();
         <li><a href="/contact">Contact</a></li>
       </ul>
     </div>
-
   </div>
   <p class="site-footer__copy">
     © {year} Jean-Baptiste Recolet. Contenus citables avec attribution et lien
     vers la source.
   </p>
 </footer>
-
-<style>
-  .site-footer {
-    padding: var(--space-xl) 0 var(--space-md);
-    border-top: 1px solid var(--color-rule);
-    margin-top: var(--space-xl);
-  }
-  .site-footer__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: var(--space-lg);
-    flex-wrap: wrap;
-  }
-  .site-footer__col {
-    flex: 1;
-    min-width: 150px;
-  }
-  .site-footer__col h2 {
-    margin-top: 0;
-    padding-top: 0;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    color: var(--color-muted);
-    letter-spacing: 0.05em;
-    margin-bottom: var(--space-sm);
-  }
-  .site-footer__col ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .site-footer__col li {
-    margin-bottom: var(--space-xs);
-  }
-  .site-footer__copy {
-    margin-top: var(--space-xl);
-    padding-top: var(--space-md);
-    border-top: 1px solid var(--color-rule);
-    font-size: 0.85rem;
-    color: var(--color-muted);
-    text-align: center;
-  }
-</style>
