@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
-import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 
 const allPosts = await getCollection('blog', ({ data }) => !data.draft);
@@ -53,17 +52,17 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
             {post.data.cover && (
               <div class="article-card__thumb">
                 <a href={`/blog/${post.id}`} tabindex="-1" aria-hidden="true">
-                  <Image
-                    src={post.data.cover}
+                  <img
+                    src={`/${post.data.cover}`}
                     alt={post.data.coverAlt ?? ''}
-                    width={200}
-                    height={130}
+                    width="200"
+                    height="130"
                   />
                 </a>
               </div>
             )}
             <div class="article-card__body">
-              <p class="article-card__category">{post.data.category.toUpperCase()}</p>
+              <p class="article-card__category">{post.data.category?.toUpperCase()}</p>
               <h3 class="article-card__title">
                 <a href={`/blog/${post.id}`}>{post.data.title}</a>
               </h3>
@@ -94,17 +93,17 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
             {post.data.cover && (
               <div class="article-card__thumb">
                 <a href={`/blog/${post.id}`} tabindex="-1" aria-hidden="true">
-                  <Image
-                    src={post.data.cover}
+                  <img
+                    src={`/${post.data.cover}`}
                     alt={post.data.coverAlt ?? ''}
-                    width={200}
-                    height={130}
+                    width="200"
+                    height="130"
                   />
                 </a>
               </div>
             )}
             <div class="article-card__body">
-              <p class="article-card__category">{post.data.category.toUpperCase()}</p>
+              <p class="article-card__category">{post.data.category?.toUpperCase()}</p>
               <h3 class="article-card__title">
                 <a href={`/blog/${post.id}`}>{post.data.title}</a>
               </h3>
