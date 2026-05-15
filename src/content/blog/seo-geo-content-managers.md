@@ -1,10 +1,14 @@
+---
 title: "Du SEO au GEO : ce qui change vraiment pour les Content Managers"
 description: "AI Overviews, ChatGPT, Perplexity : la recherche ne renvoie plus vers des pages, elle synthétise des réponses. Ce que ça change concrètement pour ceux qui écrivent et publient du contenu."
 tldr: "Les AI Overviews font chuter le CTR organique de 58 %. L'enjeu pour les Content Managers n'est plus d'être en première page, mais d'être cité dans la réponse synthétisée. Une bascule méthodologique autant que sémantique."
-date: 2026-05-15
-cover: "seo-geo-content-managers.webp"
+pubDate: 2026-05-15
 tags: ["GEO", "SEO", "AI Overviews", "Content Management"]
+category: "transition"
+tier: "approfondi"
 featured: true
+draft: false
+---
 En novembre 2024, HubSpot perdait la moitié de son trafic organique. En quelques semaines, les 13,5 millions de visites mensuelles estimées par Ahrefs tombaient à moins de 7 millions. Yamini Rangan, la PDG, finissait par le reconnaître publiquement lors d'un appel aux résultats trimestriels : "La recherche organique décline à l'échelle mondiale. Les AI Overviews donnent les réponses, et moins de personnes cliquent pour accéder aux sites."
 HubSpot n'est pas un cas isolé. C'est le signal d'alarme que l'industrie attendait, parce que si l'une des meilleures équipes SEO au monde ne pouvait pas tenir, personne n'était à l'abri.
 Le terrain de jeu a changé. Pas progressivement. Brutalement.
