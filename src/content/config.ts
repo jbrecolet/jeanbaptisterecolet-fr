@@ -12,20 +12,16 @@ const blog = defineCollection({
         .min(120, 'Meta description trop courte (<120)')
         .max(165, 'Meta description trop longue (>165)'),
       tldr: z.string().max(280).optional(),
-
       // Dates
       pubDate: z.coerce.date(),
       updatedDate: z.coerce.date().optional(),
-
       // Taxonomie
       tags: z.array(z.string()).min(2).max(8),
-      category: z.enum(['seo', 'geo', 'transition', 'actualite']),
+      category: z.string().optional(),
       tier: z.enum(['pilier', 'approfondi', 'standard']).default('standard'),
-
       // Visuels
       cover: z.string().optional(),
       coverAlt: z.string().optional(),
-
       // SEO/GEO
       canonical: z.string().url().optional(),
       keywords: z.array(z.string()).optional(),
@@ -37,7 +33,6 @@ const blog = defineCollection({
           })
         )
         .optional(),
-
       // Workflow
       draft: z.boolean().default(false),
       featured: z.boolean().default(false),
