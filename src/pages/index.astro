@@ -11,7 +11,7 @@ const recent = sorted.slice(0, 6);
 
 <BaseLayout
   title="Jean-Baptiste Récolet - Content Manager SEO & GEO"
-  description="Méthodes, retours d'expérience et veille pour Content Managers en 2026. Comprendre, mettre en œuvre et mesurer le GEO en français."
+  description="Portfolio et blog de Jean-Baptiste Récolet, Content Manager en région parisienne. Articles, méthodes et veille sur le SEO et le GEO."
 >
   <section class="hero">
     <div class="hero__inner">
@@ -47,18 +47,16 @@ const recent = sorted.slice(0, 6);
         sur <a href="https://www.linkedin.com/in/jbrecolet/">LinkedIn</a>.
       </p>
     ) : (
-      <ul class="article-list">
+      <ul class="article-grid">
         {recent.map((post) => (
           <li class="article-card">
             {post.data.cover && (
-              <div class="article-card__thumb">
-                <a href={`/blog/${post.id}`} tabindex="-1" aria-hidden="true">
-                  <img
-                    src={`/${post.data.cover}`}
-                    alt={post.data.coverAlt ?? ''}
-                  />
-                </a>
-              </div>
+              <a href={`/blog/${post.id}`} class="article-card__thumb" tabindex="-1" aria-hidden="true">
+                <img
+                  src={`/${post.data.cover}`}
+                  alt={post.data.coverAlt ?? ''}
+                />
+              </a>
             )}
             <div class="article-card__body">
               <p class="article-card__category">{post.data.category?.toUpperCase()}</p>
@@ -137,33 +135,37 @@ const recent = sorted.slice(0, 6);
 
   /* ── Sections ── */
   .section { margin-top: var(--space-lg); }
-  .section--narrow { max-width: var(--max-w-text); }
   .section h2 { margin-bottom: var(--space-md); }
-  .section__more { margin-top: var(--space-md); font-weight: 500; }
+  .section__more { margin-top: var(--space-lg); font-weight: 500; }
 
-  .article-list {
-    list-style: none;
-    padding: 0;
-    max-width: none;
-  }
   .empty-state {
     color: var(--color-muted);
     font-style: italic;
     padding: var(--space-md) 0;
   }
 
-  /* ── Cartes articles ── */
-  .article-card {
+  /* ── Grille articles ── */
+  .article-grid {
+    list-style: none;
+    padding: 0;
+    max-width: none;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: var(--space-xl);
-    align-items: start;
-    border-top: 1px solid var(--color-rule);
-    padding: var(--space-md) 0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
   }
-  .article-card:last-child { border-bottom: 1px solid var(--color-rule); }
 
-  .article-card__thumb { width: 100%; }
+  .article-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    border-top: 1px solid var(--color-rule);
+    padding-top: var(--space-md);
+  }
+
+  .article-card__thumb {
+    display: block;
+    width: 100%;
+  }
   .article-card__thumb img {
     width: 100%;
     height: auto;
@@ -174,15 +176,22 @@ const recent = sorted.slice(0, 6);
     display: flex;
     flex-direction: column;
     gap: var(--space-xs);
+    flex: 1;
   }
   .article-card__category { font-size: 0.8rem; color: var(--color-accent); font-weight: bold; }
   .article-card__title { margin: 0; }
   .article-card__title a { text-decoration: none; color: inherit; }
   .article-card__title a:hover { color: var(--color-accent); }
-  .article-card__desc { color: var(--color-muted); }
+  .article-card__desc { color: var(--color-muted); font-size: 0.9375rem; }
 
-  @media (max-width: 720px) {
-    .article-card {
+  @media (max-width: 900px) {
+    .article-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .article-grid {
       grid-template-columns: 1fr;
     }
   }
