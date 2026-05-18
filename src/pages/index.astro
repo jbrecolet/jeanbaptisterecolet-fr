@@ -6,8 +6,7 @@ const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const sorted = allPosts.sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
-const featured = sorted.filter((p) => p.data.featured).slice(0, 1);
-const recent = sorted.filter((p) => !p.data.featured).slice(0, 6);
+const recent = sorted.slice(0, 6);
 ---
 
 <BaseLayout
@@ -22,6 +21,9 @@ const recent = sorted.filter((p) => !p.data.featured).slice(0, 6);
         <p class="hero__subtitle hero__subtitle--accent">
           Des contenus lus par les humains, indexés par Google et cités par les IA.
         </p>
+        <a href="/cv-jean-baptiste-recolet.pdf" class="hero__cv" download>
+          Télécharger mon CV
+        </a>
       </div>
 
       <div class="hero__visual">
@@ -36,35 +38,6 @@ const recent = sorted.filter((p) => !p.data.featured).slice(0, 6);
 
     </div>
   </section>
-
-  {featured.length > 0 && (
-    <section class="section">
-      <h2>À la une</h2>
-      <ul class="article-list">
-        {featured.map((post) => (
-          <li class="article-card">
-            {post.data.cover && (
-              <div class="article-card__thumb">
-                <a href={`/blog/${post.id}`} tabindex="-1" aria-hidden="true">
-                  <img
-                    src={`/${post.data.cover}`}
-                    alt={post.data.coverAlt ?? ''}
-                  />
-                </a>
-              </div>
-            )}
-            <div class="article-card__body">
-              <p class="article-card__category">{post.data.category?.toUpperCase()}</p>
-              <h3 class="article-card__title">
-                <a href={`/blog/${post.id}`}>{post.data.title}</a>
-              </h3>
-              <p class="article-card__desc">{post.data.description}</p>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </section>
-  )}
 
   <section class="section">
     <h2>Derniers articles</h2>
@@ -120,6 +93,22 @@ const recent = sorted.filter((p) => !p.data.featured).slice(0, 6);
 
   .hero__subtitle--accent {
     color: var(--color-accent);
+  }
+
+  .hero__cv {
+    display: inline-block;
+    margin-top: var(--space-md);
+    padding: 0.6rem 1.25rem;
+    background: var(--color-accent);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    border-radius: var(--radius);
+  }
+  .hero__cv:hover {
+    opacity: 0.88;
+    text-decoration: none;
   }
 
   .hero__visual {
