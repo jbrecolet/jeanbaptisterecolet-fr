@@ -8,8 +8,33 @@ coverAlt: "Du SEO au GEO : ce qui change pour les Content Managers"
 tags: ["GEO", "SEO", "AI Overviews", "Content Management"]
 category: "GEO"
 tier: "approfondi"
-featured: true
 draft: false
+featured: true
+faq:
+  - question: "Qu'est-ce que le GEO (Generative Engine Optimization) ?"
+    answer: >-
+      Le GEO est une discipline d'optimisation visant à faire apparaître un contenu comme source citée dans les réponses générées par des moteurs IA tels que Google AI Overviews, ChatGPT ou Perplexity. À la différence du SEO, qui vise le classement dans une liste de liens, le GEO vise la citation à l'intérieur d'une réponse synthétisée. Le terme a été formalisé dans un article de recherche co-signé par des équipes de Princeton, Georgia Tech, l'Allen Institute for AI et IIT Delhi, présenté à la conférence ACM SIGKDD 2024.
+  - question: "Le SEO est-il mort avec l'arrivée du GEO ?"
+    answer: >-
+      Non. En septembre 2025, Google envoyait encore 345 fois plus de trafic que l'ensemble des plateformes IA réunies. Les fondamentaux SEO restent la base : 76,1 % des sources citées dans les AI Overviews font également partie du top 10 organique Google. Le GEO est une couche supplémentaire, pas un remplacement.
+  - question: "Quels types de contenus sont les plus impactés par les AI Overviews ?"
+    answer: >-
+      Les contenus informationnels, les définitions, les tutoriels et les comparatifs sont les plus touchés, car ils répondent à des requêtes que l'IA peut satisfaire sans renvoyer vers un site. Les requêtes transactionnelles, locales ou très spécifiques restent pour l'instant plus résistantes aux AI Overviews.
+  - question: "Quelles métriques un Content Manager doit-il suivre pour le GEO ?"
+    answer: >-
+      Au-delà du trafic organique et du classement, il faut suivre la citation frequency (combien de fois le domaine est cité dans des réponses IA sur les requêtes cibles), l'AI Visibility Index, et le share of voice IA par rapport aux concurrents. Des outils spécialisés comme Profound.co ou Otterly.ai commencent à proposer ces données. La vérification manuelle sur 10 à 15 requêtes-clés reste la méthode la plus fiable à court terme.
+  - question: "Comment structurer un article pour être cité par les moteurs génératifs ?"
+    answer: >-
+      La réponse directe doit apparaître dans les 40 à 60 premiers mots. Chaque section doit être autoporteuse, compréhensible sans lire le reste de l'article. Les données datées et sourcées doivent être présentes à intervalles réguliers. Les experts sont cités par leur nom et titre officiels. Le balisage schema.org pertinent est implémenté sur la page.
+  - question: "Être cité dans une AI Overview génère-t-il du trafic ?"
+    answer: >-
+      Davantage que ne pas l'être. L'étude de Seer Interactive de septembre 2025 montre que les marques citées dans les AI Overviews obtiennent 35 % de clics organiques supplémentaires par rapport aux marques non citées sur les mêmes requêtes. L'effet de reconnaissance de marque semble plus déterminant que la réponse directe à la requête.
+  - question: "Le trafic IA va-t-il dépasser le trafic SEO classique ?"
+    answer: >-
+      Pas à court terme. En 2025, le trafic IA représentait moins de 1,5 % du trafic organique pour la majorité des sites, malgré une progression de 527 % en glissement annuel au premier semestre 2025 selon Previsible. IDC anticipe que les marques alloueront cinq fois plus de budget à l'optimisation pour les LLM que pour le SEO d'ici 2029.
+  - question: "Faut-il des outils spécifiques pour faire du GEO ?"
+    answer: >-
+      Les outils SEO existants (SEMrush, Ahrefs, Google Search Console) restent utiles pour les fondamentaux. Des plateformes dédiées au suivi de la visibilité IA émergent : Profound.co, Otterly.ai, Brand24. Pour débuter, la vérification manuelle des citations dans ChatGPT, Perplexity et Google reste accessible et instructive sans abonnement supplémentaire.
 ---
 
 En novembre 2024, HubSpot perdait la moitié de son trafic organique. En quelques semaines, les 13,5 millions de visites mensuelles estimées par Ahrefs tombaient à moins de 7 millions. Yamini Rangan, la PDG, finissait par le reconnaître publiquement lors d'un appel aux résultats trimestriels : "La recherche organique décline à l'échelle mondiale. Les AI Overviews donnent les réponses, et moins de personnes cliquent pour accéder aux sites."
@@ -93,37 +118,3 @@ L'E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness), cadre d'�
 Ce que le GEO ajoute au SEO, c'est une couche de lisibilité structurelle et de densité factuelle que le SEO ne demandait pas avec la même rigueur. Le SEO acceptait l'article bien écrit mais progressif. Le GEO récompense l'article dense, sourcé, structuré pour l'extraction dès les premières lignes.
 
 Pour les Content Managers, la transition n'est pas "arrêtez le SEO, faites du GEO". C'est "faites du SEO mieux qu'avant, et apprenez en plus à écrire pour être cité."
-
-## FAQ
-
-### Qu'est-ce que le GEO (Generative Engine Optimization) ?
-
-Le GEO est une discipline d'optimisation visant à faire apparaître un contenu comme source citée dans les réponses générées par des moteurs IA tels que Google AI Overviews, ChatGPT ou Perplexity. À la différence du SEO, qui vise le classement dans une liste de liens, le GEO vise la citation à l'intérieur d'une réponse synthétisée. Le terme a été formalisé dans un article de recherche co-signé par des équipes de Princeton, Georgia Tech, l'Allen Institute for AI et IIT Delhi, présenté à la conférence ACM SIGKDD 2024.
-
-### Le SEO est-il mort avec l'arrivée du GEO ?
-
-Non. En septembre 2025, Google envoyait encore 345 fois plus de trafic que l'ensemble des plateformes IA réunies. Les fondamentaux SEO restent la base : 76,1 % des sources citées dans les AI Overviews font également partie du top 10 organique Google. Le GEO est une couche supplémentaire, pas un remplacement.
-
-### Quels types de contenus sont les plus impactés par les AI Overviews ?
-
-Les contenus informationnels, les définitions, les tutoriels et les comparatifs sont les plus touchés, car ils répondent à des requêtes que l'IA peut satisfaire sans renvoyer vers un site. Les requêtes transactionnelles, locales ou très spécifiques restent pour l'instant plus résistantes aux AI Overviews.
-
-### Quelles métriques un Content Manager doit-il suivre pour le GEO ?
-
-Au-delà du trafic organique et du classement, il faut suivre la citation frequency (combien de fois le domaine est cité dans des réponses IA sur les requêtes cibles), l'AI Visibility Index, et le share of voice IA par rapport aux concurrents. Des outils spécialisés comme Profound.co ou Otterly.ai commencent à proposer ces données. La vérification manuelle sur 10 à 15 requêtes-clés reste la méthode la plus fiable à court terme.
-
-### Comment structurer un article pour être cité par les moteurs génératifs ?
-
-La réponse directe doit apparaître dans les 40 à 60 premiers mots. Chaque section doit être autoporteuse, compréhensible sans lire le reste de l'article. Les données datées et sourcées doivent être présentes à intervalles réguliers. Les experts sont cités par leur nom et titre officiels. Le balisage schema.org pertinent est implémenté sur la page.
-
-### Être cité dans une AI Overview génère-t-il du trafic ?
-
-Davantage que ne pas l'être. L'étude de Seer Interactive de septembre 2025 montre que les marques citées dans les AI Overviews obtiennent 35 % de clics organiques supplémentaires par rapport aux marques non citées sur les mêmes requêtes. L'effet de reconnaissance de marque semble plus déterminant que la réponse directe à la requête.
-
-### Le trafic IA va-t-il dépasser le trafic SEO classique ?
-
-Pas à court terme. En 2025, le trafic IA représentait moins de 1,5 % du trafic organique pour la majorité des sites, malgré une progression de 527 % en glissement annuel au premier semestre 2025 selon Previsible. IDC anticipe que les marques alloueront cinq fois plus de budget à l'optimisation pour les LLM que pour le SEO d'ici 2029, ce qui signale la direction sans effacer la réalité des audiences actuelles.
-
-### Faut-il des outils spécifiques pour faire du GEO ?
-
-Les outils SEO existants (SEMrush, Ahrefs, Google Search Console) restent utiles pour les fondamentaux. Des plateformes dédiées au suivi de la visibilité IA émergent : Profound.co, Otterly.ai, Brand24. Pour débuter, la vérification manuelle des citations dans ChatGPT, Perplexity et Google reste accessible et instructive sans abonnement supplémentaire.
