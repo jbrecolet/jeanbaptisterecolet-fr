@@ -10,6 +10,31 @@ category: "Guide"
 tier: "approfondi"
 draft: false
 featured: false
+faq:
+  - question: "Pourquoi Reddit est-il autant cité par les LLMs ?"
+    answer: >-
+      Deux raisons principales. D'abord, des accords officiels : Google paie Reddit 60 millions de dollars par an pour un accès structuré à ses données, et OpenAI a signé un accord similaire en 2024. Ensuite, le format question-réponse de Reddit correspond exactement à ce que les LLMs cherchent lors de la récupération en temps réel : une réponse humaine à une question précise, filtrée par les upvotes communautaires.
+  - question: "Quels LLMs citent Reddit, et lesquels ne le citent pas ?"
+    answer: >-
+      Perplexity est le plus grand citateur de Reddit (24 % de ses citations au T1 2026), suivi de Google AI Overviews (21 %) et ChatGPT (5 %+). Grok atteint 70 % de citations sociales issues de Reddit. Claude d'Anthropic cite très peu Reddit. Gemini est quasi-absent (0,1 %).
+  - question: "Qu'est-ce qu'une Answer Capsule ?"
+    answer: >-
+      C'est un format de post Reddit structuré pour maximiser la récupération par les LLMs. Il combine un titre formulé comme une question, un TLDR de 2 à 3 lignes en ouverture, un contexte personnel non promotionnel, une réponse structurée avec sous-titres et listes, des chiffres sourcés et datés, et une conclusion ouverte. Ce format se fait citer 3 à 5 fois plus souvent que les posts non structurés.
+  - question: "Combien de temps faut-il pour construire un compte Reddit crédible ?"
+    answer: >-
+      La stratégie recommandée pour un objectif long terme dure 6 à 8 semaines. Les deux premières semaines sont consacrées à l'observation pure, les semaines 3 à 6 à la contribution non promotionnelle, les semaines 7 et 8 aux premières contributions d'expertise. Le compte est considéré comme crédible à partir de 30 jours d'historique et 300 de karma total.
+  - question: "Comment identifier les subreddits déjà cités par les LLMs ?"
+    answer: >-
+      La méthode du reverse engineering : lister ses 10 requêtes prioritaires, les poser dans ChatGPT, Perplexity et Google AI Overviews, noter les threads Reddit qui apparaissent dans les réponses. Les subreddits qui reviennent constituent la shortlist opérationnelle. C'est la seule méthode fiable pour ne pas choisir ses cibles par intuition.
+  - question: "Quels sont les signaux qui déclenchent un ban ou un shadowban ?"
+    answer: >-
+      Les principaux déclencheurs : compte de moins de 30 jours qui poste un lien externe, même commentaire copié-collé dans plusieurs subreddits, liens vers un site propriétaire dans le corps d'un post, activité trop intense dans les premiers jours du compte. Le shadowban est silencieux : une vérification régulière depuis un compte déconnecté permet de le détecter.
+  - question: "Quelle est la différence entre un post Reddit et un article de blog pour le GEO ?"
+    answer: >-
+      Un article de blog est optimisé pour apparaître dans une liste de résultats classés sur Google. Un post Reddit est optimisé pour devenir la réponse canonique d'une question posée par d'autres humains dans une communauté spécifique. Les LLMs extraient des chunks de 60 à 300 mots depuis ces threads : chaque section du post doit fonctionner seule, sans dépendre du contexte environnant.
+  - question: "La stratégie Reddit francophone est-elle viable ?"
+    answer: >-
+      Particulièrement. Les threads Reddit en français cités par les LLMs sont rares. Les contenus francophones structurés pour l'extraction IA représentent une fraction infime de ce qui existe en anglais. La concurrence est donc bien moindre sur les requêtes francophones que sur les mêmes requêtes en anglais.
 ---
 
 Une étude Semrush portant sur 150 000 citations LLM révèle que Reddit était la source la plus citée par les IA en 2025, avec une fréquence de 40,1 %. Devant Wikipedia. Devant les grands médias. Devant les sites spécialisés qui ont pourtant passé des années à construire leur autorité SEO.
@@ -97,39 +122,3 @@ La mesure n'est pas encore outillée nativement. Google Search Console ne distin
 En complément, le suivi du trafic de référence Reddit dans Google Analytics 4 donne une mesure partielle. Les utilisateurs qui cliquent depuis une citation dans une réponse Perplexity vers un thread Reddit, puis depuis ce thread vers le site, laissent une trace dans les sources de trafic.
 
 La progression se mesure sur plusieurs mois, pas en semaines. L'objectif n'est pas viral. C'est de devenir la réponse de référence sur 5 à 10 requêtes dans 3 à 5 subreddits bien ciblés.
-
----
-
-## FAQ
-
-### Pourquoi Reddit est-il autant cité par les LLMs ?
-
-Deux raisons principales. D'abord, des accords officiels : Google paie Reddit 60 millions de dollars par an pour un accès structuré à ses données, et OpenAI a signé un accord similaire en 2024. Ensuite, le format question-réponse de Reddit correspond exactement à ce que les LLMs cherchent lors de la récupération en temps réel : une réponse humaine à une question précise, filtrée par les upvotes communautaires.
-
-### Quels LLMs citent Reddit, et lesquels ne le citent pas ?
-
-Perplexity est le plus grand citateur de Reddit (24 % de ses citations au T1 2026), suivi de Google AI Overviews (21 %) et ChatGPT (5 %+). Grok atteint 70 % de citations sociales issues de Reddit. Claude d'Anthropic, qui s'appuie sur Brave Search et favorise les sources institutionnelles, cite très peu Reddit. Gemini est quasi-absent (0,1 %).
-
-### Qu'est-ce qu'une Answer Capsule ?
-
-C'est un format de post Reddit structuré pour maximiser la récupération par les LLMs. Il combine un titre formulé comme une question, un TLDR de 2 à 3 lignes en ouverture, un contexte personnel non promotionnel, une réponse structurée avec sous-titres et listes, des chiffres sourcés et datés, et une conclusion ouverte sans appel à l'action commercial. Ce format se fait citer 3 à 5 fois plus souvent que les posts non structurés.
-
-### Combien de temps faut-il pour construire un compte Reddit crédible ?
-
-La stratégie recommandée pour un objectif long terme dure 6 à 8 semaines. Les deux premières semaines sont consacrées à l'observation pure, les semaines 3 à 6 à la contribution non promotionnelle, les semaines 7 et 8 aux premières contributions d'expertise. Le compte est considéré comme crédible à partir de 30 jours d'historique et 300 de karma total.
-
-### Comment identifier les subreddits déjà cités par les LLMs ?
-
-La méthode du reverse engineering : lister ses 10 requêtes prioritaires, les poser dans ChatGPT, Perplexity et Google AI Overviews, noter les threads Reddit qui apparaissent dans les réponses. Les subreddits qui reviennent constituent la shortlist opérationnelle. C'est la seule méthode fiable pour ne pas choisir ses cibles par intuition.
-
-### Quels sont les signaux qui déclenchent un ban ou un shadowban ?
-
-Les principaux déclencheurs : compte de moins de 30 jours qui poste un lien externe, même commentaire copié-collé dans plusieurs subreddits, liens vers un site propriétaire dans le corps d'un post, activité trop intense dans les premiers jours du compte, comportement de vote anormal. Le shadowban est silencieux : une vérification régulière depuis un compte déconnecté permet de le détecter.
-
-### Quelle est la différence entre un post Reddit et un article de blog pour le GEO ?
-
-Un article de blog est optimisé pour apparaître dans une liste de résultats classés sur Google. Un post Reddit est optimisé pour devenir la réponse canonique d'une question posée par d'autres humains dans une communauté spécifique. Les LLMs extraient des chunks de 60 à 300 mots depuis ces threads : chaque section du post doit fonctionner seule, sans dépendre du contexte environnant.
-
-### La stratégie Reddit francophone est-elle viable ?
-
-Particulièrement. Les threads Reddit en français cités par les LLMs sont rares. Les contenus francophones structurés pour l'extraction IA représentent une fraction infime de ce qui existe en anglais. La concurrence est donc bien moindre sur les requêtes francophones que sur les mêmes requêtes en anglais. La fenêtre est ouverte, mais elle ne le restera pas indéfiniment.
