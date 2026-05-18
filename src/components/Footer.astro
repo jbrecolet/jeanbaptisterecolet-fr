@@ -30,8 +30,24 @@ const year = new Date().getFullYear();
       </ul>
     </div>
   </div>
-  <p class="site-footer__copy">
-    © {year} Jean-Baptiste Récolet. Contenus citables avec attribution et lien
-    vers la source.
-  </p>
+  <div class="site-footer__copy-wrapper">
+    <p class="site-footer__copy">
+      © {year} Jean-Baptiste Récolet. Contenus citables avec attribution et lien
+      vers la source.
+    </p>
+  </div>
 </footer>
+
+<style>
+  .site-footer__copy-wrapper {
+    max-width: var(--max-w-page);
+    margin: var(--space-lg) auto 0;
+    padding: 0 var(--space-md);
+    text-align: center;
+  }
+  .site-footer__copy {
+    color: var(--color-muted);
+    font-size: 0.8125rem;
+    max-width: none;
+  }
+</style>
