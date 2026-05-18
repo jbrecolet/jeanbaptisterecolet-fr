@@ -109,13 +109,9 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
             </time>
           </>
         )}
-        {' — Par '}<a href="/a-propos">Jean-Baptiste Récolet</a>
+        {' · Par '}<a href="/a-propos">Jean-Baptiste Récolet</a>
       </p>
     </header>
-
-    <div class="article__body">
-      <slot />
-    </div>
 
     {data.tldr && (
       <aside class="article__tldr" aria-label="En résumé">
@@ -123,20 +119,9 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
       </aside>
     )}
 
-    <section class="article__faq" aria-labelledby="faq-title">
-      <h2 id="faq-title">Questions fréquentes</h2>
-      <div class="article__body">
-        <slot name="faq" />
-      </div>
-    </section>
-
-    <footer class="article__footer">
-      <ul class="article__tags">
-        {data.tags.map((tag) => (
-          <li><span class="article__tag">{tag}</span></li>
-        ))}
-      </ul>
-    </footer>
+    <div class="article__body">
+      <slot />
+    </div>
 
   </article>
 </BaseLayout>
@@ -160,33 +145,8 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
     background: var(--color-card);
     border-left: 3px solid var(--color-accent);
     padding: var(--space-md);
-    margin-top: var(--space-xl);
     margin-bottom: var(--space-lg);
     border-radius: 0 var(--radius) var(--radius) 0;
     max-width: var(--max-w-text);
-  }
-
-  .article__faq {
-    margin-top: var(--space-xl);
-    padding-top: var(--space-lg);
-    border-top: 2px solid var(--color-rule);
-  }
-
-  .article__tags {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: var(--space-sm);
-    flex-wrap: wrap;
-    margin-top: var(--space-lg);
-    max-width: none;
-  }
-
-  .article__tag {
-    color: var(--color-muted);
-    font-size: 0.875rem;
-    background: var(--color-rule);
-    padding: 0.2rem 0.6rem;
-    border-radius: var(--radius);
   }
 </style>
