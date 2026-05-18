@@ -131,12 +131,13 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
 </BaseLayout>
 
 <style>
-  .article__cover {
+.article__cover {
     margin: 0 0 var(--space-lg);
   }
   .article__cover-img {
     width: 100%;
-    height: auto;
+    height: 420px;
+    object-fit: cover;
     border-radius: var(--radius);
     display: block;
   }
