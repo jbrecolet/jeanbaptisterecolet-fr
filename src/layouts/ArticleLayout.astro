@@ -1,6 +1,5 @@
 ---
 import BaseLayout from './BaseLayout.astro';
-import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 
 export interface Props {
@@ -9,7 +8,6 @@ export interface Props {
 
 const { entry } = Astro.props;
 const { data, id } = entry;
-
 const url = new URL(`/blog/${id}`, Astro.site).href;
 
 const articleSchema = {
@@ -22,13 +20,13 @@ const articleSchema = {
   inLanguage: 'fr-FR',
   author: {
     '@type': 'Person',
-    name: 'Jean-Baptiste Recolet',
+    name: 'Jean-Baptiste Récolet',
     url: 'https://jeanbaptisterecolet.fr',
     sameAs: ['https://www.linkedin.com/in/jbrecolet/'],
   },
   publisher: {
     '@type': 'Person',
-    name: 'Jean-Baptiste Recolet',
+    name: 'Jean-Baptiste Récolet',
     url: 'https://jeanbaptisterecolet.fr',
   },
   mainEntityOfPage: {
@@ -85,61 +83,110 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
   )}
 
   <article class="article">
+
+    {data.cover && (
+      <figure class="article__cover">
+        <img
+          src={`/${data.cover}`}
+          alt={data.coverAlt ?? data.title}
+          class="article__cover-img"
+        />
+      </figure>
+    )}
+
     <header class="article__header">
-      <p class="article__category">
-        <a href={`/tag/${data.category}`}>{data.category.toUpperCase()}</a>
-      </p>
+      <p class="article__category">{data.category?.toUpperCase()}</p>
       <h1 class="article__title">{data.title}</h1>
       <p class="article__meta">
         <time datetime={data.pubDate.toISOString()}>
-          Publie le {dateFmt.format(data.pubDate)}
+          Publié le {dateFmt.format(data.pubDate)}
         </time>
         {data.updatedDate && (
           <>
             {' - '}
             <time datetime={data.updatedDate.toISOString()}>
-              Mis a jour le {dateFmt.format(data.updatedDate)}
+              Mis à jour le {dateFmt.format(data.updatedDate)}
             </time>
           </>
         )}
-        {' - Par '}<a href="/a-propos">Jean-Baptiste Recolet</a>
+        {' — Par '}<a href="/a-propos">Jean-Baptiste Récolet</a>
       </p>
-
-      {data.tldr && (
-        <aside class="article__tldr" aria-label="TLDR">
-          <strong>TLDR.</strong> {data.tldr}
-        </aside>
-      )}
     </header>
-      {data.cover && (
-  <figure class="article__cover">
-    <img src={data.cover} alt={data.coverAlt ?? data.title} class="article__cover-img" />
-  </figure>
-      )}
+
     <div class="article__body">
       <slot />
     </div>
 
-    {data.faq && data.faq.length > 0 && (
-      <section class="article__faq" aria-labelledby="faq-title">
-        <h2 id="faq-title">Questions frequentes</h2>
-        <dl>
-          {data.faq.map((item) => (
-            <>
-              <dt>{item.question}</dt>
-              <dd>{item.answer}</dd>
-            </>
-          ))}
-        </dl>
-      </section>
+    {data.tldr && (
+      <aside class="article__tldr" aria-label="En résumé">
+        <strong>En résumé.</strong> {data.tldr}
+      </aside>
     )}
+
+    <section class="article__faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Questions fréquentes</h2>
+      <div class="article__body">
+        <slot name="faq" />
+      </div>
+    </section>
 
     <footer class="article__footer">
       <ul class="article__tags">
         {data.tags.map((tag) => (
-          <li><a href={`/tag/${tag}`}>#{tag}</a></li>
+          <li><span class="article__tag">{tag}</span></li>
         ))}
       </ul>
     </footer>
+
   </article>
 </BaseLayout>
+
+<style>
+  .article__cover {
+    margin: 0 0 var(--space-lg);
+  }
+  .article__cover-img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    display: block;
+  }
+
+  .article__header {
+    margin-bottom: var(--space-lg);
+  }
+
+  .article__tldr {
+    background: var(--color-card);
+    border-left: 3px solid var(--color-accent);
+    padding: var(--space-md);
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-lg);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    max-width: var(--max-w-text);
+  }
+
+  .article__faq {
+    margin-top: var(--space-xl);
+    padding-top: var(--space-lg);
+    border-top: 2px solid var(--color-rule);
+  }
+
+  .article__tags {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+    margin-top: var(--space-lg);
+    max-width: none;
+  }
+
+  .article__tag {
+    color: var(--color-muted);
+    font-size: 0.875rem;
+    background: var(--color-rule);
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--radius);
+  }
+</style>
