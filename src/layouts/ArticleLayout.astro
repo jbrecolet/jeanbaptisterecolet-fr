@@ -67,19 +67,9 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
   modifiedTime={data.updatedDate}
   tags={data.tags}
 >
-  <script
-    is:inline
-    slot="head"
-    type="application/ld+json"
-    set:html={JSON.stringify(articleSchema)}
-  />
+  <script is:inline slot="head" type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
   {faqSchema && (
-    <script
-      is:inline
-      slot="head"
-      type="application/ld+json"
-      set:html={JSON.stringify(faqSchema)}
-    />
+    <script is:inline slot="head" type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   )}
 
   <article class="article">
@@ -103,7 +93,7 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
         </time>
         {data.updatedDate && (
           <>
-            {' - '}
+            {' · '}
             <time datetime={data.updatedDate.toISOString()}>
               Mis à jour le {dateFmt.format(data.updatedDate)}
             </time>
@@ -113,15 +103,29 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
       </p>
     </header>
 
+    <div class="article__body">
+      <slot />
+    </div>
+
     {data.tldr && (
       <aside class="article__tldr" aria-label="En résumé">
         <strong>En résumé.</strong> {data.tldr}
       </aside>
     )}
 
-    <div class="article__body">
-      <slot />
-    </div>
+    {data.faq && data.faq.length > 0 && (
+      <section class="article__faq">
+        <h2>Questions fréquentes</h2>
+        <dl>
+          {data.faq.map((item) => (
+            <>
+              <dt>{item.question}</dt>
+              <dd>{item.answer}</dd>
+            </>
+          ))}
+        </dl>
+      </section>
+    )}
 
   </article>
 </BaseLayout>
@@ -145,8 +149,16 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
     background: var(--color-card);
     border-left: 3px solid var(--color-accent);
     padding: var(--space-md);
-    margin-bottom: var(--space-lg);
+    margin-top: var(--space-xl);
+    margin-bottom: 0;
     border-radius: 0 var(--radius) var(--radius) 0;
+    max-width: var(--max-w-text);
+  }
+
+  .article__faq {
+    margin-top: var(--space-xl);
+    padding-top: var(--space-lg);
+    border-top: 2px solid var(--color-rule);
     max-width: var(--max-w-text);
   }
 </style>
