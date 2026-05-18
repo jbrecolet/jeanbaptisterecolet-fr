@@ -75,11 +75,11 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
   <article class="article">
 
     {data.cover && (
-      <figure class="article__cover">
+      <figure class="cover-figure">
         <img
           src={`/${data.cover}`}
           alt={data.coverAlt ?? data.title}
-          class="article__cover-img"
+          class="cover-img"
         />
       </figure>
     )}
@@ -108,33 +108,36 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
     </div>
 
     {data.tldr && (
-      <aside class="article__tldr" aria-label="En résumé">
+      <aside class="tldr-block" aria-label="En résumé">
         <strong>En résumé.</strong> {data.tldr}
       </aside>
     )}
 
     {data.faq && data.faq.length > 0 && (
-      <section class="article__faq">
-        <h2>Questions fréquentes</h2>
-        <dl>
-          {data.faq.map((item) => (
-            <>
-              <dt>{item.question}</dt>
-              <dd>{item.answer}</dd>
-            </>
-          ))}
-        </dl>
-      </section>
+      <>
+        <hr class="faq-divider" />
+        <section class="faq-block">
+          <h2>Questions fréquentes</h2>
+          <dl>
+            {data.faq.map((item) => (
+              <>
+                <dt>{item.question}</dt>
+                <dd>{item.answer}</dd>
+              </>
+            ))}
+          </dl>
+        </section>
+      </>
     )}
 
   </article>
 </BaseLayout>
 
 <style>
-.article__cover {
+  .cover-figure {
     margin: 0 0 var(--space-lg);
   }
-  .article__cover-img {
+  .cover-img {
     width: 100%;
     height: 420px;
     object-fit: cover;
@@ -146,20 +149,28 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
     margin-bottom: var(--space-lg);
   }
 
-  .article__tldr {
+  .tldr-block {
     background: var(--color-card);
     border-left: 3px solid var(--color-accent);
     padding: var(--space-md);
     margin-top: var(--space-xl);
-    margin-bottom: var(--space-lg);
     border-radius: 0 var(--radius) var(--radius) 0;
     max-width: var(--max-w-text);
   }
 
-  .article__faq {
-    margin-top: var(--space-lg);
-    padding-top: var(--space-lg);
-    border-top: 2px solid var(--color-rule) !important;
+  .faq-divider {
+    border: none;
+    border-top: 2px solid var(--color-rule);
+    margin: var(--space-lg) 0 0;
     max-width: var(--max-w-text);
+  }
+
+  .faq-block {
+    max-width: var(--max-w-text);
+    padding-top: var(--space-md);
+  }
+
+  .faq-block h2 {
+    margin-top: 0;
   }
 </style>
