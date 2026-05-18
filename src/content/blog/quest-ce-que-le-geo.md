@@ -3,6 +3,8 @@ title: "Qu'est-ce que le GEO (Generative Engine Optimization) ?"
 description: "La GEO optimise le contenu pour être cité par les IA génératives. Définition, chiffres clés, mécanisme RAG et différences avec le SEO classique."
 tldr: "La GEO optimise le contenu pour être cité dans les réponses IA (ChatGPT, Perplexity, Claude, AI Overviews). Née d'une étude Princeton en 2024, elle complète le SEO sans le remplacer. Statistiques concrètes, citations d'experts et structure extractible : les trois leviers clés."
 pubDate: 2026-05-13
+cover: "quest-ce-que-le-geo.webp"
+coverAlt: "Qu'est-ce que le GEO (Generative Engine Optimization) ?"
 tags: ["geo", "seo", "ia", "chatgpt", "perplexity", "llm"]
 category: "GEO"
 tier: "pilier"
