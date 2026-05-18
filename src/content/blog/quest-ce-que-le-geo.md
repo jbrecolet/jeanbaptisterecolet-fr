@@ -10,6 +10,31 @@ category: "GEO"
 tier: "pilier"
 draft: false
 featured: false
+faq:
+  - question: "Qu'est-ce que la GEO (Generative Engine Optimization) ?"
+    answer: >-
+      La GEO est l'ensemble des pratiques visant à optimiser du contenu pour qu'il soit cité dans les réponses des moteurs de recherche génératifs comme ChatGPT, Perplexity, Claude et Google AI Overviews. Elle a été formalisée dans une étude de Princeton et Georgia Tech présentée à ACM SIGKDD en août 2024.
+  - question: "Quelle est la différence entre un agent conversationnel et un moteur génératif ?"
+    answer: >-
+      Un agent conversationnel (ChatGPT, Claude, Perplexity, Gemini) est un outil basé sur un LLM qui génère des réponses en langage naturel. Un moteur génératif (Bing Copilot, Google AI Overviews, SearchGPT) est un moteur de recherche traditionnel dont l'algorithme intègre un agent conversationnel : l'interface ressemble à Google, mais la réponse est synthétisée par une IA. Les deux relèvent de la GEO.
+  - question: "Quelle est la différence entre SEO et GEO ?"
+    answer: >-
+      Le SEO optimise une page pour apparaître dans une liste de résultats classés. La GEO optimise des sections de contenu pour être extraites et citées dans une réponse générée par une IA. Les deux partagent des fondamentaux communs mais la GEO ajoute des exigences spécifiques autour des blocs autoporteurs, des statistiques sourcées et de la structure extractible.
+  - question: "La GEO remplace-t-elle le SEO ?"
+    answer: >-
+      Non. La GEO s'appuie sur le SEO comme fondation. Les moteurs IA récupèrent leurs sources depuis le web : un site absent de l'index Google ou peu visible organiquement aura peu de chances d'être cité. Les marques qui performent bien en GEO sont généralement les mêmes que celles qui ont un SEO solide.
+  - question: "Quelles sont les optimisations GEO les plus efficaces prouvées par la recherche ?"
+    answer: >-
+      L'étude Princeton SIGKDD 2024, qui a testé 10 000 requêtes, identifie cinq stratégies par ordre d'efficacité : statistiques concrètes et datées (+40 %), citations de sources crédibles (+30 à 35 %), fluidité rédactionnelle (+15 à 30 %), citations d'experts (+20 %), vocabulaire technique précis (+15 %). Le keyword stuffing pénalise la visibilité de 10 %.
+  - question: "ChatGPT, Perplexity et Claude citent-ils les mêmes sources ?"
+    answer: >-
+      Non. Seulement 11 % des domaines sont cités à la fois par ChatGPT et Perplexity, selon une analyse 2026 portant sur 150 000 citations LLM. Chaque moteur IA a ses préférences : ChatGPT favorise les contenus encyclopédiques, Perplexity la fraîcheur et Reddit, Claude la nuance et la structure logique.
+  - question: "Comment mesurer sa visibilité GEO ?"
+    answer: >-
+      La méthode la plus accessible : définir 10 requêtes cibles, les tester une fois par mois dans ChatGPT, Perplexity et Claude, noter si le site est cité et sous quel angle. Compléter avec le suivi du trafic brandé dans Google Analytics 4 et l'évolution des impressions dans Google Search Console.
+  - question: "Qu'est-ce que le mécanisme RAG utilisé par les moteurs IA ?"
+    answer: >-
+      RAG signifie Retrieval-Augmented Generation. Plutôt que de générer une réponse depuis sa mémoire d'entraînement, le modèle décompose la requête en sous-questions, récupère les passages les plus pertinents depuis le web, puis synthétise une réponse avec citations. Ce sont des chunks de 60 à 300 mots qui sont extraits et cités, pas des pages entières.
 ---
 
 Une question simple : quand un utilisateur pose une question à ChatGPT, Perplexity ou Claude, est-ce que votre site apparaît dans la réponse ? Pas dans une liste de liens. Dans la réponse elle-même, cité comme source.
@@ -126,36 +151,3 @@ Cette asymétrie est une opportunité directe. Un site francophone qui applique 
 
 ---
 
-## FAQ
-
-### Qu'est-ce que la GEO (Generative Engine Optimization) ?
-
-La GEO est l'ensemble des pratiques visant à optimiser du contenu pour qu'il soit cité dans les réponses des moteurs de recherche génératifs comme ChatGPT, Perplexity, Claude et Google AI Overviews. Elle a été formalisée dans une étude de Princeton et Georgia Tech présentée à ACM SIGKDD en août 2024.
-
-### Quelle est la différence entre un agent conversationnel et un moteur génératif ?
-
-Un agent conversationnel (ChatGPT, Claude, Perplexity, Gemini) est un outil basé sur un LLM qui génère des réponses en langage naturel. Un moteur génératif (Bing Copilot, Google AI Overviews, SearchGPT) est un moteur de recherche traditionnel dont l'algorithme intègre un agent conversationnel — l'interface ressemble à Google, mais la réponse est synthétisée par une IA plutôt qu'affichée sous forme de liste de liens. Les deux relèvent de la GEO.
-
-### Quelle est la différence entre SEO et GEO ?
-
-Le SEO optimise une page pour apparaître dans une liste de résultats classés. La GEO optimise des sections de contenu pour être extraites et citées dans une réponse générée par une IA. Les deux partagent des fondamentaux communs mais la GEO ajoute des exigences spécifiques autour des blocs autoporteurs, des statistiques sourcées et de la structure extractible.
-
-### La GEO remplace-t-elle le SEO ?
-
-Non. La GEO s'appuie sur le SEO comme fondation. Les moteurs IA récupèrent leurs sources depuis le web — un site absent de l'index Google ou peu visible organiquement aura peu de chances d'être cité. Les marques qui performent bien en GEO sont généralement les mêmes que celles qui ont un SEO solide.
-
-### Quelles sont les optimisations GEO les plus efficaces prouvées par la recherche ?
-
-L'étude Princeton SIGKDD 2024, qui a testé 10 000 requêtes, identifie cinq stratégies par ordre d'efficacité : statistiques concrètes et datées (+40 %), citations de sources crédibles (+30 à 35 %), fluidité rédactionnelle (+15 à 30 %), citations d'experts (+20 %), vocabulaire technique précis (+15 %). Le keyword stuffing pénalise la visibilité de 10 %.
-
-### ChatGPT, Perplexity et Claude citent-ils les mêmes sources ?
-
-Non. Seulement 11 % des domaines sont cités à la fois par ChatGPT et Perplexity, selon une analyse 2026 portant sur 150 000 citations LLM. Chaque moteur IA a ses préférences : ChatGPT favorise les contenus encyclopédiques, Perplexity la fraîcheur et Reddit, Claude la nuance et la structure logique.
-
-### Comment mesurer sa visibilité GEO ?
-
-La méthode la plus accessible : définir 10 requêtes cibles, les tester une fois par mois dans ChatGPT, Perplexity et Claude, noter si le site est cité et sous quel angle. Compléter avec le suivi du trafic brandé dans Google Analytics 4 et l'évolution des impressions dans Google Search Console.
-
-### Qu'est-ce que le mécanisme RAG utilisé par les moteurs IA ?
-
-RAG signifie Retrieval-Augmented Generation. Plutôt que de générer une réponse depuis sa mémoire d'entraînement, le modèle décompose la requête en sous-questions, récupère les passages les plus pertinents depuis le web, puis synthétise une réponse avec citations. Ce sont des "chunks" de 60 à 300 mots qui sont extraits et cités — pas des pages entières. Un paragraphe autoporteur qui répond directement à une question sera extrait ; un paragraphe qui dépend de son contexte pour avoir du sens sera ignoré.
