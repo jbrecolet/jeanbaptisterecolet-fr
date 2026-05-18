@@ -20,18 +20,16 @@ const sortedPosts = posts.sort(
     {sortedPosts.length === 0 ? (
       <p>Aucun article pour le moment.</p>
     ) : (
-      <ul class="article-list">
+      <ul class="article-grid">
         {sortedPosts.map((post) => (
           <li class="article-card">
             {post.data.cover && (
-              <div class="article-card__thumb">
-                <a href={`/blog/${post.id}`} tabindex="-1" aria-hidden="true">
-                  <img
-                    src={`/${post.data.cover}`}
-                    alt={post.data.coverAlt ?? ''}
-                  />
-                </a>
-              </div>
+              <a href={`/blog/${post.id}`} class="article-card__thumb" tabindex="-1" aria-hidden="true">
+                <img
+                  src={`/${post.data.cover}`}
+                  alt={post.data.coverAlt ?? ''}
+                />
+              </a>
             )}
             <div class="article-card__body">
               <p class="article-card__category">{post.data.category?.toUpperCase()}</p>
@@ -49,25 +47,35 @@ const sortedPosts = posts.sort(
 
 <style>
   .section { margin-top: var(--space-xl); }
-  .section__intro { margin-bottom: var(--space-lg); color: var(--color-muted); font-size: 1.2rem; max-width: none; }
-
-  .article-list {
-    list-style: none;
-    padding: 0;
+  .section__intro {
+    margin-bottom: var(--space-lg);
+    color: var(--color-muted);
+    font-size: 1.2rem;
     max-width: none;
   }
 
-  .article-card {
+  /* ── Grille articles ── */
+  .article-grid {
+    list-style: none;
+    padding: 0;
+    max-width: none;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: var(--space-xl);
-    align-items: start;
-    border-top: 1px solid var(--color-rule);
-    padding: var(--space-md) 0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
   }
-  .article-card:last-child { border-bottom: 1px solid var(--color-rule); }
 
-  .article-card__thumb { width: 100%; }
+  .article-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    border-top: 1px solid var(--color-rule);
+    padding-top: var(--space-md);
+  }
+
+  .article-card__thumb {
+    display: block;
+    width: 100%;
+  }
   .article-card__thumb img {
     width: 100%;
     height: auto;
@@ -78,15 +86,22 @@ const sortedPosts = posts.sort(
     display: flex;
     flex-direction: column;
     gap: var(--space-xs);
+    flex: 1;
   }
   .article-card__category { font-size: 0.8rem; color: var(--color-accent); font-weight: bold; }
   .article-card__title { margin: 0; }
   .article-card__title a { text-decoration: none; color: inherit; }
   .article-card__title a:hover { color: var(--color-accent); }
-  .article-card__desc { color: var(--color-muted); }
+  .article-card__desc { color: var(--color-muted); font-size: 0.9375rem; }
 
-  @media (max-width: 720px) {
-    .article-card {
+  @media (max-width: 900px) {
+    .article-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .article-grid {
       grid-template-columns: 1fr;
     }
   }
