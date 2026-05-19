@@ -16,6 +16,18 @@ const terms = [
   },
   {
     letter: 'A',
+    id: 'algorithme',
+    name: 'Algorithme (Google)',
+    definition: "Ensemble de règles et de signaux utilisés par Google pour classer les pages web dans ses résultats de recherche. L'algorithme intègre plusieurs centaines de facteurs : pertinence du contenu, autorité des backlinks, expérience utilisateur (Core Web Vitals), fraîcheur, E-E-A-T... Il est mis à jour régulièrement via des core updates et des mises à jour ciblées (Panda, Penguin, Helpful Content). Comprendre ses évolutions est au cœur du travail SEO.",
+  },
+  {
+    letter: 'A',
+    id: 'anchor-text',
+    name: 'Anchor text',
+    definition: "Texte cliquable d'un lien hypertexte, visible par l'utilisateur et interprété par les moteurs de recherche comme un signal de contexte sur la page de destination. Un anchor text descriptif (ex. : \"guide GEO complet\") transmet plus d'information sémantique qu'un anchor générique (ex. : \"cliquez ici\"). En SEO, la diversité et la naturalité des anchor texts d'un profil de backlinks sont des signaux de qualité.",
+  },
+  {
+    letter: 'A',
     id: 'answer-capsule',
     name: 'Answer Capsule',
     definition: "Format de contenu structuré optimisé pour la récupération par les LLMs. Une Answer Capsule combine un titre formulé comme une question, un résumé de 2 à 3 lignes en ouverture, une réponse structurée avec sous-titres et listes, des données sourcées et datées, et une conclusion ouverte. Ce format se fait citer 3 à 5 fois plus souvent dans les réponses IA que les contenus non structurés, selon les analyses de citations LLM.",
@@ -46,6 +58,12 @@ const terms = [
   },
   {
     letter: 'C',
+    id: 'cannibalisation',
+    name: 'Cannibalisation',
+    definition: "Phénomène SEO dans lequel plusieurs pages d'un même site ciblent les mêmes mots-clés et se font concurrence dans les résultats de recherche. La cannibalisation dilue l'autorité SEO entre les pages concernées et envoie un signal de confusion à Google sur laquelle prioriser. Elle se corrige en fusionnant les pages concurrentes, en précisant les cibles sémantiques de chacune, ou en ajoutant des balises canonical.",
+  },
+  {
+    letter: 'C',
     id: 'chunk',
     name: 'Chunk',
     definition: "Fragment de texte de 60 à 300 mots extrait d'une page web par un LLM lors de la phase de récupération (RAG). Les LLMs ne lisent pas les pages entières : ils découpent le contenu en chunks, les convertissent en représentations vectorielles et sélectionnent les plus pertinents pour assembler une réponse. Un paragraphe autoporteur qui répond directement à une question forme un bon chunk extractible.",
@@ -61,6 +79,12 @@ const terms = [
     id: 'contenu-autoporteur',
     name: 'Contenu autoporteur',
     definition: "Bloc de contenu (paragraphe, section) compréhensible et utile sans avoir besoin de lire le reste de l'article. En GEO, l'autoportance est une condition d'extractibilité : les LLMs isolent des chunks pour composer leur réponse. Si un paragraphe dépend du contexte des paragraphes précédents pour avoir du sens, il ne sera pas extrait. Chaque section doit pouvoir répondre à une question précise de façon autonome.",
+  },
+  {
+    letter: 'C',
+    id: 'contenu-duplique',
+    name: 'Contenu dupliqué',
+    definition: "Contenu identique ou très similaire présent sur plusieurs URLs, que ce soit à l'intérieur d'un même site ou entre plusieurs sites. Google pénalise ou ignore les pages en duplication car elles n'apportent pas de valeur supplémentaire à l'index. Les causes courantes sont les paramètres d'URL, les versions http/https, les pages de pagination ou les copies de contenu tiers. La balise canonical est la solution technique principale.",
   },
   {
     letter: 'C',
@@ -88,6 +112,12 @@ const terms = [
   },
   {
     letter: 'D',
+    id: 'da',
+    name: 'DA (Domain Authority)',
+    definition: "Voir Autorité de domaine. Métrique propriétaire de Moz (0 à 100) estimant la capacité d'un domaine à se classer dans les SERPs, calculée principalement à partir de la qualité et du volume du profil de backlinks. Ahrefs propose un indicateur équivalent appelé Domain Rating (DR), et Semrush utilise l'Authority Score. Aucune de ces métriques n'est officielle : Google ne communique pas de score d'autorité public.",
+  },
+  {
+    letter: 'D',
     id: 'densite-semantique',
     name: 'Densité sémantique',
     definition: "Mesure de la richesse du vocabulaire d'un contenu en termes liés au sujet traité. Une densité sémantique élevée signifie que le texte couvre un champ lexical large et cohérent autour de sa thématique principale, ce que les algorithmes de Google et les LLMs interprètent comme un signal de profondeur et d'expertise. S'oppose au keyword stuffing, qui consiste à répéter mécaniquement un même mot-clé.",
@@ -97,6 +127,12 @@ const terms = [
     id: 'eeat',
     name: 'E-E-A-T',
     definition: "Acronyme pour Experience, Expertise, Authoritativeness, Trustworthiness. Cadre d'évaluation de la qualité du contenu utilisé par les évaluateurs qualité de Google. L'expérience vécue du sujet, la compétence thématique, la reconnaissance par les pairs et la fiabilité des sources sont les quatre dimensions évaluées. L'E-E-A-T est particulièrement exigeant sur les sujets YMYL et reste un signal clé pour le GEO : les LLMs favorisent les sources qui en démontrent les attributs.",
+  },
+  {
+    letter: 'E',
+    id: 'embedding',
+    name: 'Embedding',
+    definition: "Représentation numérique d'un texte sous forme de vecteur dans un espace mathématique multidimensionnel. Les LLMs convertissent les chunks de contenu en embeddings pour mesurer leur proximité sémantique avec la requête d'un utilisateur. Plus deux embeddings sont proches dans cet espace vectoriel, plus leur contenu est sémantiquement similaire. C'est le mécanisme fondamental qui permet aux LLMs de sélectionner les passages les plus pertinents lors de la phase RAG.",
   },
   {
     letter: 'F',
@@ -124,6 +160,12 @@ const terms = [
   },
   {
     letter: 'I',
+    id: 'impressions',
+    name: 'Impressions',
+    definition: "Nombre de fois qu'une page a été affichée dans les résultats de recherche, indépendamment du fait qu'un utilisateur ait cliqué dessus. Les impressions sont mesurables dans Google Search Console. En GEO, il est courant d'observer une hausse des impressions simultanément à une baisse des clics : le contenu alimente des réponses IA sans générer de trafic direct. Ce découplage impressions/clics est l'un des signaux caractéristiques de la recherche générative.",
+  },
+  {
+    letter: 'I',
     id: 'index',
     name: 'Index',
     definition: "Base de données dans laquelle les moteurs de recherche stockent les pages web découvertes par le crawl. Une page doit être indexée pour apparaître dans les résultats de recherche. L'indexation peut être contrôlée via la balise meta robots, le fichier robots.txt ou la balise canonical. Une page non indexée est invisible aux moteurs de recherche et aux LLMs qui récupèrent leurs sources depuis le web.",
@@ -139,6 +181,18 @@ const terms = [
     id: 'keyword-stuffing',
     name: 'Keyword stuffing',
     definition: "Pratique consistant à répéter excessivement un mot-clé dans un contenu dans le but de manipuler les algorithmes de classement. Pénalisée par Google depuis les mises à jour Panda (2011), cette technique est doublement contre-productive en contexte GEO : l'étude Princeton SIGKDD 2024 démontre que le keyword stuffing pénalise la visibilité dans les réponses IA de 10 %.",
+  },
+  {
+    letter: 'K',
+    id: 'kpi',
+    name: 'KPI (Key Performance Indicator)',
+    definition: "Indicateur clé de performance permettant de mesurer l'atteinte d'un objectif défini. En SEO, les KPIs classiques sont le positionnement moyen, le trafic organique, le CTR, le taux de conversion et le nombre de backlinks. En GEO, de nouveaux KPIs s'ajoutent : la citation frequency, la part de voix IA et le trafic de référence issu des plateformes IA. La transition SEO vers GEO implique une évolution des tableaux de bord de reporting.",
+  },
+  {
+    letter: 'L',
+    id: 'landing-page',
+    name: 'Landing page',
+    definition: "Page web conçue spécifiquement pour recevoir un trafic ciblé et convertir les visiteurs vers une action définie : inscription, achat, téléchargement, prise de contact. En SEO, une landing page est optimisée pour une requête transactionnelle ou commerciale précise. En GEO, les landing pages sont moins exposées aux AI Overviews que les contenus informationnels, ce qui en fait des actifs relativement préservés par la recherche générative.",
   },
   {
     letter: 'L',
@@ -166,9 +220,39 @@ const terms = [
   },
   {
     letter: 'M',
+    id: 'mot-cle',
+    name: 'Mot-clé',
+    definition: "Terme ou expression saisi par un utilisateur dans un moteur de recherche. En SEO, les mots-clés se divisent en head keywords (mots-clés génériques à fort volume et forte concurrence, ex. : \"SEO\") et longue traîne (expressions spécifiques à faible volume et faible concurrence, ex. : \"comment structurer un article pour le GEO\"). La sélection et le ciblage des mots-clés constituent la base de toute stratégie éditoriale SEO.",
+  },
+  {
+    letter: 'M',
     id: 'moteur-generatif',
     name: 'Moteur génératif',
     definition: "Moteur de recherche dont l'interface intègre un LLM pour synthétiser une réponse directe à partir de plusieurs sources, en lieu et place d'une liste de liens. Bing Copilot, Google AI Overviews et SearchGPT sont des moteurs génératifs. À distinguer des agents conversationnels (ChatGPT, Claude, Perplexity) qui sont des outils de dialogue basés sur des LLMs sans interface de recherche traditionnelle.",
+  },
+  {
+    letter: 'N',
+    id: 'nlp',
+    name: 'NLP (Natural Language Processing)',
+    definition: "Branche de l'intelligence artificielle qui permet aux machines de comprendre, interpréter et générer du langage humain. Le NLP est la technologie sous-jacente des moteurs de recherche modernes et des LLMs. Google utilise des modèles NLP (BERT, MUM) pour comprendre le sens des requêtes au-delà des mots-clés exacts. En GEO, la qualité NLP d'un contenu (clarté, cohérence, structure logique) influence directement sa probabilité d'être extrait et cité.",
+  },
+  {
+    letter: 'O',
+    id: 'on-page-off-page',
+    name: 'On-page / Off-page',
+    definition: "Distinction fondamentale en SEO entre les optimisations réalisées directement sur les pages du site (on-page : title tag, contenu, balisage, maillage interne, Core Web Vitals) et les signaux provenant de l'extérieur du site (off-page : backlinks, mentions de marque, citations dans des sources tierces). En GEO, cette distinction s'étend : la présence sur Reddit, LinkedIn ou des médias spécialisés constitue un off-page GEO qui influence les citations IA.",
+  },
+  {
+    letter: 'P',
+    id: 'paa',
+    name: 'PAA (People Also Ask)',
+    definition: "Bloc de questions-réponses déroulantes affiché par Google dans la SERP, généré dynamiquement à partir des requêtes connexes les plus fréquentes autour d'un sujet. Chaque réponse est extraite d'une page web citée en source. Le PAA est un signal fort de l'intent de recherche associé à une requête : les questions affichées reflètent ce que les utilisateurs cherchent réellement à comprendre. Apparaître dans le PAA suit la même logique que le Featured Snippet : contenu autoporteur, réponse directe en moins de 50 mots, structure claire.",
+  },
+  {
+    letter: 'P',
+    id: 'pagerank',
+    name: 'PageRank',
+    definition: "Algorithme fondateur de Google, développé par Larry Page et Sergey Brin en 1998, qui mesure l'autorité d'une page web en fonction du nombre et de la qualité des liens entrants. Le PageRank a posé les bases du SEO off-page et de la notion de backlink comme signal d'autorité. Google ne publie plus de score PageRank public depuis 2016, mais l'algorithme continue d'opérer en interne sous des formes évoluées.",
   },
   {
     letter: 'P',
@@ -178,9 +262,9 @@ const terms = [
   },
   {
     letter: 'P',
-    id: 'paa',
-    name: 'PAA (People Also Ask)',
-    definition: "Bloc de questions-réponses déroulantes affiché par Google dans la SERP, généré dynamiquement à partir des requêtes connexes les plus fréquentes autour d'un sujet. Chaque réponse est extraite d'une page web citée en source. Le PAA est un signal fort de l'intent de recherche associé à une requête : les questions affichées reflètent ce que les utilisateurs cherchent réellement à comprendre. Apparaître dans le PAA suit la même logique que le Featured Snippet : contenu autoporteur, réponse directe en moins de 50 mots, structure claire.",
+    id: 'prompt',
+    name: 'Prompt',
+    definition: "Instruction ou question soumise à un LLM pour obtenir une réponse. La qualité du prompt influence directement la qualité et la précision de la réponse générée. Le prompt engineering désigne la discipline consistant à formuler des instructions optimales pour obtenir les meilleurs résultats d'un modèle IA. En GEO, comprendre comment les utilisateurs formulent leurs prompts permet d'anticiper les requêtes pour lesquelles un contenu devra être cité.",
   },
   {
     letter: 'R',
@@ -193,6 +277,12 @@ const terms = [
     id: 'recherche-zero-clic',
     name: 'Recherche zéro clic',
     definition: "Requête pour laquelle l'utilisateur obtient une réponse satisfaisante directement dans la SERP ou la réponse IA, sans cliquer vers aucun site. Les Featured Snippets et AI Overviews ont accéléré ce phénomène. Bain & Company estimait en 2025 que 80 % des consommateurs utilisent des résultats zéro clic dans au moins 40 % de leurs recherches.",
+  },
+  {
+    letter: 'R',
+    id: 'redirect',
+    name: 'Redirect (301 / 302)',
+    definition: "Instruction technique redirigeant automatiquement un navigateur ou un robot d'une URL vers une autre. La redirection 301 est permanente : elle transfère l'autorité SEO de l'ancienne URL vers la nouvelle. La redirection 302 est temporaire : elle ne transfère pas l'autorité. Les redirections 301 sont indispensables lors de la refonte d'un site ou du changement d'URLs pour préserver le capital SEO accumulé.",
   },
   {
     letter: 'R',
@@ -211,6 +301,18 @@ const terms = [
     id: 'richesse-lexicale',
     name: 'Richesse lexicale',
     definition: "Diversité du vocabulaire utilisé dans un contenu, mesurée par le ratio entre le nombre de mots uniques et le nombre total de mots. Une richesse lexicale élevée est associée à un contenu de qualité par les algorithmes NLP. En SEO sémantique, elle contribue à la densité sémantique et à la couverture thématique d'une page.",
+  },
+  {
+    letter: 'R',
+    id: 'robots-txt',
+    name: 'Robots.txt',
+    definition: "Fichier texte placé à la racine d'un site qui indique aux robots des moteurs de recherche quelles pages ou répertoires ils sont autorisés ou non à crawler. Les directives Disallow empêchent le crawl de certaines URLs. Attention : robots.txt empêche le crawl mais pas nécessairement l'indexation si d'autres pages pointent vers les URLs bloquées. À distinguer de la balise meta robots qui contrôle l'indexation page par page.",
+  },
+  {
+    letter: 'S',
+    id: 'score-de-visibilite',
+    name: 'Score de visibilité',
+    definition: "Indicateur agrégé utilisé par les outils SEO (Semrush, Sistrix, Ahrefs) pour mesurer la présence globale d'un site dans les SERPs sur un ensemble de mots-clés suivis. Il tient compte du positionnement et du volume de recherche de chaque mot-clé. En GEO, ce concept évolue vers la part de voix IA, qui mesure la visibilité dans les réponses des LLMs plutôt que dans les listes de résultats.",
   },
   {
     letter: 'S',
@@ -250,9 +352,21 @@ const terms = [
   },
   {
     letter: 'T',
+    id: 'taux-de-rebond',
+    name: 'Taux de rebond',
+    definition: "Pourcentage de sessions au cours desquelles un utilisateur quitte un site après n'avoir consulté qu'une seule page, sans interaction. Un taux de rebond élevé peut signaler un désalignement entre le contenu de la page et l'intent de recherche qui a amené l'utilisateur. En GA4, le taux de rebond est remplacé par le taux d'engagement, qui mesure les sessions avec au moins une interaction significative.",
+  },
+  {
+    letter: 'T',
     id: 'title-tag',
     name: 'Title tag',
     definition: "Balise HTML définissant le titre d'une page web, affiché dans l'onglet du navigateur et comme titre cliquable dans les résultats de recherche. Le title tag est l'un des signaux on-page les plus importants pour le SEO. Sa longueur optimale est de 50 à 70 caractères. Google peut le réécrire s'il le juge mal aligné avec la requête ou le contenu de la page.",
+  },
+  {
+    letter: 'T',
+    id: 'token',
+    name: 'Token',
+    definition: "Unité de base du traitement du texte par un LLM. Un token correspond approximativement à un mot, une ponctuation ou une syllabe selon le modèle. Les LLMs ont une fenêtre de contexte maximale exprimée en tokens (ex. : 128 000 tokens pour GPT-4o), qui détermine la quantité de texte qu'ils peuvent traiter en une seule fois. La facturation des API de LLMs est généralement basée sur le nombre de tokens consommés.",
   },
   {
     letter: 'U',
@@ -264,7 +378,7 @@ const terms = [
     letter: 'U',
     id: 'url',
     name: 'URL (Uniform Resource Locator)',
-    definition: "Adresse unique identifiant une ressource sur le web, composée d'un protocole (https://), d'un nom de domaine (jeanbaptisterecolet.fr), et d'un chemin (/lexique). En SEO, une URL bien construite est courte, lisible, sans paramètres superflus, et contient le mot-clé principal de la page via son slug. Les URLs sont des signaux on-page pris en compte par Google et facilitent la compréhension du contenu par les LLMs lors du crawl.",
+    definition: "Adresse unique identifiant une ressource sur le web, composée d'un protocole (https://), d'un nom de domaine (jeanbaptisterecolet.fr) et d'un chemin (/lexique). En SEO, une URL bien construite est courte, lisible, sans paramètres superflus, et contient le mot-clé principal de la page via son slug. Les URLs sont des signaux on-page pris en compte par Google et facilitent la compréhension du contenu par les LLMs lors du crawl.",
   },
   {
     letter: 'Y',
