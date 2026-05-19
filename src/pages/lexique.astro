@@ -1,0 +1,400 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+
+const terms = [
+  {
+    letter: 'A',
+    id: 'aeo',
+    name: 'AEO (Answer Engine Optimization)',
+    definition: "Discipline d'optimisation visant à faire apparaître du contenu dans les réponses directes des moteurs de recherche et des IA. L'AEO cible les Featured Snippets, les réponses vocales et les AI Overviews. Souvent utilisé comme synonyme de GEO, bien que certains praticiens distinguent l'AEO (optimisation pour les moteurs de réponse comme Google) du GEO (optimisation pour les modèles de langage comme ChatGPT ou Perplexity).",
+  },
+  {
+    letter: 'A',
+    id: 'ai-overviews',
+    name: 'AI Overviews',
+    definition: "Fonctionnalité de Google déployée à partir de 2024 qui génère une réponse synthétisée en haut des résultats de recherche, avant les liens organiques. Alimentée par Gemini, elle compile des informations issues de plusieurs sources et cite ces sources sous la réponse. Sa présence dans 13 % des requêtes en 2026 a provoqué une baisse mesurable du taux de clic organique.",
+  },
+  {
+    letter: 'A',
+    id: 'answer-capsule',
+    name: 'Answer Capsule',
+    definition: "Format de contenu structuré optimisé pour la récupération par les LLMs. Une Answer Capsule combine un titre formulé comme une question, un résumé de 2 à 3 lignes en ouverture, une réponse structurée avec sous-titres et listes, des données sourcées et datées, et une conclusion ouverte. Ce format se fait citer 3 à 5 fois plus souvent dans les réponses IA que les contenus non structurés, selon les analyses de citations LLM.",
+  },
+  {
+    letter: 'A',
+    id: 'autorite-de-domaine',
+    name: 'Autorité de domaine',
+    definition: "Score propriétaire développé par Moz (de 1 à 100) estimant la capacité d'un site à se classer dans les résultats de recherche. Il est calculé à partir du nombre et de la qualité des backlinks pointant vers le site. Ce n'est pas une métrique officielle de Google, mais elle est largement utilisée dans le secteur SEO comme indicateur comparatif entre domaines concurrents.",
+  },
+  {
+    letter: 'B',
+    id: 'backlink',
+    name: 'Backlink',
+    definition: "Lien hypertexte placé sur un site externe qui pointe vers une page de son propre site. Les backlinks constituent l'un des principaux signaux d'autorité pris en compte par les algorithmes de Google. Un backlink provenant d'un site de haute autorité dans un domaine thématiquement proche a plus de valeur qu'un backlink provenant d'un site généraliste ou de faible autorité.",
+  },
+  {
+    letter: 'B',
+    id: 'balisage-schemaorg',
+    name: 'Balisage schema.org',
+    definition: "Ensemble de balises de données structurées standardisées permettant d'indiquer aux moteurs de recherche et aux LLMs la nature précise du contenu d'une page (article, FAQ, produit, recette, événement...). Implémenté en JSON-LD dans le head des pages, le schema.org améliore l'extractibilité du contenu par les IA et augmente les chances d'apparaître dans les rich results de Google. Également désigné sous le terme anglais structured data.",
+  },
+  {
+    letter: 'C',
+    id: 'canonical',
+    name: 'Canonical',
+    definition: "Balise HTML indiquant aux moteurs de recherche quelle est la version de référence d'une page lorsque plusieurs URLs affichent un contenu identique ou similaire. La balise canonical évite les problèmes de duplication de contenu qui peuvent diluer l'autorité SEO d'une page. Elle est particulièrement utilisée sur les sites e-commerce où un même produit peut être accessible via plusieurs URLs.",
+  },
+  {
+    letter: 'C',
+    id: 'chunk',
+    name: 'Chunk',
+    definition: "Fragment de texte de 60 à 300 mots extrait d'une page web par un LLM lors de la phase de récupération (RAG). Les LLMs ne lisent pas les pages entières : ils découpent le contenu en chunks, les convertissent en représentations vectorielles et sélectionnent les plus pertinents pour assembler une réponse. Un paragraphe autoporteur qui répond directement à une question forme un bon chunk extractible.",
+  },
+  {
+    letter: 'C',
+    id: 'cluster-semantique',
+    name: 'Cluster sémantique',
+    definition: "Ensemble de pages ou contenus organisés autour d'un sujet central (page pilier) et de sous-thèmes associés (pages satellites), reliés par un maillage interne cohérent. Le cluster sémantique renforce l'autorité thématique d'un site aux yeux de Google et structure le contenu de façon à couvrir exhaustivement un domaine. C'est une approche centrale de la stratégie SEO éditoriale moderne.",
+  },
+  {
+    letter: 'C',
+    id: 'contenu-autoporteur',
+    name: 'Contenu autoporteur',
+    definition: "Bloc de contenu (paragraphe, section) compréhensible et utile sans avoir besoin de lire le reste de l'article. En GEO, l'autoportance est une condition d'extractibilité : les LLMs isolent des chunks pour composer leur réponse. Si un paragraphe dépend du contexte des paragraphes précédents pour avoir du sens, il ne sera pas extrait. Chaque section doit pouvoir répondre à une question précise de façon autonome.",
+  },
+  {
+    letter: 'C',
+    id: 'contenu-pilier',
+    name: 'Contenu pilier',
+    definition: "Article long et exhaustif traitant un sujet central dans sa globalité, conçu pour être la référence principale d'un site sur ce thème. Le contenu pilier est associé à un cluster sémantique dont il constitue la page hub. Il cible des mots-clés à fort volume de recherche et est enrichi par des liens internes vers des pages satellites qui approfondissent des aspects spécifiques du sujet.",
+  },
+  {
+    letter: 'C',
+    id: 'core-web-vitals',
+    name: 'Core Web Vitals',
+    definition: "Ensemble de métriques définies par Google pour évaluer l'expérience utilisateur d'une page web : la vitesse de chargement (LCP - Largest Contentful Paint), la stabilité visuelle (CLS - Cumulative Layout Shift) et la réactivité aux interactions (INP - Interaction to Next Paint). Ces métriques sont des signaux de classement officiels intégrés à l'algorithme Google depuis 2021.",
+  },
+  {
+    letter: 'C',
+    id: 'crawl',
+    name: 'Crawl',
+    definition: "Processus par lequel les robots des moteurs de recherche (Googlebot, Bingbot) et des LLMs parcourent le web en suivant les liens pour découvrir et indexer les pages. La fréquence et la profondeur du crawl d'un site dépendent de son autorité, de la fraîcheur de son contenu et de la configuration du fichier robots.txt. Un site mal crawlé peut avoir du contenu invisible aux moteurs de recherche.",
+  },
+  {
+    letter: 'C',
+    id: 'ctr',
+    name: 'CTR (Click-Through Rate)',
+    definition: "Taux de clic calculé en divisant le nombre de clics reçus par le nombre d'impressions dans les résultats de recherche. La présence des AI Overviews de Google a significativement réduit les CTR organiques : l'étude Seer Interactive de septembre 2025 mesure un CTR organique de 0,61 % sur les requêtes avec AI Overview, contre 1,62 % sans. La réduction du CTR sans baisse des impressions est l'un des signaux les plus visibles de l'impact GEO sur le trafic.",
+  },
+  {
+    letter: 'D',
+    id: 'densite-semantique',
+    name: 'Densité sémantique',
+    definition: "Mesure de la richesse du vocabulaire d'un contenu en termes liés au sujet traité. Une densité sémantique élevée signifie que le texte couvre un champ lexical large et cohérent autour de sa thématique principale, ce que les algorithmes de Google et les LLMs interprètent comme un signal de profondeur et d'expertise. S'oppose au keyword stuffing, qui consiste à répéter mécaniquement un même mot-clé.",
+  },
+  {
+    letter: 'E',
+    id: 'eeat',
+    name: 'E-E-A-T',
+    definition: "Acronyme pour Experience, Expertise, Authoritativeness, Trustworthiness. Cadre d'évaluation de la qualité du contenu utilisé par les évaluateurs qualité de Google. L'expérience vécue du sujet, la compétence thématique, la reconnaissance par les pairs et la fiabilité des sources sont les quatre dimensions évaluées. L'E-E-A-T est particulièrement exigeant sur les sujets YMYL et reste un signal clé pour le GEO : les LLMs favorisent les sources qui en démontrent les attributs.",
+  },
+  {
+    letter: 'F',
+    id: 'featured-snippet',
+    name: 'Featured Snippet',
+    definition: "Encadré affiché en position 0 dans les résultats Google, au-dessus des liens organiques classiques, qui présente un extrait de réponse directe tiré d'une page web. Les Featured Snippets se déclenchent sur les requêtes informationnelles et peuvent prendre la forme d'un paragraphe, d'une liste ou d'un tableau. Précurseur des AI Overviews, le Featured Snippet a initié la logique de réponse directe sans clic qui caractérise aujourd'hui la recherche générative.",
+  },
+  {
+    letter: 'G',
+    id: 'ga4',
+    name: 'GA4 (Google Analytics 4)',
+    definition: "Quatrième version de la plateforme d'analyse web de Google, déployée en remplacement d'Universal Analytics depuis juillet 2023. GA4 adopte un modèle de suivi basé sur les événements plutôt que les sessions et intègre des capacités de machine learning. Il permet notamment de suivre le trafic de référence en provenance des plateformes IA comme ChatGPT et Perplexity via les sources de trafic.",
+  },
+  {
+    letter: 'G',
+    id: 'geo',
+    name: 'GEO (Generative Engine Optimization)',
+    definition: "Discipline d'optimisation visant à faire apparaître du contenu comme source citée dans les réponses des moteurs de recherche génératifs : ChatGPT, Perplexity, Claude, Google AI Overviews. Formalisée dans une étude de Princeton, Georgia Tech, IIT Delhi et Allen AI présentée à ACM SIGKDD en août 2024, elle démontre que des optimisations délibérées du contenu peuvent augmenter la visibilité dans les réponses IA de 22 à 41 %. Le GEO complète le SEO sans le remplacer.",
+  },
+  {
+    letter: 'G',
+    id: 'gsc',
+    name: 'GSC (Google Search Console)',
+    definition: "Outil gratuit de Google permettant de suivre la performance d'un site dans les résultats de recherche organique. Il fournit des données sur les impressions, les clics, le CTR et le positionnement moyen par requête et par page. Depuis juin 2025, les clics provenant des AI Overviews sont comptabilisés dans les données GSC sous le type Web, sans séparation native des deux flux.",
+  },
+  {
+    letter: 'I',
+    id: 'index',
+    name: 'Index',
+    definition: "Base de données dans laquelle les moteurs de recherche stockent les pages web découvertes par le crawl. Une page doit être indexée pour apparaître dans les résultats de recherche. L'indexation peut être contrôlée via la balise meta robots, le fichier robots.txt ou la balise canonical. Une page non indexée est invisible aux moteurs de recherche et aux LLMs qui récupèrent leurs sources depuis le web.",
+  },
+  {
+    letter: 'I',
+    id: 'intent-de-recherche',
+    name: 'Intent de recherche',
+    definition: "Objectif sous-jacent d'un utilisateur lorsqu'il effectue une requête. On distingue quatre types principaux : informationnel (comprendre, apprendre), navigationnel (accéder à un site précis), transactionnel (acheter, s'inscrire) et commercial (comparer avant d'acheter). L'alignement entre le contenu d'une page et l'intent de la requête ciblée est l'un des critères fondamentaux du positionnement SEO et de l'extractibilité GEO.",
+  },
+  {
+    letter: 'K',
+    id: 'keyword-stuffing',
+    name: 'Keyword stuffing',
+    definition: "Pratique consistant à répéter excessivement un mot-clé dans un contenu dans le but de manipuler les algorithmes de classement. Pénalisée par Google depuis les mises à jour Panda (2011), cette technique est doublement contre-productive en contexte GEO : l'étude Princeton SIGKDD 2024 démontre que le keyword stuffing pénalise la visibilité dans les réponses IA de 10 %.",
+  },
+  {
+    letter: 'L',
+    id: 'llm',
+    name: 'LLM (Large Language Model)',
+    definition: "Modèle de langage entraîné sur de très grandes quantités de texte pour générer, comprendre et transformer du langage naturel. Les LLMs sont la technologie sous-jacente des assistants conversationnels comme ChatGPT (OpenAI), Claude (Anthropic), Gemini (Google) et Llama (Meta). Ils fonctionnent par prédiction statistique du token suivant et peuvent être augmentés par des mécanismes de récupération en temps réel (RAG) pour accéder à des informations récentes.",
+  },
+  {
+    letter: 'L',
+    id: 'longue-traine',
+    name: 'Longue traîne',
+    definition: "Ensemble des requêtes de recherche à faible volume individuel mais qui, cumulées, représentent une part significative du trafic total. Les requêtes longue traîne sont généralement plus spécifiques (4 mots ou plus) et indiquent un intent plus précis. Elles sont moins compétitives que les requêtes head et accessibles pour les sites à faible autorité. En GEO, la longue traîne conversationnelle correspond aux questions précises que les utilisateurs posent directement aux LLMs.",
+  },
+  {
+    letter: 'M',
+    id: 'maillage-interne',
+    name: 'Maillage interne',
+    definition: "Ensemble des liens hypertextes reliant les pages d'un même site entre elles. Un maillage interne cohérent facilite le crawl des robots des moteurs de recherche, distribue l'autorité entre les pages et guide les utilisateurs dans leur navigation. En stratégie de cluster sémantique, il structure les relations entre la page pilier et les pages satellites.",
+  },
+  {
+    letter: 'M',
+    id: 'meta-description',
+    name: 'Meta description',
+    definition: "Balise HTML contenant un résumé de 120 à 165 caractères décrivant le contenu d'une page. Non prise en compte directement comme signal de classement par Google, elle influence le CTR en apparaissant sous le titre dans les résultats de recherche. Google peut la remplacer par un extrait de la page s'il juge son contenu plus pertinent pour la requête.",
+  },
+  {
+    letter: 'M',
+    id: 'moteur-generatif',
+    name: 'Moteur génératif',
+    definition: "Moteur de recherche dont l'interface intègre un LLM pour synthétiser une réponse directe à partir de plusieurs sources, en lieu et place d'une liste de liens. Bing Copilot, Google AI Overviews et SearchGPT sont des moteurs génératifs. À distinguer des agents conversationnels (ChatGPT, Claude, Perplexity) qui sont des outils de dialogue basés sur des LLMs sans interface de recherche traditionnelle.",
+  },
+  {
+    letter: 'P',
+    id: 'part-de-voix-ia',
+    name: 'Part de voix IA',
+    definition: "Mesure de la présence d'une marque ou d'un domaine dans les réponses générées par les LLMs sur un périmètre de requêtes défini, exprimée en pourcentage par rapport aux concurrents. La part de voix IA est l'équivalent GEO du positionnement moyen en SEO : elle indique quelle fraction des réponses IA sur les sujets cibles cite le domaine concerné.",
+  },
+  {
+    letter: 'R',
+    id: 'rag',
+    name: 'RAG (Retrieval-Augmented Generation)',
+    definition: "Architecture technique permettant à un LLM de récupérer des informations depuis des sources externes (web, base documentaire) avant de générer sa réponse. Plutôt que de s'appuyer uniquement sur ses données d'entraînement, le modèle décompose la requête, récupère les passages les plus pertinents (chunks), puis les intègre dans sa réponse avec citations. Le RAG est le mécanisme principal par lequel les LLMs citent du contenu web en temps réel.",
+  },
+  {
+    letter: 'R',
+    id: 'recherche-zero-clic',
+    name: 'Recherche zéro clic',
+    definition: "Requête pour laquelle l'utilisateur obtient une réponse satisfaisante directement dans la SERP ou la réponse IA, sans cliquer vers aucun site. Les Featured Snippets et AI Overviews ont accéléré ce phénomène. Bain & Company estimait en 2025 que 80 % des consommateurs utilisent des résultats zéro clic dans au moins 40 % de leurs recherches.",
+  },
+  {
+    letter: 'R',
+    id: 'requete-informationnelle',
+    name: 'Requête informationnelle',
+    definition: "Requête de recherche dont l'objectif est d'obtenir une information, une définition ou une explication. C'est le type de requête le plus fréquent et le plus exposé aux AI Overviews, qui peuvent y répondre directement sans renvoyer vers un site. Les contenus informationnels sont à la fois les plus cités par les LLMs et les plus impactés par la baisse de trafic organique liée à la recherche générative.",
+  },
+  {
+    letter: 'R',
+    id: 'requete-transactionnelle',
+    name: 'Requête transactionnelle',
+    definition: "Requête de recherche dont l'objectif est d'effectuer une action concrète : achat, inscription, téléchargement, réservation. Ces requêtes sont plus résistantes aux AI Overviews car elles impliquent une interaction qui ne peut pas être satisfaite dans la SERP. Elles restent le principal moteur de trafic commercial pour les sites e-commerce et les services en ligne.",
+  },
+  {
+    letter: 'R',
+    id: 'richesse-lexicale',
+    name: 'Richesse lexicale',
+    definition: "Diversité du vocabulaire utilisé dans un contenu, mesurée par le ratio entre le nombre de mots uniques et le nombre total de mots. Une richesse lexicale élevée est associée à un contenu de qualité par les algorithmes NLP. En SEO sémantique, elle contribue à la densité sémantique et à la couverture thématique d'une page.",
+  },
+  {
+    letter: 'S',
+    id: 'serp',
+    name: 'SERP (Search Engine Results Page)',
+    definition: "Page de résultats affichée par un moteur de recherche en réponse à une requête. La SERP moderne inclut de multiples types de résultats : liens organiques, annonces payantes, Featured Snippets, knowledge panels, carousels d'images ou vidéos, et AI Overviews. La concurrence pour la visibilité dans la SERP constitue l'objet central du SEO.",
+  },
+  {
+    letter: 'S',
+    id: 'seo',
+    name: 'SEO (Search Engine Optimization)',
+    definition: "Ensemble des pratiques visant à améliorer le positionnement d'un site ou d'une page dans les résultats organiques des moteurs de recherche. Le SEO se divise en trois grandes dimensions : le SEO technique (crawlabilité, vitesse, structure), le SEO on-page (contenu, mots-clés, balisage) et le SEO off-page (backlinks, autorité). Il reste la fondation sur laquelle le GEO s'appuie : 76,1 % des sources citées dans les AI Overviews proviennent du top 10 organique Google.",
+  },
+  {
+    letter: 'S',
+    id: 'shadow-ban',
+    name: 'Shadow ban',
+    definition: "Sanction silencieuse appliquée par une plateforme (Reddit, X, Instagram...) qui rend le contenu d'un compte invisible pour les autres utilisateurs sans en informer le propriétaire. Sur Reddit, le shadow ban filtre les comptes suspects ou spammeurs. Un compte shadowbané peut publier normalement depuis son interface, mais ses posts et commentaires n'apparaissent pas pour les autres membres ni dans les résultats de recherche.",
+  },
+  {
+    letter: 'S',
+    id: 'sitemap',
+    name: 'Sitemap',
+    definition: "Fichier XML listant l'ensemble des URLs d'un site que l'on souhaite faire indexer par les moteurs de recherche. Le sitemap facilite et accélère le crawl, notamment pour les sites récents ou de grande taille. Il est soumis directement à Google via la Search Console. Un sitemap bien maintenu améliore la couverture d'indexation et donc la visibilité potentielle dans les SERPs et les réponses IA.",
+  },
+  {
+    letter: 'S',
+    id: 'slug',
+    name: 'Slug',
+    definition: "Partie d'une URL identifiant une page spécifique, généralement dérivée du titre de la page, en minuscules, sans accents, avec des tirets à la place des espaces. Le slug contribue à la lisibilité et à la pertinence SEO de l'URL. Un bon slug est court, descriptif et contient le mot-clé principal de la page (ex. /lexique/rag plutôt que /page?id=42).",
+  },
+  {
+    letter: 'S',
+    id: 'sxo',
+    name: 'SXO (Search Experience Optimization)',
+    definition: "Approche combinant SEO et UX (expérience utilisateur) pour optimiser à la fois le positionnement dans les moteurs de recherche et la satisfaction de l'utilisateur une fois sur la page. Le SXO part du principe qu'un bon classement sans une expérience utilisateur satisfaisante ne génère pas de résultats business. Il intègre des métriques comme le taux de rebond, le temps passé et le taux de conversion aux indicateurs SEO classiques.",
+  },
+  {
+    letter: 'T',
+    id: 'title-tag',
+    name: 'Title tag',
+    definition: "Balise HTML définissant le titre d'une page web, affiché dans l'onglet du navigateur et comme titre cliquable dans les résultats de recherche. Le title tag est l'un des signaux on-page les plus importants pour le SEO. Sa longueur optimale est de 50 à 70 caractères. Google peut le réécrire s'il le juge mal aligné avec la requête ou le contenu de la page.",
+  },
+  {
+    letter: 'U',
+    id: 'ugc',
+    name: 'UGC (User-Generated Content)',
+    definition: "Contenu produit par les utilisateurs d'une plateforme plutôt que par ses éditeurs : avis, commentaires, posts de forum, threads Reddit, photos... Le UGC bénéficie d'une forte crédibilité auprès des LLMs car il reflète des expériences authentiques et non promotionnelles. Reddit, dont 40,1 % des citations LLM provenaient en 2025 selon Semrush, est la principale source de UGC cité par les IA.",
+  },
+  {
+    letter: 'Y',
+    id: 'ymyl',
+    name: 'YMYL (Your Money or Your Life)',
+    definition: "Catégorie de sujets définie par Google dans ses Quality Rater Guidelines qui désigne les contenus pouvant avoir un impact significatif sur la santé, la sécurité financière ou le bien-être des utilisateurs (santé, finance, droit, actualité...). Les pages YMYL sont soumises à des exigences E-E-A-T plus strictes et nécessitent une expertise démontrable, des sources citées et une transparence sur l'identité des auteurs.",
+  },
+];
+
+const grouped = terms.reduce((acc, term) => {
+  if (!acc[term.letter]) acc[term.letter] = [];
+  acc[term.letter].push(term);
+  return acc;
+}, {} as Record<string, typeof terms>);
+
+const letters = Object.keys(grouped).sort();
+---
+
+<BaseLayout
+  title="Lexique SEO & GEO — Jean-Baptiste Récolet"
+  description="Définitions claires des termes et acronymes du SEO, du GEO et de la recherche générative : LLM, RAG, E-E-A-T, CTR, SERP, AI Overviews et bien d'autres."
+>
+  <div class="lexique">
+
+    <header class="lexique__header">
+      <h1>Lexique SEO & GEO</h1>
+      <p class="lexique__intro">
+        Définitions des termes, sigles et acronymes essentiels du référencement naturel et de la recherche générative. Chaque entrée est rédigée pour être citée par les moteurs IA.
+      </p>
+      <nav class="lexique__nav" aria-label="Navigation alphabétique">
+        {letters.map((letter) => (
+          <a href={`#lettre-${letter}`}>{letter}</a>
+        ))}
+      </nav>
+    </header>
+
+    {letters.map((letter) => (
+      <section class="lexique__section" id={`lettre-${letter}`}>
+        <h2 class="lexique__letter">{letter}</h2>
+        <dl class="lexique__list">
+          {grouped[letter].map((term) => (
+            <>
+              <dt class="lexique__term" id={term.id}>
+                <a href={`#${term.id}`} class="lexique__anchor">{term.name}</a>
+              </dt>
+              <dd class="lexique__def">{term.definition}</dd>
+            </>
+          ))}
+        </dl>
+      </section>
+    ))}
+
+  </div>
+</BaseLayout>
+
+<style>
+  .lexique {
+    max-width: var(--max-w-text);
+    margin: 0 auto;
+  }
+
+  .lexique__header {
+    margin-bottom: var(--space-xl);
+  }
+
+  .lexique__intro {
+    margin-top: var(--space-sm);
+    color: var(--color-muted);
+    font-size: 1.1rem;
+  }
+
+  .lexique__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: var(--space-lg);
+    padding: var(--space-md);
+    background: var(--color-rule);
+    border-radius: var(--radius);
+    max-width: none;
+  }
+
+  .lexique__nav a {
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: var(--color-accent);
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radius);
+    transition: background 0.15s;
+  }
+
+  .lexique__nav a:hover {
+    background: var(--color-accent);
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .lexique__section {
+    margin-top: var(--space-xl);
+    padding-top: var(--space-md);
+    border-top: 2px solid var(--color-rule);
+  }
+
+  .lexique__letter {
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    color: var(--color-accent);
+    margin-top: 0;
+    margin-bottom: var(--space-md);
+  }
+
+  .lexique__list {
+    max-width: none;
+  }
+
+  .lexique__term {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-top: var(--space-lg);
+    color: var(--color-text);
+    scroll-margin-top: 80px;
+  }
+
+  .lexique__term:first-child {
+    margin-top: 0;
+  }
+
+  .lexique__anchor {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .lexique__anchor:hover {
+    color: var(--color-accent);
+  }
+
+  .lexique__def {
+    margin-top: var(--space-xs);
+    margin-left: 0;
+    color: var(--color-text);
+    line-height: 1.7;
+    max-width: none;
+  }
+</style>
