@@ -156,7 +156,12 @@ main {
 .article__tags a:hover { color: var(--color-accent); }
 
 /* ---------- Footer ---------- */
-.site-footer { border-top: 1px solid var(--color-rule); margin-top: var(--space-xl); padding: var(--space-lg) var(--space-md); }
+.site-footer {
+  border-top: 1px solid var(--color-rule);
+  margin-top: var(--space-xl);
+  padding: var(--space-lg) var(--space-md);
+  background: var(--color-rule);
+}
 .site-footer__inner {
   max-width: var(--max-w-page);
   margin: 0 auto;
@@ -164,7 +169,14 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: var(--space-lg);
 }
-.site-footer h2 { font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-muted); font-family: var(--font-sans); margin-bottom: var(--space-sm); }
+.site-footer h2 {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  font-family: var(--font-sans);
+  margin-bottom: var(--space-sm);
+}
 .site-footer ul { list-style: none; padding: 0; }
 .site-footer li { margin-top: var(--space-xs); }
 .site-footer a { color: var(--color-text); text-decoration: none; font-size: 0.9375rem; }
