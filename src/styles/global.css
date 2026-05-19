@@ -160,7 +160,7 @@ main {
   border-top: 1px solid var(--color-rule);
   margin-top: var(--space-xl);
   padding: var(--space-lg) var(--space-md);
-  background: var(--color-rule);
+  background: #ebebeb;
 }
 .site-footer__inner {
   max-width: var(--max-w-page);
