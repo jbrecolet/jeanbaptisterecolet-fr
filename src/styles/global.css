@@ -130,7 +130,33 @@ main {
   margin-bottom: var(--space-lg);
   border-radius: 0 var(--radius) var(--radius) 0;
 }
+.article__body table {
+  width: 100%;
+  max-width: none;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+  margin: var(--space-md) 0;
+}
 
+.article__body th {
+  background: var(--color-rule);
+  color: var(--color-text);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.6rem 0.875rem;
+  border: 1px solid #c8c8c8;
+}
+
+.article__body td {
+  padding: 0.6rem 0.875rem;
+  border: 1px solid #c8c8c8;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.article__body tr:nth-child(even) td {
+  background: #faf9f6;
+}
 .article__body h2 { margin-top: var(--space-xl); }
 .article__body h3 { margin-top: var(--space-lg); }
 .article__body p, .article__body ul, .article__body ol { margin-top: var(--space-sm); }
