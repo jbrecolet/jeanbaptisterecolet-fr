@@ -139,17 +139,17 @@ main {
 }
 
 .article__body th {
-  background: var(--color-rule);
+  background: transparent;
   color: var(--color-text);
   font-weight: 600;
   text-align: left;
   padding: 0.6rem 0.875rem;
-  border: 1px solid #c8c8c8;
+  border: 1px solid var(--color-accent);
 }
 
 .article__body td {
   padding: 0.6rem 0.875rem;
-  border: 1px solid #c8c8c8;
+  border: 1px solid var(--color-accent);
   vertical-align: top;
   line-height: 1.5;
 }
