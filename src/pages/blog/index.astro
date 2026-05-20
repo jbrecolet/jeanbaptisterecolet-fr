@@ -36,7 +36,7 @@ const sortedPosts = posts.sort(
               <h3 class="article-card__title">
                 <a href={`/blog/${post.id}`}>{post.data.title}</a>
               </h3>
-              <p class="article-card__desc">{post.data.description}</p>
+              <p class="article-card__desc">{post.data.excerpt ?? post.data.description}</p>
             </div>
           </li>
         ))}
@@ -71,10 +71,7 @@ const sortedPosts = posts.sort(
     padding-top: var(--space-md);
   }
 
-  .article-card__thumb {
-    display: block;
-    width: 100%;
-  }
+  .article-card__thumb { display: block; width: 100%; }
   .article-card__thumb img {
     width: 100%;
     height: 200px;
@@ -95,14 +92,9 @@ const sortedPosts = posts.sort(
   .article-card__desc { color: var(--color-muted); font-size: 0.9375rem; }
 
   @media (max-width: 900px) {
-    .article-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
+    .article-grid { grid-template-columns: repeat(2, 1fr); }
   }
-
   @media (max-width: 600px) {
-    .article-grid {
-      grid-template-columns: 1fr;
-    }
+    .article-grid { grid-template-columns: 1fr; }
   }
 </style>
