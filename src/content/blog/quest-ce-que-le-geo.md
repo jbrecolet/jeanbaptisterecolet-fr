@@ -146,5 +146,3 @@ Un angle rarement évoqué dans les ressources anglophones sur la GEO : le march
 Cette asymétrie est une opportunité directe. Un site francophone qui applique les principes GEO correctement fait face à une concurrence bien moindre qu'un site anglophone sur les mêmes requêtes dans les réponses IA. La fenêtre est ouverte, mais elle ne le restera pas indéfiniment.
 
 ---
-
-## Questions fréquentes
