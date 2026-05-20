@@ -38,9 +38,9 @@ faq:
       Non. Les deux disciplines se nourrissent mutuellement. Un contenu qui cite ses sources, intègre des données chiffrées et des experts nommés est aussi plus crédible pour les lecteurs humains. Un contenu de fond approfondi performe bien à la fois pour les positions organiques et pour les citations IA. Ce qui change, c'est la hiérarchie des signaux et les métriques de performance, pas la logique de qualité éditoriale.
 ---
 
-La question revient dans chaque conversation sur le GEO : est-ce que ça remet en cause tout ce qu'on fait en SEO ? La réponse courte est non. La réponse longue est plus nuancée, et elle mérite d'être posée avec des données plutôt qu'avec des opinions.
+En septembre 2025, BrightEdge publie une donnée qui résume mieux que n'importe quel argumentaire l'état de la relation entre SEO et GEO : 54,5 % des citations dans les Google AI Overviews proviennent de pages classées organiquement. Le SEO nourrit le GEO. Les deux disciplines ne s'opposent pas.
 
-Le SEO et le GEO ne sont pas deux disciplines opposées. Ils opèrent sur des mécaniques différentes, avec des signaux qui se recoupent partiellement. Mais la hiérarchie des priorités change, et certains réflexes SEO bien ancrés ne servent à rien en GEO. C'est là que se joue vraiment la différence.
+Mais les données de LLM Research Lab publiées début 2026 compliquent le tableau : 83 % des citations IA viennent d'en dehors du top 10 Google sur la même requête. Être bien classé aide, mais ne garantit rien. Et ne pas être dans le top 10 n'empêche pas d'être cité. Le GEO obéit à des signaux que le SEO classique n'a pas optimisés, et c'est là que se joue vraiment la différence.
 
 ## Ce que le SEO a construit et qui reste valable
 
