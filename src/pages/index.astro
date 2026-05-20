@@ -16,7 +16,10 @@ const recent = sorted.slice(0, 6);
   <section class="hero">
     <div class="hero__inner">
       <div class="hero__text">
-        <h1>Jean-Baptiste Récolet<br />Content Manager SEO & GEO</h1>
+        <h1>
+          <span class="hero__name">Jean-Baptiste Récolet</span>
+          <span class="hero__role">Content Manager <em>SEO & GEO</em></span>
+        </h1>
         <p class="hero__subtitle hero__subtitle--accent">
           Des contenus lus par les humains, indexés par Google et cités par les IA.
         </p>
@@ -73,11 +76,30 @@ const recent = sorted.slice(0, 6);
 </BaseLayout>
 
 <style>
+  /* ── Hero ── */
   .hero__inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--space-xl);
     align-items: center;
+  }
+
+  .hero__name {
+    font-weight: 400;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    display: block;
+  }
+
+  .hero__role {
+    font-weight: 800;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    white-space: nowrap;
+    display: block;
+  }
+
+  .hero__role em {
+    font-style: italic;
+    font-weight: 600;
   }
 
   .hero__subtitle { margin-top: var(--space-sm); }
@@ -113,8 +135,10 @@ const recent = sorted.slice(0, 6);
   @media (max-width: 720px) {
     .hero__inner { grid-template-columns: 1fr; }
     .hero__visual { margin-top: var(--space-md); }
+    .hero__role { white-space: normal; }
   }
 
+  /* ── Sections ── */
   .section { margin-top: var(--space-lg); }
   .section h2 { margin-bottom: var(--space-md); }
   .section__more { margin-top: var(--space-lg); font-weight: 500; }
@@ -125,6 +149,7 @@ const recent = sorted.slice(0, 6);
     padding: var(--space-md) 0;
   }
 
+  /* ── Grille articles ── */
   .article-grid {
     list-style: none;
     padding: 0;
