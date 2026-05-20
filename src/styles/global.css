@@ -13,8 +13,8 @@
   --color-rule: #e3ddd1;
   --color-card: #ffffff;
 
-  --font-serif: 'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif: 'Inter Tight', sans-serif;
+  --font-sans: 'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
   --max-w-text: 68ch;
   --max-w-page: 1100px;
