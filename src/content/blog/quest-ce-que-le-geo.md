@@ -1,7 +1,7 @@
 ---
 title: "Qu'est-ce que le GEO (Generative Engine Optimization) ?"
-description: "Le GEO optimise le contenu pour être cité dans les réponses IA. Définition, données 2026, signaux qui fonctionnent et ce qu'on ne sait pas encore."
-tldr: "En 2026, 25 % des requêtes Google déclenchent un AI Overview. Le GEO optimise le contenu pour être cité dans ces réponses, pas seulement classé. Citations sourcées, données chiffrées et priorité à l'information en début de contenu : les trois signaux les plus cohérents à ce stade."
+description: "Le GEO optimise le contenu pour être cité dans les réponses IA. Définition, données 2026, signaux qui fonctionnent."
+tldr: "Le GEO optimise le contenu pour être cité dans ces réponses, pas seulement classé. Citations sourcées, données chiffrées et priorité à l'information en début de contenu : les trois signaux les plus cohérents à ce stade."
 pubDate: 2026-05-20
 cover: "quest-ce-que-le-geo.webp"
 coverAlt: "Qu'est-ce que le GEO (Generative Engine Optimization) ?"
