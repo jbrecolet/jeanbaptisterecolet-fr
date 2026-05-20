@@ -6,13 +6,19 @@ const terms = [
     letter: 'A',
     id: 'aeo',
     name: 'AEO (Answer Engine Optimization)',
-    definition: "Discipline d'optimisation visant à faire apparaître du contenu dans les réponses directes des moteurs de recherche et des IA. L'AEO cible les Featured Snippets, les réponses vocales et les AI Overviews. Souvent utilisé comme synonyme de GEO, bien que certains praticiens distinguent l'AEO (optimisation pour les moteurs de réponse comme Google) du GEO (optimisation pour les modèles de langage comme ChatGPT ou Perplexity).",
+    definition: "Discipline d'optimisation visant à faire apparaître du contenu dans les réponses directes des moteurs de recherche et des IA. L'AEO cible les Featured Snippets, les réponses vocales et les AI Overviews. Souvent utilisé comme synonyme de GEO, bien que certains praticiens distinguent l'AEO (optimisation pour les extraits de réponse) du GEO (qui englobe l'ensemble de la visibilité dans les LLMs).",
+  },
+  {
+    letter: 'A',
+    id: 'ai-mode',
+    name: 'AI Mode (Google)',
+    definition: "Interface conversationnelle de Google Search où l'utilisateur dialogue directement avec un modèle Gemini intégré, distinct des AI Overviews classiques. AI Mode permet une conversation multi-tours, là où les AIO fournissent une réponse synthétique unique au-dessus des résultats. Selon les premières analyses, AI Mode favorise les propriétés Google (YouTube, sources institutionnelles) avec un taux de zero-click proche de 93 %.",
   },
   {
     letter: 'A',
     id: 'ai-overviews',
     name: 'AI Overviews',
-    definition: "Fonctionnalité de Google déployée à partir de 2024 (mais pas encore disponible en france) qui génère une réponse synthétisée en haut des résultats de recherche, avant les liens organiques. Alimentée par Gemini, elle compile des informations issues de plusieurs sources et cite ces sources sous la réponse. Sa présence dans 13 % des requêtes en 2026 a provoqué une baisse mesurable du taux de clic organique.",
+    definition: "Fonctionnalité de Google déployée à partir de 2024 qui génère une réponse synthétisée en haut des résultats de recherche, avant les liens organiques. Alimentée par Gemini, elle compile des informations issues de plusieurs sources et cite ces sources sous la réponse. Sa présence dans 25 % des requêtes en 2026 a provoqué une baisse mesurable du taux de clic organique. À ne pas confondre avec Google AI Mode, une interface conversationnelle distincte.",
   },
   {
     letter: 'A',
@@ -34,6 +40,12 @@ const terms = [
   },
   {
     letter: 'A',
+    id: 'answer-share',
+    name: 'Answer Share',
+    definition: "Aussi appelé Mention Rate. Pourcentage des requêtes d'un panel défini pour lesquelles un domaine ou une marque est explicitement cité dans la réponse d'un LLM. C'est le KPI central des outils de tracking GEO (Peec.ai, Otterly, AthenaHQ). Sa valeur dépend fortement de la liste de prompts choisie : deux outils mesurant le même site sur des prompts différents donneront des Answer Share très différents.",
+  },
+  {
+    letter: 'A',
     id: 'autorite-de-domaine',
     name: 'Autorité de domaine',
     definition: "Score propriétaire développé par Moz (de 1 à 100) estimant la capacité d'un site à se classer dans les résultats de recherche. Il est calculé à partir du nombre et de la qualité des backlinks pointant vers le site. Ce n'est pas une métrique officielle de Google, mais elle est largement utilisée dans le secteur SEO comme indicateur comparatif entre domaines concurrents.",
@@ -42,13 +54,25 @@ const terms = [
     letter: 'B',
     id: 'backlink',
     name: 'Backlink',
-    definition: "Lien hypertexte placé sur un site externe qui pointe vers une page de son propre site. Les backlinks constituent l'un des principaux signaux d'autorité pris en compte par les algorithmes de Google. Un backlink provenant d'un site de haute autorité dans un domaine thématiquement proche a plus de valeur qu'un backlink provenant d'un site généraliste ou de faible autorité.",
+    definition: "Lien hypertexte placé sur un site externe qui pointe vers une page de son propre site. Les backlinks constituent l'un des principaux signaux d'autorité pris en compte par les algorithmes de Google. En GEO en revanche, leur corrélation avec la visibilité dans les LLMs est faible (0,12 selon LLM Research Lab, 2026), bien inférieure à celle des citations éditoriales (0,61).",
   },
   {
     letter: 'B',
     id: 'balisage-schemaorg',
     name: 'Balisage schema.org',
-    definition: "Ensemble de balises de données structurées standardisées permettant d'indiquer aux moteurs de recherche et aux LLMs la nature précise du contenu d'une page (article, FAQ, produit, recette, événement...). Implémenté en JSON-LD dans le head des pages, le schema.org améliore l'extractibilité du contenu par les IA et augmente les chances d'apparaître dans les rich results de Google. Également désigné sous le terme anglais structured data.",
+    definition: "Ensemble de balises de données structurées standardisées permettant d'indiquer aux moteurs de recherche et aux LLMs la nature précise du contenu d'une page (article, FAQ, produit, recette, événement...). Implémenté en JSON-LD dans le head des pages, le schema.org améliore l'extractibilité du contenu par les IA. Le LLM Research Lab (2026) mesure +28 % de citations globales pour les pages balisées, montant à +32 % pour les types Review et AggregateRating.",
+  },
+  {
+    letter: 'B',
+    id: 'brand-search-lift',
+    name: 'Brand Search Lift',
+    definition: "Hausse mesurée des recherches brandées (nom de marque, domaine) dans Google Search Console, utilisée comme proxy indirect de la visibilité dans les LLMs. Le raisonnement : un utilisateur qui voit une marque citée dans une réponse IA mais ne clique pas peut rechercher le nom de la marque dans Google plus tard. C'est le KPI business le plus accessible sans outil de tracking GEO dédié.",
+  },
+  {
+    letter: 'B',
+    id: 'brand-search-volume',
+    name: 'Brand Search Volume',
+    definition: "Volume absolu des recherches contenant le nom d'une marque dans Google. Distinct du Brand Search Lift, qui en mesure la variation. Digital Bloom (2025) mesure une corrélation de 0,334 entre brand search volume et probabilité d'être cité par un LLM, ce qui en fait l'un des premiers prédicteurs de visibilité IA mesurés à ce jour, devant le Domain Authority (0,18) et les backlinks (0,12).",
   },
   {
     letter: 'C',
@@ -66,13 +90,25 @@ const terms = [
     letter: 'C',
     id: 'chunk',
     name: 'Chunk',
-    definition: "Fragment de texte de 60 à 300 mots extrait d'une page web par un LLM lors de la phase de récupération (RAG). Les LLMs ne lisent pas les pages entières : ils découpent le contenu en chunks, les convertissent en représentations vectorielles et sélectionnent les plus pertinents pour assembler une réponse. Un paragraphe autoporteur qui répond directement à une question forme un bon chunk extractible.",
+    definition: "Fragment de texte de 60 à 500 mots extrait d'une page web par un LLM lors de la phase de récupération (RAG). Les LLMs ne lisent pas les pages entières : ils découpent le contenu en chunks, les convertissent en représentations vectorielles (embeddings) et sélectionnent les plus pertinents pour assembler une réponse. Un paragraphe autoporteur qui répond directement à une question forme un bon chunk extractible.",
+  },
+  {
+    letter: 'C',
+    id: 'citation-bias',
+    name: 'Citation Bias',
+    definition: "Tendance d'un LLM à sur-représenter certains types de sources dans ses réponses, indépendamment de leur qualité réelle. Exemples documentés : ChatGPT sur-cite Wikipedia, Perplexity sur-cite Reddit (46,7 % selon Digital Bloom), Gemini sur-cite les sites de marques (52,15 % selon Yext). Ce biais n'est pas délibéré : il reflète la composition du corpus d'entraînement et la stratégie de grounding de chaque modèle, et il évolue rapidement dans le temps.",
+  },
+  {
+    letter: 'C',
+    id: 'citation-drift',
+    name: 'Citation Drift',
+    definition: "Volatilité des sources citées par un LLM dans le temps : le même prompt peut être répondu avec des sources différentes d'une semaine à l'autre. Digital Bloom mesure 59,3 % de citation drift mensuel sur les AI Overviews et 54,1 % sur ChatGPT. Le cas le plus documenté : la part de Reddit dans les citations ChatGPT, passée de 60 % à 10 % en 13 semaines (juillet à octobre 2025) selon Semrush. Conséquence opérationnelle : une stratégie GEO sérieuse mesure ses citations de façon récurrente.",
   },
   {
     letter: 'C',
     id: 'cluster-semantique',
     name: 'Cluster sémantique',
-    definition: "Ensemble de pages ou contenus organisés autour d'un sujet central (page pilier) et de sous-thèmes associés (pages satellites), reliés par un maillage interne cohérent. Le cluster sémantique renforce l'autorité thématique d'un site aux yeux de Google et structure le contenu de façon à couvrir exhaustivement un domaine. C'est une approche centrale de la stratégie SEO éditoriale moderne.",
+    definition: "Ensemble de pages ou contenus organisés autour d'un sujet central (page pilier) et de sous-thèmes associés (pages satellites), reliés par un maillage interne cohérent. Le cluster sémantique renforce l'autorité thématique d'un site aux yeux de Google et des LLMs. Ahrefs (août 2025) recommande explicitement la construction de clusters thématiques comme l'un des trois leviers principaux pour gagner des citations IA.",
   },
   {
     letter: 'C',
@@ -102,19 +138,25 @@ const terms = [
     letter: 'C',
     id: 'crawl',
     name: 'Crawl',
-    definition: "Processus par lequel les robots des moteurs de recherche (Googlebot, Bingbot) et des LLMs parcourent le web en suivant les liens pour découvrir et indexer les pages. La fréquence et la profondeur du crawl d'un site dépendent de son autorité, de la fraîcheur de son contenu et de la configuration du fichier robots.txt. Un site mal crawlé peut avoir du contenu invisible aux moteurs de recherche.",
+    definition: "Processus par lequel les robots des moteurs de recherche (Googlebot, Bingbot, PerplexityBot) parcourent le web en suivant les liens pour découvrir et indexer les pages. La fréquence et la profondeur du crawl d'un site dépendent de son autorité, de la fraîcheur de son contenu et de la configuration du fichier robots.txt. Un site mal crawlé peut avoir du contenu invisible aux moteurs de recherche et aux LLMs.",
   },
   {
     letter: 'C',
     id: 'ctr',
     name: 'CTR (Click-Through Rate)',
-    definition: "Taux de clic calculé en divisant le nombre de clics reçus par le nombre d'impressions dans les résultats de recherche. La présence des AI Overviews de Google a significativement réduit les CTR organiques : l'étude Seer Interactive de septembre 2025 mesure un CTR organique de 0,61 % sur les requêtes avec AI Overview, contre 1,62 % sans. La réduction du CTR sans baisse des impressions est l'un des signaux les plus visibles de l'impact GEO sur le trafic.",
+    definition: "Taux de clic calculé en divisant le nombre de clics reçus par le nombre d'impressions dans les résultats de recherche. Ahrefs mesure une chute de 58 % du CTR organique en position 1 quand un AI Overview est présent (analyse sur 300 000 mots-clés, déc. 2025). Mais pour les marques effectivement citées dans un AIO, Seer Interactive documente une remontée du CTR de 1,3 % à 2,4 % entre décembre 2025 et février 2026.",
   },
   {
     letter: 'D',
     id: 'da',
     name: 'DA (Domain Authority)',
-    definition: "Voir Autorité de domaine. Métrique propriétaire de Moz (0 à 100) estimant la capacité d'un domaine à se classer dans les SERPs, calculée principalement à partir de la qualité et du volume du profil de backlinks. Ahrefs propose un indicateur équivalent appelé Domain Rating (DR), et Semrush utilise l'Authority Score. Aucune de ces métriques n'est officielle : Google ne communique pas de score d'autorité public.",
+    definition: "Métrique propriétaire de Moz (0 à 100) estimant la capacité d'un domaine à se classer dans les SERPs, calculée principalement à partir de la qualité et du volume du profil de backlinks. En GEO, sa corrélation avec la visibilité dans les LLMs est faible (0,18 selon LLM Research Lab, 2026). Ahrefs propose un indicateur équivalent appelé Domain Rating (DR), et Semrush utilise l'Authority Score.",
+  },
+  {
+    letter: 'D',
+    id: 'dark-traffic-ia',
+    name: 'Dark Traffic IA',
+    definition: "Trafic généré indirectement par une citation dans une réponse LLM, mais non attribué à un canal IA dans Google Analytics 4. Il prend plusieurs formes : copier-coller d'URL (arrive en Direct), recherche brandée différée (arrive en Organic sur une requête de marque), clic depuis l'app mobile (referrer supprimé). C'est l'angle mort principal de la mesure GEO. Le dark traffic IA est estimé à plusieurs fois le trafic referral IA visible dans GA4.",
   },
   {
     letter: 'D',
@@ -123,10 +165,16 @@ const terms = [
     definition: "Mesure de la richesse du vocabulaire d'un contenu en termes liés au sujet traité. Une densité sémantique élevée signifie que le texte couvre un champ lexical large et cohérent autour de sa thématique principale, ce que les algorithmes de Google et les LLMs interprètent comme un signal de profondeur et d'expertise. S'oppose au keyword stuffing, qui consiste à répéter mécaniquement un même mot-clé.",
   },
   {
+    letter: 'D',
+    id: 'dynamic-retrieval',
+    name: 'Dynamic Retrieval',
+    definition: "Mécanisme de Gemini (Google) qui décide dynamiquement, pour chaque requête, si une recherche web en temps réel est nécessaire ou si les données d'entraînement suffisent. Paramétrable via l'API Google AI avec un seuil de confiance (défaut : 0,7). En dessous du seuil, Gemini répond depuis ses poids d'entraînement. Au-dessus, il effectue un grounding via Google Search. Ce mécanisme explique pourquoi Gemini ne cite pas les mêmes sources selon le type de requête.",
+  },
+  {
     letter: 'E',
     id: 'eeat',
     name: 'E-E-A-T',
-    definition: "Acronyme pour Experience, Expertise, Authoritativeness, Trustworthiness. Cadre d'évaluation de la qualité du contenu utilisé par les évaluateurs qualité de Google. L'expérience vécue du sujet, la compétence thématique, la reconnaissance par les pairs et la fiabilité des sources sont les quatre dimensions évaluées. L'E-E-A-T est particulièrement exigeant sur les sujets YMYL et reste un signal clé pour le GEO : les LLMs favorisent les sources qui en démontrent les attributs.",
+    definition: "Acronyme pour Experience, Expertise, Authoritativeness, Trustworthiness. Cadre d'évaluation de la qualité du contenu issu des Quality Rater Guidelines de Google. Le premier E (Experience) a été ajouté en 2022 pour valoriser le vécu de terrain en plus de l'expertise théorique. En GEO, l'E-E-A-T est transposé implicitement par les LLMs : ils favorisent les sources avec auteur identifié (nom, titre, affiliation), date de mise à jour récente et citations de sources primaires.",
   },
   {
     letter: 'F',
@@ -135,22 +183,40 @@ const terms = [
     definition: "Encadré affiché en position 0 dans les résultats Google, au-dessus des liens organiques classiques, qui présente un extrait de réponse directe tiré d'une page web. Les Featured Snippets se déclenchent sur les requêtes informationnelles et peuvent prendre la forme d'un paragraphe, d'une liste ou d'un tableau. Précurseur des AI Overviews, le Featured Snippet a initié la logique de réponse directe sans clic qui caractérise aujourd'hui la recherche générative.",
   },
   {
+    letter: 'F',
+    id: 'front-loading',
+    name: 'Front-loading',
+    definition: "Pratique éditoriale qui consiste à placer la réponse principale, les chiffres clés et les définitions dans le premier tiers d'un contenu, typiquement les 200 premiers mots ou la première section après le H1. Levier central du GEO : 44,2 % des citations LLM viennent du premier tiers du contenu (Growth Memo, 2026). Concrètement : question en H2, réponse synthétique en première phrase, statistique sourcée dans le paragraphe d'ouverture.",
+  },
+  {
     letter: 'G',
     id: 'ga4',
     name: 'GA4 (Google Analytics 4)',
-    definition: "Quatrième version de la plateforme d'analyse web de Google, déployée en remplacement d'Universal Analytics depuis juillet 2023. GA4 adopte un modèle de suivi basé sur les événements plutôt que les sessions et intègre des capacités de machine learning. Il permet notamment de suivre le trafic de référence en provenance des plateformes IA comme ChatGPT et Perplexity via les sources de trafic.",
+    definition: "Quatrième version de la plateforme d'analyse web de Google, déployée en remplacement d'Universal Analytics depuis juillet 2023. GA4 adopte un modèle de suivi basé sur les événements plutôt que les sessions et intègre des capacités de machine learning. Il permet notamment de suivre le trafic de référence en provenance des plateformes IA comme ChatGPT et Perplexity via les sources de trafic, bien que le dark traffic IA reste largement invisible.",
   },
   {
     letter: 'G',
     id: 'geo',
     name: 'GEO (Generative Engine Optimization)',
-    definition: "Discipline d'optimisation visant à faire apparaître du contenu comme source citée dans les réponses des moteurs de recherche génératifs : ChatGPT, Perplexity, Claude, Google AI Overviews. Formalisée dans une étude de Princeton, Georgia Tech, IIT Delhi et Allen AI présentée à ACM SIGKDD en août 2024, elle démontre que des optimisations délibérées du contenu peuvent augmenter la visibilité dans les réponses IA de 22 à 41 %. Le GEO complète le SEO sans le remplacer.",
+    definition: "Ensemble des pratiques visant à maximiser la visibilité d'un contenu dans les réponses générées par les LLMs : ChatGPT, Perplexity, Claude, Google AI Overviews, Gemini. Formalisé académiquement par Aggarwal et al. (Princeton, IIT Delhi, Georgia Tech, Allen AI) dans l'étude GEO: Generative Engine Optimization, présentée à ACM SIGKDD en août 2024. À ne pas confondre avec l'AEO (plus étroit, centré sur les extraits de réponse) ni avec le LLMO (plus large, inclut les usages non-search des LLMs).",
+  },
+  {
+    letter: 'G',
+    id: 'grounding',
+    name: 'Grounding',
+    definition: "Mécanisme par lequel un LLM ancre sa réponse dans des sources web récupérées en temps réel plutôt que dans ses seules données d'entraînement. Le grounding réduit les hallucinations et lie la réponse à des sources vérifiables. Perplexity est grounded par design (toujours). Gemini utilise le Dynamic Retrieval (conditionnel). ChatGPT en mode Search est grounded sur certaines requêtes. Un LLM non-grounded répond depuis ses poids d'entraînement : ses références ne sont pas des liens vers des sources réelles mais des données mémorisées à l'entraînement.",
   },
   {
     letter: 'G',
     id: 'gsc',
     name: 'GSC (Google Search Console)',
     definition: "Outil gratuit de Google permettant de suivre la performance d'un site dans les résultats de recherche organique. Il fournit des données sur les impressions, les clics, le CTR et le positionnement moyen par requête et par page. Depuis juin 2025, les clics provenant des AI Overviews sont comptabilisés dans les données GSC sous le type Web, sans séparation native des deux flux.",
+  },
+  {
+    letter: 'H',
+    id: 'hallucination',
+    name: 'Hallucination',
+    definition: "Production par un LLM d'une information fausse présentée avec la même assurance qu'une information vraie. Les hallucinations ne sont pas des erreurs au sens classique : elles résultent de la nature probabiliste des LLMs, qui génèrent le token le plus probable même en l'absence de donnée factuelle fiable. Le grounding réduit mais n'élimine pas les hallucinations. Pour un site GEO, être une source bien représentée dans l'index d'un LLM réduit le risque qu'il hallucine des informations vous concernant.",
   },
   {
     letter: 'I',
@@ -168,7 +234,7 @@ const terms = [
     letter: 'I',
     id: 'intention-de-recherche',
     name: 'Intention de recherche',
-    definition: "Objectif sous-jacent d'un utilisateur lorsqu'il effectue une requête. On distingue quatre types principaux : informationnel (comprendre, apprendre), navigationnel (accéder à un site précis), transactionnel (acheter, s'inscrire) et commercial (comparer avant d'acheter). L'alignement entre le contenu d'une page et l'intent de la requête ciblée est l'un des critères fondamentaux du positionnement SEO et de l'extractibilité GEO.",
+    definition: "Objectif sous-jacent d'un utilisateur lorsqu'il effectue une requête. On distingue quatre types principaux : informationnel (comprendre, apprendre), navigationnel (accéder à un site précis), transactionnel (acheter, s'inscrire) et commercial (comparer avant d'acheter). L'alignement entre le contenu d'une page et l'intention de la requête ciblée est l'un des critères fondamentaux du positionnement SEO et de l'extractibilité GEO.",
   },
   {
     letter: 'K',
@@ -180,7 +246,7 @@ const terms = [
     letter: 'K',
     id: 'kpi',
     name: 'KPI (Key Performance Indicator)',
-    definition: "Indicateur clé de performance permettant de mesurer l'atteinte d'un objectif défini. En SEO, les KPIs classiques sont le positionnement moyen, le trafic organique, le CTR, le taux de conversion et le nombre de backlinks. En GEO, de nouveaux KPIs s'ajoutent : la citation frequency, la part de voix IA et le trafic de référence issu des plateformes IA. La transition SEO vers GEO implique une évolution des tableaux de bord de reporting.",
+    definition: "Indicateur clé de performance permettant de mesurer l'atteinte d'un objectif défini. En SEO, les KPIs classiques sont le positionnement moyen, le trafic organique, le CTR et les backlinks. En GEO, de nouveaux KPIs s'ajoutent : l'Answer Share, la Part de voix IA, le Brand Search Lift et le trafic de référence issu des plateformes IA. La transition SEO vers GEO implique une évolution des tableaux de bord de reporting.",
   },
   {
     letter: 'L',
@@ -192,19 +258,31 @@ const terms = [
     letter: 'L',
     id: 'llm',
     name: 'LLM (Large Language Model)',
-    definition: "Modèle de langage entraîné sur de très grandes quantités de texte pour générer, comprendre et transformer du langage naturel. Les LLMs sont la technologie sous-jacente des assistants conversationnels comme ChatGPT (OpenAI), Claude (Anthropic), Gemini (Google) et Llama (Meta). Ils fonctionnent par prédiction statistique du token suivant et peuvent être augmentés par des mécanismes de récupération en temps réel (RAG) pour accéder à des informations récentes.",
+    definition: "Modèle de langage entraîné sur de très grandes quantités de texte pour générer, comprendre et transformer du langage naturel. Les LLMs sont la technologie sous-jacente des assistants conversationnels comme ChatGPT (OpenAI), Claude (Anthropic), Gemini (Google) et Llama (Meta). La distinction importante pour le GEO : le LLM lui-même (poids, connaissances d'entraînement) vs le produit qui l'enrobe (interface, grounding, plugins). Optimiser pour ChatGPT, c'est optimiser pour le produit, pas seulement pour le modèle GPT-4o.",
+  },
+  {
+    letter: 'L',
+    id: 'llmo',
+    name: 'LLMO (Large Language Model Optimization)',
+    definition: "Terme plus large que GEO, couvrant l'ensemble des stratégies visant à influencer le comportement d'un LLM en lien avec une marque ou un contenu, y compris hors des moteurs de recherche (chatbots d'entreprise, assistants embarqués, agents IA). Moins utilisé dans la pratique que GEO ou AEO, mais conceptuellement plus précis pour désigner l'optimisation pour des LLMs dans des contextes non-search.",
   },
   {
     letter: 'L',
     id: 'longue-traine',
     name: 'Longue traîne',
-    definition: "Ensemble des requêtes de recherche à faible volume individuel mais qui, cumulées, représentent une part significative du trafic total. Les requêtes longue traîne sont généralement plus spécifiques (4 mots ou plus) et indiquent un intent plus précis. Elles sont moins compétitives que les requêtes head et accessibles pour les sites à faible autorité. En GEO, la longue traîne conversationnelle correspond aux questions précises que les utilisateurs posent directement aux LLMs.",
+    definition: "Ensemble des requêtes de recherche à faible volume individuel mais qui, cumulées, représentent une part significative du trafic total. Les requêtes longue traîne sont généralement plus spécifiques (4 mots ou plus) et indiquent un intent plus précis. En GEO, la longue traîne conversationnelle correspond aux questions précises que les utilisateurs posent directement aux LLMs, souvent formulées en langage naturel.",
   },
   {
     letter: 'M',
     id: 'maillage-interne',
     name: 'Maillage interne',
     definition: "Ensemble des liens hypertextes reliant les pages d'un même site entre elles. Un maillage interne cohérent facilite le crawl des robots des moteurs de recherche, distribue l'autorité entre les pages et guide les utilisateurs dans leur navigation. En stratégie de cluster sémantique, il structure les relations entre la page pilier et les pages satellites.",
+  },
+  {
+    letter: 'M',
+    id: 'mention-rate',
+    name: 'Mention Rate',
+    definition: "Pourcentage des prompts d'un panel sur lesquels une marque ou un domaine est explicitement cité dans la réponse d'un LLM. Très proche de l'Answer Share, parfois utilisé comme synonyme, parfois distingué : le Mention Rate compte toute mention textuelle de la marque, l'Answer Share compte uniquement les citations avec lien sortant. Sa valeur dépend fortement de la liste de prompts choisie, ce qui rend la comparaison entre outils difficile sans aligner les périmètres.",
   },
   {
     letter: 'M',
@@ -216,13 +294,19 @@ const terms = [
     letter: 'M',
     id: 'mot-cle',
     name: 'Mot-clé',
-    definition: "Terme ou expression saisi par un utilisateur dans un moteur de recherche. En SEO, les mots-clés se divisent en head keywords (mots-clés génériques à fort volume et forte concurrence, ex. : \"SEO\") et longue traîne (expressions spécifiques à faible volume et faible concurrence, ex. : \"comment structurer un article pour le GEO\"). La sélection et le ciblage des mots-clés constituent la base de toute stratégie éditoriale SEO.",
+    definition: "Terme ou expression saisi par un utilisateur dans un moteur de recherche. En SEO, les mots-clés se divisent en head keywords (mots-clés génériques à fort volume et forte concurrence) et longue traîne (expressions spécifiques à faible volume et faible concurrence). La sélection et le ciblage des mots-clés constituent la base de toute stratégie éditoriale SEO.",
   },
   {
     letter: 'M',
     id: 'moteur-generatif',
     name: 'Moteur génératif',
     definition: "Moteur de recherche dont l'interface intègre un LLM pour synthétiser une réponse directe à partir de plusieurs sources, en lieu et place d'une liste de liens. Bing Copilot, Google AI Overviews et SearchGPT sont des moteurs génératifs. À distinguer des agents conversationnels (ChatGPT, Claude, Perplexity) qui sont des outils de dialogue basés sur des LLMs sans interface de recherche traditionnelle.",
+  },
+  {
+    letter: 'M',
+    id: 'multi-turn',
+    name: 'Multi-turn',
+    definition: "Échange en plusieurs tours entre un utilisateur et un LLM, par opposition à la requête unique du moteur de recherche classique. Une session ChatGPT ou Perplexity dure typiquement 3 à 7 tours. Cette dynamique change la nature des sources retenues : le LLM affine sa compréhension du besoin au fil de la conversation, et la citation finale dépend de l'historique du dialogue, pas seulement du dernier prompt. Le visiteur arrivé d'un LLM via une conversation multi-tour est généralement plus avancé dans sa réflexion qu'un visiteur organique.",
   },
   {
     letter: 'N',
@@ -240,7 +324,7 @@ const terms = [
     letter: 'P',
     id: 'paa',
     name: 'PAA (People Also Ask)',
-    definition: "Bloc de questions-réponses déroulantes affiché par Google dans la SERP, généré dynamiquement à partir des requêtes connexes les plus fréquentes autour d'un sujet. Chaque réponse est extraite d'une page web citée en source. Le PAA est un signal fort de l'intent de recherche associé à une requête : les questions affichées reflètent ce que les utilisateurs cherchent réellement à comprendre. Apparaître dans le PAA suit la même logique que le Featured Snippet : contenu autoporteur, réponse directe en moins de 50 mots, structure claire.",
+    definition: "Bloc de questions-réponses déroulantes affiché par Google dans la SERP, généré dynamiquement à partir des requêtes connexes les plus fréquentes autour d'un sujet. Chaque réponse est extraite d'une page web citée en source. Le PAA est un signal fort de l'intention de recherche associée à une requête. Apparaître dans le PAA suit la même logique que le Featured Snippet : contenu autoporteur, réponse directe en moins de 50 mots, structure claire.",
   },
   {
     letter: 'P',
@@ -252,25 +336,31 @@ const terms = [
     letter: 'P',
     id: 'part-de-voix-ia',
     name: 'Part de voix IA',
-    definition: "Mesure de la présence d'une marque ou d'un domaine dans les réponses générées par les LLMs sur un périmètre de requêtes défini, exprimée en pourcentage par rapport aux concurrents. La part de voix IA est l'équivalent GEO du positionnement moyen en SEO : elle indique quelle fraction des réponses IA sur les sujets cibles cite le domaine concerné.",
+    definition: "Part des citations d'un domaine rapportée à l'ensemble des citations de la concurrence sur les mêmes prompts. Si une marque est citée dans 30 % des réponses et ses trois concurrents dans 25, 25 et 20 %, sa part de voix IA est de 30 %. Métrique relative plus stable que le Mention Rate absolu, car elle filtre les variations liées aux prompts choisis ou aux mises à jour de modèle.",
+  },
+  {
+    letter: 'P',
+    id: 'perplexitybot',
+    name: 'PerplexityBot',
+    definition: "Robot d'indexation de Perplexity, distinct de Googlebot et Bingbot. Perplexity maintient son propre index web de plus de 200 milliards d'URLs et le rafraîchit indépendamment des autres moteurs. Identifier PerplexityBot dans les logs serveur indique que Perplexity crawle le site. Le bloquer dans robots.txt exclut le site de l'index Perplexity et donc de ses réponses génératives.",
   },
   {
     letter: 'P',
     id: 'prompt',
     name: 'Prompt',
-    definition: "Instruction ou question soumise à un LLM pour obtenir une réponse. La qualité du prompt influence directement la qualité et la précision de la réponse générée. Le prompt engineering désigne la discipline consistant à formuler des instructions optimales pour obtenir les meilleurs résultats d'un modèle IA. En GEO, comprendre comment les utilisateurs formulent leurs prompts permet d'anticiper les requêtes pour lesquelles un contenu devra être cité.",
+    definition: "Instruction ou question soumise à un LLM pour obtenir une réponse. En GEO, le prompt est l'équivalent de la requête SEO, mais il est souvent plus long, plus conversationnel, et peut inclure un contexte. La formulation du prompt influence fortement les sources citées et les informations présentées. Les outils de tracking GEO définissent des listes de prompts représentatifs des requêtes de la cible pour mesurer la visibilité d'une marque.",
   },
   {
     letter: 'R',
     id: 'rag',
     name: 'RAG (Retrieval-Augmented Generation)',
-    definition: "Architecture technique permettant à un LLM de récupérer des informations depuis des sources externes (web, base documentaire) avant de générer sa réponse. Plutôt que de s'appuyer uniquement sur ses données d'entraînement, le modèle décompose la requête, récupère les passages les plus pertinents (chunks), puis les intègre dans sa réponse avec citations. Le RAG est le mécanisme principal par lequel les LLMs citent du contenu web en temps réel.",
+    definition: "Architecture technique permettant à un LLM de récupérer des informations depuis des sources externes (web, base documentaire) avant de générer sa réponse. Plutôt que de s'appuyer uniquement sur ses données d'entraînement, le modèle décompose la requête, récupère les passages les plus pertinents (chunks), puis les intègre dans sa réponse avec citations. Perplexity est architecturellement un RAG sur index web. Le RAG est le mécanisme principal par lequel les LLMs citent du contenu en temps réel.",
   },
   {
     letter: 'R',
     id: 'recherche-zero-clic',
     name: 'Recherche zéro clic',
-    definition: "Requête pour laquelle l'utilisateur obtient une réponse satisfaisante directement dans la SERP ou la réponse IA, sans cliquer vers aucun site. Les Featured Snippets et AI Overviews ont accéléré ce phénomène. Bain & Company estimait en 2025 que 80 % des consommateurs utilisent des résultats zéro clic dans au moins 40 % de leurs recherches.",
+    definition: "Requête pour laquelle l'utilisateur obtient une réponse satisfaisante directement dans la SERP ou la réponse IA, sans cliquer vers aucun site. En 2025, 60 % des recherches Google se terminaient sans clic selon SparkToro, une hausse directement liée à la généralisation des AI Overviews. En GEO, l'objectif n'est plus seulement d'être cliqué mais d'être cité, même dans une réponse qui ne génère pas de trafic direct.",
   },
   {
     letter: 'R',
@@ -300,13 +390,13 @@ const terms = [
     letter: 'R',
     id: 'robots-txt',
     name: 'Robots.txt',
-    definition: "Fichier texte placé à la racine d'un site qui indique aux robots des moteurs de recherche quelles pages ou répertoires ils sont autorisés ou non à crawler. Les directives Disallow empêchent le crawl de certaines URLs. Attention : robots.txt empêche le crawl mais pas nécessairement l'indexation si d'autres pages pointent vers les URLs bloquées. À distinguer de la balise meta robots qui contrôle l'indexation page par page.",
+    definition: "Fichier texte placé à la racine d'un site qui indique aux robots des moteurs de recherche quelles pages ou répertoires ils sont autorisés ou non à crawler. Les directives Disallow empêchent le crawl de certaines URLs. Attention : robots.txt empêche le crawl mais pas nécessairement l'indexation si d'autres pages pointent vers les URLs bloquées. Bloquer PerplexityBot dans robots.txt exclut le site de l'index Perplexity.",
   },
   {
     letter: 'S',
     id: 'score-de-visibilite',
     name: 'Score de visibilité',
-    definition: "Indicateur agrégé utilisé par les outils SEO (Semrush, Sistrix, Ahrefs) pour mesurer la présence globale d'un site dans les SERPs sur un ensemble de mots-clés suivis. Il tient compte du positionnement et du volume de recherche de chaque mot-clé. En GEO, ce concept évolue vers la part de voix IA, qui mesure la visibilité dans les réponses des LLMs plutôt que dans les listes de résultats.",
+    definition: "Indicateur agrégé utilisé par les outils SEO (Semrush, Sistrix, Ahrefs) pour mesurer la présence globale d'un site dans les SERPs sur un ensemble de mots-clés suivis. En GEO, ce concept évolue vers la Part de voix IA et l'Answer Share, qui mesurent la visibilité dans les réponses des LLMs plutôt que dans les listes de résultats.",
   },
   {
     letter: 'S',
@@ -318,7 +408,7 @@ const terms = [
     letter: 'S',
     id: 'seo',
     name: 'SEO (Search Engine Optimization)',
-    definition: "Ensemble des pratiques visant à améliorer le positionnement d'un site ou d'une page dans les résultats organiques des moteurs de recherche. Le SEO se divise en trois grandes dimensions : le SEO technique (crawlabilité, vitesse, structure), le SEO on-page (contenu, mots-clés, balisage) et le SEO off-page (backlinks, autorité). Il reste la fondation sur laquelle le GEO s'appuie : 76,1 % des sources citées dans les AI Overviews proviennent du top 10 organique Google.",
+    definition: "Ensemble des pratiques visant à améliorer le positionnement d'un site ou d'une page dans les résultats organiques des moteurs de recherche. Le SEO se divise en trois grandes dimensions : le SEO technique (crawlabilité, vitesse, structure), le SEO on-page (contenu, mots-clés, balisage) et le SEO off-page (backlinks, autorité). Il reste la fondation sur laquelle le GEO s'appuie : 54,5 % des sources citées dans les AI Overviews proviennent de pages classées organiquement (BrightEdge, sept. 2025).",
   },
   {
     letter: 'S',
@@ -336,7 +426,7 @@ const terms = [
     letter: 'S',
     id: 'slug',
     name: 'Slug',
-    definition: "Partie d'une URL identifiant une page spécifique, généralement dérivée du titre de la page, en minuscules, sans accents, avec des tirets à la place des espaces. Le slug contribue à la lisibilité et à la pertinence SEO de l'URL. Un bon slug est court, descriptif et contient le mot-clé principal de la page (ex. /lexique/rag plutôt que /page?id=42).",
+    definition: "Partie d'une URL identifiant une page spécifique, généralement dérivée du titre de la page, en minuscules, sans accents, avec des tirets à la place des espaces. Le slug contribue à la lisibilité et à la pertinence SEO de l'URL. Un bon slug est court, descriptif et contient le mot-clé principal de la page.",
   },
   {
     letter: 'S',
@@ -348,7 +438,7 @@ const terms = [
     letter: 'T',
     id: 'taux-de-rebond',
     name: 'Taux de rebond',
-    definition: "Pourcentage de sessions au cours desquelles un utilisateur quitte un site après n'avoir consulté qu'une seule page, sans interaction. Un taux de rebond élevé peut signaler un désalignement entre le contenu de la page et l'intent de recherche qui a amené l'utilisateur. En GA4, le taux de rebond est remplacé par le taux d'engagement, qui mesure les sessions avec au moins une interaction significative.",
+    definition: "Pourcentage de sessions au cours desquelles un utilisateur quitte un site après n'avoir consulté qu'une seule page, sans interaction. Un taux de rebond élevé peut signaler un désalignement entre le contenu de la page et l'intention de recherche. En GA4, le taux de rebond est remplacé par le taux d'engagement, qui mesure les sessions avec au moins une interaction significative.",
   },
   {
     letter: 'T',
@@ -366,19 +456,19 @@ const terms = [
     letter: 'U',
     id: 'ugc',
     name: 'UGC (User-Generated Content)',
-    definition: "Contenu produit par les utilisateurs d'une plateforme plutôt que par ses éditeurs : avis, commentaires, posts de forum, threads Reddit, photos... Le UGC bénéficie d'une forte crédibilité auprès des LLMs car il reflète des expériences authentiques et non promotionnelles. Reddit, dont 40,1 % des citations LLM provenaient en 2025 selon Semrush, est la principale source de UGC cité par les IA.",
+    definition: "Contenu produit par les utilisateurs d'une plateforme plutôt que par ses éditeurs : avis, commentaires, posts de forum, threads Reddit, photos... Le UGC bénéficie d'une forte crédibilité auprès des LLMs car il reflète des expériences authentiques et non promotionnelles. Reddit concentrait 40,1 % des citations LLM en 2025 selon Semrush, ce qui en fait la principale source de UGC cité par les IA.",
   },
   {
     letter: 'U',
     id: 'url',
     name: 'URL (Uniform Resource Locator)',
-    definition: "Adresse unique identifiant une ressource sur le web, composée d'un protocole (https://), d'un nom de domaine (jeanbaptisterecolet.fr) et d'un chemin (/lexique). En SEO, une URL bien construite est courte, lisible, sans paramètres superflus, et contient le mot-clé principal de la page via son slug. Les URLs sont des signaux on-page pris en compte par Google et facilitent la compréhension du contenu par les LLMs lors du crawl.",
+    definition: "Adresse unique identifiant une ressource sur le web, composée d'un protocole (https://), d'un nom de domaine et d'un chemin. En SEO, une URL bien construite est courte, lisible, sans paramètres superflus, et contient le mot-clé principal de la page via son slug. Les URLs sont des signaux on-page pris en compte par Google et facilitent la compréhension du contenu par les LLMs lors du crawl.",
   },
   {
     letter: 'Y',
     id: 'ymyl',
     name: 'YMYL (Your Money or Your Life)',
-    definition: "Catégorie de sujets définie par Google dans ses Quality Rater Guidelines qui désigne les contenus pouvant avoir un impact significatif sur la santé, la sécurité financière ou le bien-être des utilisateurs (santé, finance, droit, actualité...). Les pages YMYL sont soumises à des exigences E-E-A-T plus strictes et nécessitent une expertise démontrable, des sources citées et une transparence sur l'identité des auteurs.",
+    definition: "Catégorie de sujets définie par Google dans ses Quality Rater Guidelines qui désigne les contenus pouvant avoir un impact significatif sur la santé, la sécurité financière ou le bien-être des utilisateurs (santé, finance, droit, actualité...). Les pages YMYL sont soumises à des exigences E-E-A-T plus strictes. En GEO, la catégorie YMYL détermine souvent le comportement des IA : forte couverture AIO sur le contenu éducatif santé et finance, mais exclusions totales sur les sujets à risque.",
   },
 ];
 
@@ -400,7 +490,7 @@ const letters = Object.keys(grouped).sort();
     <header class="lexique__header">
       <h1>Lexique SEO & GEO</h1>
       <p class="lexique__intro">
-        Définitions des termes, sigles et acronymes essentiels du référencement naturel et de la recherche générative.
+        Définitions des termes, sigles et acronymes essentiels du référencement naturel et de la recherche générative. Chaque entrée est rédigée pour être citée par les moteurs IA.
       </p>
       <nav class="lexique__nav" aria-label="Navigation alphabétique">
         {letters.map((letter) => (
