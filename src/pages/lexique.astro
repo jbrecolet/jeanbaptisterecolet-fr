@@ -12,7 +12,7 @@ const terms = [
     letter: 'A',
     id: 'ai-mode',
     name: 'AI Mode (Google)',
-    definition: "Interface conversationnelle de Google Search où l'utilisateur dialogue directement avec un modèle Gemini intégré, distinct des AI Overviews classiques. AI Mode permet une conversation multi-tours, là où les AIO fournissent une réponse synthétique unique au-dessus des résultats. Selon les premières analyses, AI Mode favorise les propriétés Google (YouTube, sources institutionnelles) avec un taux de zero-click proche de 93 %.",
+    definition: "Interface conversationnelle de Google Search permettant un dialogue multi-tours avec un modèle Gemini intégré, distincte des AI Overviews classiques qui se limitent à une réponse synthétique unique. Les premières analyses montrent qu'AI Mode concentre ses citations sur des propriétés Google (YouTube, sources institutionnelles) avec un taux de zero-click avoisinant 93 %, ce qui en fait un canal GEO différent des AI Overviews standard.",
   },
   {
     letter: 'A',
@@ -42,7 +42,7 @@ const terms = [
     letter: 'A',
     id: 'answer-share',
     name: 'Answer Share',
-    definition: "Aussi appelé Mention Rate. Pourcentage des requêtes d'un panel défini pour lesquelles un domaine ou une marque est explicitement cité dans la réponse d'un LLM. C'est le KPI central des outils de tracking GEO (Peec.ai, Otterly, AthenaHQ). Sa valeur dépend fortement de la liste de prompts choisie : deux outils mesurant le même site sur des prompts différents donneront des Answer Share très différents.",
+    definition: "Indicateur GEO mesurant la proportion de requêtes d'un panel prédéfini pour lesquelles un domaine apparaît explicitement dans la réponse d'un LLM. Proche du Mention Rate, dont il se distingue parfois par le fait de ne comptabiliser que les citations avec lien sortant. La valeur de cet indicateur dépend entièrement du périmètre de prompts retenu : deux outils qui suivent le même site sur des listes de requêtes différentes produiront des chiffres incomparables. C'est le KPI central des plateformes de tracking GEO comme Peec.ai, Otterly ou AthenaHQ.",
   },
   {
     letter: 'A',
@@ -66,13 +66,13 @@ const terms = [
     letter: 'B',
     id: 'brand-search-lift',
     name: 'Brand Search Lift',
-    definition: "Hausse mesurée des recherches brandées (nom de marque, domaine) dans Google Search Console, utilisée comme proxy indirect de la visibilité dans les LLMs. Le raisonnement : un utilisateur qui voit une marque citée dans une réponse IA mais ne clique pas peut rechercher le nom de la marque dans Google plus tard. C'est le KPI business le plus accessible sans outil de tracking GEO dédié.",
+    definition: "Variation positive du volume de recherches contenant le nom d'une marque dans Google Search Console, interprétée comme un effet indirect de la visibilité dans les LLMs. Quand un utilisateur voit une marque citée dans une réponse IA sans cliquer, il peut la rechercher ultérieurement dans Google de façon autonome. Cette trace dans les données de recherche organique permet d'estimer une visibilité IA sans outil de tracking dédié, ce qui en fait un proxy accessible à n'importe quelle équipe disposant d'un accès à Search Console.",
   },
   {
     letter: 'B',
     id: 'brand-search-volume',
     name: 'Brand Search Volume',
-    definition: "Volume absolu des recherches contenant le nom d'une marque dans Google. Distinct du Brand Search Lift, qui en mesure la variation. Digital Bloom (2025) mesure une corrélation de 0,334 entre brand search volume et probabilité d'être cité par un LLM, ce qui en fait l'un des premiers prédicteurs de visibilité IA mesurés à ce jour, devant le Domain Authority (0,18) et les backlinks (0,12).",
+    definition: "Volume absolu des requêtes Google incluant le nom d'une marque, distinct du Brand Search Lift qui en mesure la variation dans le temps. Digital Bloom (2025) a établi une corrélation de 0,334 entre ce volume et la probabilité d'être cité par un LLM, un coefficient supérieur à celui des backlinks (0,12) et du Domain Authority (0,18). Une marque fréquemment recherchée sur Google est mécaniquement plus présente dans les corpus d'entraînement des modèles de langage, ce qui expliquerait cette corrélation.",
   },
   {
     letter: 'C',
@@ -96,13 +96,13 @@ const terms = [
     letter: 'C',
     id: 'citation-bias',
     name: 'Citation Bias',
-    definition: "Tendance d'un LLM à sur-représenter certains types de sources dans ses réponses, indépendamment de leur qualité réelle. Exemples documentés : ChatGPT sur-cite Wikipedia, Perplexity sur-cite Reddit (46,7 % selon Digital Bloom), Gemini sur-cite les sites de marques (52,15 % selon Yext). Ce biais n'est pas délibéré : il reflète la composition du corpus d'entraînement et la stratégie de grounding de chaque modèle, et il évolue rapidement dans le temps.",
+    definition: "Sur-représentation systématique de certaines catégories de sources dans les réponses d'un LLM, indépendante de leur valeur informative réelle. Ce phénomène est documenté et varie selon les modèles : Perplexity sur-représente Reddit (46,7 % selon Digital Bloom), Gemini favorise les sites de marques directes (52,15 % selon Yext). Ces biais ne sont pas intentionnels : ils reflètent la composition des données d'entraînement et les mécanismes de grounding propres à chaque système, et évoluent à chaque mise à jour majeure de modèle.",
   },
   {
     letter: 'C',
     id: 'citation-drift',
     name: 'Citation Drift',
-    definition: "Volatilité des sources citées par un LLM dans le temps : le même prompt peut être répondu avec des sources différentes d'une semaine à l'autre. Digital Bloom mesure 59,3 % de citation drift mensuel sur les AI Overviews et 54,1 % sur ChatGPT. Le cas le plus documenté : la part de Reddit dans les citations ChatGPT, passée de 60 % à 10 % en 13 semaines (juillet à octobre 2025) selon Semrush. Conséquence opérationnelle : une stratégie GEO sérieuse mesure ses citations de façon récurrente.",
+    definition: "Instabilité des sources citées par un LLM sur une même requête d'un mois à l'autre. Digital Bloom quantifie ce phénomène à 59,3 % sur les AI Overviews et 54,1 % sur ChatGPT : la majorité des sources présentes dans les réponses un mois donné ne le sont plus le mois suivant. L'évolution de Reddit dans les citations ChatGPT entre juillet et octobre 2025 (de 60 % à 10 % selon Semrush) en est l'illustration la plus documentée. Cette volatilité rend indispensable un suivi récurrent des citations plutôt qu'une mesure ponctuelle.",
   },
   {
     letter: 'C',
@@ -144,7 +144,7 @@ const terms = [
     letter: 'C',
     id: 'ctr',
     name: 'CTR (Click-Through Rate)',
-    definition: "Taux de clic calculé en divisant le nombre de clics reçus par le nombre d'impressions dans les résultats de recherche. Ahrefs mesure une chute de 58 % du CTR organique en position 1 quand un AI Overview est présent (analyse sur 300 000 mots-clés, déc. 2025). Mais pour les marques effectivement citées dans un AIO, Seer Interactive documente une remontée du CTR de 1,3 % à 2,4 % entre décembre 2025 et février 2026.",
+    definition: "Taux de clic calculé en divisant le nombre de clics reçus par le nombre d'impressions dans les résultats de recherche. Ahrefs mesure une chute de 78 % du CTR organique en position 1 quand un AI Overview est présent (analyse sur 300 000 mots-clés, déc. 2025). Mais pour les marques effectivement citées dans un AIO, Seer Interactive documente une remontée du CTR de 1,3 % à 2,4 % entre décembre 2025 et février 2026.",
   },
   {
     letter: 'D',
@@ -156,7 +156,7 @@ const terms = [
     letter: 'D',
     id: 'dark-traffic-ia',
     name: 'Dark Traffic IA',
-    definition: "Trafic généré indirectement par une citation dans une réponse LLM, mais non attribué à un canal IA dans Google Analytics 4. Il prend plusieurs formes : copier-coller d'URL (arrive en Direct), recherche brandée différée (arrive en Organic sur une requête de marque), clic depuis l'app mobile (referrer supprimé). C'est l'angle mort principal de la mesure GEO. Le dark traffic IA est estimé à plusieurs fois le trafic referral IA visible dans GA4.",
+    definition: "Part du trafic web induite par une citation dans une réponse IA, mais qui n'apparaît pas sous ce libellé dans les outils d'analyse. Un utilisateur qui voit une marque citée dans ChatGPT sans cliquer peut l'atteindre en tapant l'URL directement (comptabilisé en Direct), en la cherchant sur Google (comptabilisé en Organic), ou depuis une app mobile (referrer absent). Ce phénomène crée un angle mort structurel dans la mesure GEO : le trafic visible depuis les plateformes IA dans GA4 sous-estime significativement l'impact réel des citations IA.",
   },
   {
     letter: 'D',
@@ -168,7 +168,7 @@ const terms = [
     letter: 'D',
     id: 'dynamic-retrieval',
     name: 'Dynamic Retrieval',
-    definition: "Mécanisme de Gemini (Google) qui décide dynamiquement, pour chaque requête, si une recherche web en temps réel est nécessaire ou si les données d'entraînement suffisent. Paramétrable via l'API Google AI avec un seuil de confiance (défaut : 0,7). En dessous du seuil, Gemini répond depuis ses poids d'entraînement. Au-dessus, il effectue un grounding via Google Search. Ce mécanisme explique pourquoi Gemini ne cite pas les mêmes sources selon le type de requête.",
+    definition: "Mécanisme propre à Gemini qui évalue, requête par requête, si une consultation du web en temps réel est nécessaire ou si le modèle peut répondre depuis ses données d'entraînement. Un seuil de confiance (0,7 par défaut via l'API Google AI) détermine le basculement : en dessous, Gemini génère depuis sa mémoire ; au-dessus, il interroge Google Search. Ce comportement conditionnel explique pourquoi les sources citées par Gemini varient fortement selon la nature de la requête, contrairement à Perplexity qui est grounded par défaut sur toutes les requêtes.",
   },
   {
     letter: 'E',
@@ -204,7 +204,7 @@ const terms = [
     letter: 'G',
     id: 'grounding',
     name: 'Grounding',
-    definition: "Mécanisme par lequel un LLM ancre sa réponse dans des sources web récupérées en temps réel plutôt que dans ses seules données d'entraînement. Le grounding réduit les hallucinations et lie la réponse à des sources vérifiables. Perplexity est grounded par design (toujours). Gemini utilise le Dynamic Retrieval (conditionnel). ChatGPT en mode Search est grounded sur certaines requêtes. Un LLM non-grounded répond depuis ses poids d'entraînement : ses références ne sont pas des liens vers des sources réelles mais des données mémorisées à l'entraînement.",
+    definition: "Procédé par lequel un LLM ancre sa réponse dans des sources web récupérées en temps réel, plutôt que de générer depuis ses seules données d'entraînement. Le grounding limite les hallucinations et produit des réponses avec des références vérifiables. Chaque système l'implémente différemment : Perplexity l'applique sur toutes les requêtes par défaut, Gemini l'active conditionnellement via le Dynamic Retrieval, ChatGPT en mode Search l'utilise sur une sélection de requêtes. Un LLM qui répond sans grounding produit des associations statistiques depuis sa mémoire d'entraînement, pas des citations de sources réelles.",
   },
   {
     letter: 'G',
@@ -216,7 +216,7 @@ const terms = [
     letter: 'H',
     id: 'hallucination',
     name: 'Hallucination',
-    definition: "Production par un LLM d'une information fausse présentée avec la même assurance qu'une information vraie. Les hallucinations ne sont pas des erreurs au sens classique : elles résultent de la nature probabiliste des LLMs, qui génèrent le token le plus probable même en l'absence de donnée factuelle fiable. Le grounding réduit mais n'élimine pas les hallucinations. Pour un site GEO, être une source bien représentée dans l'index d'un LLM réduit le risque qu'il hallucine des informations vous concernant.",
+    definition: "Génération par un LLM d'une affirmation factuellement incorrecte, présentée avec le même degré de confiance qu'une information exacte. Ce phénomène découle de la nature statistique des modèles de langage : ils produisent le token le plus probable à partir du contexte, même quand aucune donnée fiable ne correspond à la requête. Le grounding en temps réel réduit ce risque sans l'éliminer. Pour un site qui souhaite être cité par les LLMs, être une source bien documentée dans leurs données diminue la probabilité qu'un modèle hallucine des informations erronées à son sujet.",
   },
   {
     letter: 'I',
@@ -264,7 +264,7 @@ const terms = [
     letter: 'L',
     id: 'llmo',
     name: 'LLMO (Large Language Model Optimization)',
-    definition: "Terme plus large que GEO, couvrant l'ensemble des stratégies visant à influencer le comportement d'un LLM en lien avec une marque ou un contenu, y compris hors des moteurs de recherche (chatbots d'entreprise, assistants embarqués, agents IA). Moins utilisé dans la pratique que GEO ou AEO, mais conceptuellement plus précis pour désigner l'optimisation pour des LLMs dans des contextes non-search.",
+    definition: "Périmètre d'optimisation plus large que le GEO, qui englobe toutes les stratégies visant à influencer la façon dont un LLM traite et restitue des informations liées à une marque ou un contenu, y compris dans des contextes sans recherche web : chatbots intégrés à des produits, assistants embarqués dans des logiciels, agents IA d'entreprise. Le LLMO reconnaît que les LLMs sont désormais présents bien au-delà des moteurs de recherche, et que la visibilité dans leurs réponses dépasse le seul périmètre du Search.",
   },
   {
     letter: 'L',
@@ -282,7 +282,7 @@ const terms = [
     letter: 'M',
     id: 'mention-rate',
     name: 'Mention Rate',
-    definition: "Pourcentage des prompts d'un panel sur lesquels une marque ou un domaine est explicitement cité dans la réponse d'un LLM. Très proche de l'Answer Share, parfois utilisé comme synonyme, parfois distingué : le Mention Rate compte toute mention textuelle de la marque, l'Answer Share compte uniquement les citations avec lien sortant. Sa valeur dépend fortement de la liste de prompts choisie, ce qui rend la comparaison entre outils difficile sans aligner les périmètres.",
+    definition: "Proportion de prompts d'un panel défini pour lesquels une marque ou un domaine apparaît dans la réponse d'un LLM, que ce soit avec ou sans lien sortant. Souvent confondu avec l'Answer Share, dont il se distingue parfois par le fait de comptabiliser toutes les mentions textuelles et pas uniquement les citations avec URL. La robustesse de cette métrique dépend de la qualité du panel de prompts : un panel trop générique ou trop spécifique peut produire des chiffres non représentatifs de la visibilité réelle.",
   },
   {
     letter: 'M',
@@ -306,7 +306,7 @@ const terms = [
     letter: 'M',
     id: 'multi-turn',
     name: 'Multi-turn',
-    definition: "Échange en plusieurs tours entre un utilisateur et un LLM, par opposition à la requête unique du moteur de recherche classique. Une session ChatGPT ou Perplexity dure typiquement 3 à 7 tours. Cette dynamique change la nature des sources retenues : le LLM affine sa compréhension du besoin au fil de la conversation, et la citation finale dépend de l'historique du dialogue, pas seulement du dernier prompt. Le visiteur arrivé d'un LLM via une conversation multi-tour est généralement plus avancé dans sa réflexion qu'un visiteur organique.",
+    definition: "Mode d'interaction dans lequel un utilisateur affine sa demande en plusieurs échanges successifs avec un LLM, par opposition à la requête unique du moteur de recherche classique. Une session sur ChatGPT ou Perplexity dure typiquement entre 3 et 7 tours. Ce format modifie la nature des sources qui seront finalement citées : le modèle construit une compréhension progressive du besoin et les références sélectionnées dans la dernière réponse dépendent de l'ensemble du contexte conversationnel. L'utilisateur qui arrive sur un site depuis une conversation multi-turn est généralement plus avancé dans sa réflexion qu'un visiteur organique.",
   },
   {
     letter: 'N',
@@ -342,7 +342,7 @@ const terms = [
     letter: 'P',
     id: 'perplexitybot',
     name: 'PerplexityBot',
-    definition: "Robot d'indexation de Perplexity, distinct de Googlebot et Bingbot. Perplexity maintient son propre index web de plus de 200 milliards d'URLs et le rafraîchit indépendamment des autres moteurs. Identifier PerplexityBot dans les logs serveur indique que Perplexity crawle le site. Le bloquer dans robots.txt exclut le site de l'index Perplexity et donc de ses réponses génératives.",
+    definition: "Robot d'indexation exploité par Perplexity pour alimenter son propre index web, indépendant de celui de Google ou Bing. Cet index dépasse 200 milliards d'URLs et est rafraîchi selon une cadence propre à Perplexity. Sa présence dans les logs serveur d'un site confirme que Perplexity crawle et peut potentiellement citer ce site dans ses réponses. Le bloquer via robots.txt exclut le site de l'index Perplexity et donc de toute citation dans ses réponses génératives.",
   },
   {
     letter: 'P',
@@ -354,7 +354,7 @@ const terms = [
     letter: 'R',
     id: 'rag',
     name: 'RAG (Retrieval-Augmented Generation)',
-    definition: "Architecture technique permettant à un LLM de récupérer des informations depuis des sources externes (web, base documentaire) avant de générer sa réponse. Plutôt que de s'appuyer uniquement sur ses données d'entraînement, le modèle décompose la requête, récupère les passages les plus pertinents (chunks), puis les intègre dans sa réponse avec citations. Perplexity est architecturellement un RAG sur index web. Le RAG est le mécanisme principal par lequel les LLMs citent du contenu en temps réel.",
+    definition: "Architecture technique permettant à un LLM de récupérer des informations depuis des sources externes (web, base documentaire) avant de générer sa réponse. Plutôt que de s'appuyer uniquement sur ses données d'entraînement, le modèle décompose la requête, récupère les passages les plus pertinents (chunks), puis les intègre dans sa réponse avec citations. Perplexity est architecturalement un RAG sur index web. Le RAG est le mécanisme principal par lequel les LLMs citent du contenu en temps réel.",
   },
   {
     letter: 'R',
