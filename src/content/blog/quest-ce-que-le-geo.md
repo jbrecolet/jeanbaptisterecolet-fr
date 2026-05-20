@@ -1,5 +1,5 @@
 ---
-title: "Qu'est-ce que le GEO ?"
+title: "Qu'est-ce que le GEO (Generative Engine Optimization) ?"
 description: "Découvrez la définition complète du Generative Engine Optimization et apprenez comment adapter efficacement votre stratégie de contenu pour optimiser votre visibilité sur les moteurs de réponses IA."
 tldr: "Le GEO optimise le contenu pour être cité dans les réponses IA. Les signaux clés incluent les citations sourcées, les données chiffrées et l'information essentielle placée dès l'introduction."
 pubDate: 2026-05-20
