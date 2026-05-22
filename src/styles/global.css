@@ -130,6 +130,14 @@ main {
   margin-bottom: var(--space-lg);
   border-radius: 0 var(--radius) var(--radius) 0;
 }
+.tldr-block {
+  background: var(--color-card);
+  border-left: 3px solid var(--color-accent);
+  padding: var(--space-md);
+  margin: var(--space-lg) 0;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  max-width: var(--max-w-text);
+}
 .article__body table {
   width: 100%;
   max-width: none;
