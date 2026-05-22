@@ -107,12 +107,6 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
       <slot />
     </div>
 
-    {data.tldr && (
-      <aside class="tldr-block" aria-label="En résumé">
-        <strong>En résumé :</strong> {data.tldr}
-      </aside>
-    )}
-
     {data.faq && data.faq.length > 0 && (
       <>
         <hr class="faq-divider" />
@@ -147,15 +141,6 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
 
   .article__header {
     margin-bottom: var(--space-lg);
-  }
-
-  .tldr-block {
-    background: var(--color-card);
-    border-left: 3px solid var(--color-accent);
-    padding: var(--space-md);
-    margin-top: var(--space-xl);
-    border-radius: 0 var(--radius) var(--radius) 0;
-    max-width: var(--max-w-text);
   }
 
   .faq-divider {
