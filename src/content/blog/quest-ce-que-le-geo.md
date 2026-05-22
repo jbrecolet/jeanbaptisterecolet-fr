@@ -1,7 +1,6 @@
 ---
 title: "Qu'est-ce que le GEO (Generative Engine Optimization) ?"
 description: "Le GEO optimise le contenu pour être cité dans les réponses IA. Définition, données 2026 et les bonnes pratiques qui fonctionnent."
-excerpt: "L'étude fondatrice date de novembre 2023. En 2026, 25 % des requêtes Google déclenchent un AI Overview. Ce que les données disent vraiment sur comment figurer dans les réponses des IA."
 tldr: "Le GEO optimise le contenu pour être cité par les IA génératives. Trois piliers en 2026 : citations sourcées, données chiffrées et front-loading. Le SEO reste indispensable mais ne suffit plus seul sur les moteurs génératifs indépendants."
 pubDate: 2026-05-20
 cover: "quest-ce-que-le-geo.webp"
