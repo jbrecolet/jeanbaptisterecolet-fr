@@ -177,7 +177,7 @@ La concurrence pour être cité dans les réponses IA sur des requêtes françai
 
 ## Sources
 
-- **L'étude scientifique fondatrice (Novembre 2023) :** *« GEO: Generative Engine Optimization »* par Princeton, Georgia Tech, IIT Delhi et Allen Institute for AI. [Consulter la publication sur arXiv](https://arxiv.org/abs/2311.09735)
-- **Le rapport de référence du marché (Mai 2026) :** *« How Marketers Are Increasing Their GEO Traffic in 2026 »* par The Digital Bloom. Il centralise les données 2025-2026 de l'article (Averi.ai, Brandlight, Growth Memo, Adobe et Gartner). [Consulter le rapport complet sur The Digital Bloom](https://thedigitalbloom.com/learn/geo-traffic-optimization-report-2026/)
-- **Les benchmarks de visibilité Off-Site (2025-2026) :** Études de la suite Semrush sur les volumes de citations (Reddit et LinkedIn). [Lire l'étude sur le Blog Officiel de Semrush](https://www.semrush.com/blog/track-google-ai-mode-visibility-with-semrush/)
-- **Le suivi des Google AI Overviews (2025) :** Données de l'institut BrightEdge mesurant l'évolution et la part des citations issues du Top 10 organique de Google. [Accéder aux données de l'étude sur BrightEdge](https://www.brightedge.com/ai-overviews)
+- L'étude scientifique fondatrice (Novembre 2023) : *« GEO: Generative Engine Optimization »* par Princeton, Georgia Tech, IIT Delhi et Allen Institute for AI. [Consulter la publication sur arXiv](https://arxiv.org/abs/2311.09735)
+- Le rapport de référence du marché (Mai 2026) : *« How Marketers Are Increasing Their GEO Traffic in 2026 »* par The Digital Bloom. Il centralise les données 2025-2026 de l'article (Averi.ai, Brandlight, Growth Memo, Adobe et Gartner). [Consulter le rapport complet sur The Digital Bloom](https://thedigitalbloom.com/learn/geo-traffic-optimization-report-2026/)
+- Les benchmarks de visibilité Off-Site (2025-2026) : Études de la suite Semrush sur les volumes de citations (Reddit et LinkedIn). [Lire l'étude sur le Blog Officiel de Semrush](https://www.semrush.com/blog/track-google-ai-mode-visibility-with-semrush/)
+- Le suivi des Google AI Overviews (2025) : Données de l'institut BrightEdge mesurant l'évolution et la part des citations issues du Top 10 organique de Google. [Accéder aux données de l'étude sur BrightEdge](https://www.brightedge.com/ai-overviews)
