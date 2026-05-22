@@ -1,6 +1,7 @@
 ---
 title: "Reddit et les LLMs : comment devenir une source citée par les IA"
 description: "Reddit est la source la plus citée par les LLMs. Guide pour structurer ses posts, cibler les subreddits pertinents et apparaître dans les réponses IA."
+excerpt: "Une étude Semrush portant sur 150 000 citations LLM révèle que Reddit était la source la plus citée par les IA en 2025, avec une fréquence de 40,1 %. Devant Wikipedia. Devant les grands médias."
 tldr: "Reddit concentrait 40,1% des citations LLM en 2025. Ce qui est cité, ce sont les threads authentiques avec 50+ upvotes, pas les profils de marque. La méthode : cibler les subreddits cités par les IA, structurer ses posts en Answer Capsule, bâtir un historique de compte crédible."
 pubDate: 2026-05-18
 cover: "reddit-llms-source-citee-ia.webp"
