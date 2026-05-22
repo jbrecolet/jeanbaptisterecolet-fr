@@ -1,3 +1,6 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+
 const terms = [
   // A
   {
@@ -10,7 +13,7 @@ const terms = [
     letter: 'A',
     id: 'ai-mode',
     name: 'AI Mode (Google)',
-    definition: "Interface conversationnelle et immersive de Google Search, distincte des AI Overviews. Déployé massivement, l'AI Mode s'active lorsque l'utilisateur bascule volontairement dans un flux de discussion continu avec Gemini. Contrairement aux AI Overviews qui synthétisent la SERP classique, l'AI Mode affiche une volatilité des sources beaucoup plus forte, avec un taux de rotation (citation drift) mesuré à 56 % par semaine par Sistrix en mai 2026.",
+    definition: "Interface conversationnelle et immersive de Google Search, distincte des AI Overviews. L'AI Mode s'active lorsque l'utilisateur bascule volontairement dans un flux de discussion continu avec Gemini. Contrairement aux AI Overviews qui synthétisent la SERP classique, l'AI Mode affiche une volatilité des sources beaucoup plus forte, avec un taux de rotation (citation drift) mesuré à 56 % par semaine par Sistrix en mai 2026.",
   },
   {
     letter: 'A',
@@ -28,7 +31,7 @@ const terms = [
     letter: 'A',
     id: 'anchor-text',
     name: 'Anchor text',
-    definition: "Texte cliquable d'un lien hypertexte, visible par l'utilisateur et interprété par les moteurs de recherche comme un signal de contexte sur la page de destination. Un anchor text descriptif (ex. : \"guide GEO complet\") transmet plus d'information sémantique qu'un anchor générique (ex. : \"cliquez ici\"). En SEO, la diversité et la naturalité des anchor texts d'un profil de backlinks sont des signaux de qualité.",
+    definition: 'Texte cliquable d\'un lien hypertexte, visible par l\'utilisateur et interprété par les moteurs de recherche comme un signal de contexte sur la page de destination. Un anchor text descriptif (ex. : "guide GEO complet") transmet plus d\'information sémantique qu\'un anchor générique (ex. : "cliquez ici"). En SEO, la diversité et la naturalité des anchor texts d\'un profil de backlinks sont des signaux de qualité.',
   },
   {
     letter: 'A',
@@ -488,3 +491,140 @@ const terms = [
     definition: "Catégorie de sujets définie par Google dans ses Quality Rater Guidelines qui désigne les contenus pouvant avoir un impact significatif sur la santé, la sécurité financière ou le bien-être des utilisateurs (santé, finance, droit, actualité...). Les pages YMYL sont soumises à des exigences E-E-A-T plus strictes. En GEO, la catégorie YMYL détermine souvent le comportement des IA : forte couverture AIO sur le contenu éducatif santé et finance, mais exclusions totales sur les sujets à risque.",
   },
 ];
+
+const grouped = terms.reduce((acc, term) => {
+  if (!acc[term.letter]) acc[term.letter] = [];
+  acc[term.letter].push(term);
+  return acc;
+}, {} as Record<string, typeof terms>);
+
+const letters = Object.keys(grouped).sort();
+---
+
+<BaseLayout
+  title="Lexique SEO & GEO — Jean-Baptiste Récolet"
+  description="Définitions claires des termes et acronymes du SEO, du GEO et de la recherche générative : LLM, RAG, E-E-A-T, CTR, SERP, AI Overviews et bien d'autres."
+>
+  <div class="lexique">
+
+    <header class="lexique__header">
+      <h1>Lexique SEO & GEO</h1>
+      <p class="lexique__intro">
+        Définitions des termes, sigles et acronymes essentiels du référencement naturel et de la recherche générative. Chaque entrée est rédigée pour être citée par les moteurs IA.
+      </p>
+      <nav class="lexique__nav" aria-label="Navigation alphabétique">
+        {letters.map((letter) => (
+          <a href={`#lettre-${letter}`}>{letter}</a>
+        ))}
+      </nav>
+    </header>
+
+    {letters.map((letter) => (
+      <section class="lexique__section" id={`lettre-${letter}`}>
+        <h2 class="lexique__letter">{letter}</h2>
+        <dl class="lexique__list">
+          {grouped[letter].map((term) => (
+            <>
+              <dt class="lexique__term" id={term.id}>
+                <a href={`#${term.id}`} class="lexique__anchor">{term.name}</a>
+              </dt>
+              <dd class="lexique__def">{term.definition}</dd>
+            </>
+          ))}
+        </dl>
+      </section>
+    ))}
+
+  </div>
+</BaseLayout>
+
+<style>
+  .lexique {
+    max-width: var(--max-w-text);
+    margin: 0 auto;
+  }
+
+  .lexique__header {
+    margin-bottom: var(--space-xl);
+  }
+
+  .lexique__intro {
+    margin-top: var(--space-sm);
+    color: var(--color-muted);
+    font-size: 1.1rem;
+  }
+
+  .lexique__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: var(--space-lg);
+    padding: var(--space-md);
+    background: var(--color-rule);
+    border-radius: var(--radius);
+    max-width: none;
+  }
+
+  .lexique__nav a {
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: var(--color-accent);
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radius);
+    transition: background 0.15s;
+  }
+
+  .lexique__nav a:hover {
+    background: var(--color-accent);
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .lexique__section {
+    margin-top: var(--space-xl);
+    padding-top: var(--space-md);
+    border-top: 2px solid var(--color-rule);
+  }
+
+  .lexique__letter {
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    color: var(--color-accent);
+    margin-top: 0;
+    margin-bottom: var(--space-md);
+  }
+
+  .lexique__list {
+    max-width: none;
+  }
+
+  .lexique__term {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-top: var(--space-lg);
+    color: var(--color-text);
+    scroll-margin-top: 80px;
+  }
+
+  .lexique__term:first-child {
+    margin-top: 0;
+  }
+
+  .lexique__anchor {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .lexique__anchor:hover {
+    color: var(--color-accent);
+  }
+
+  .lexique__def {
+    margin-top: var(--space-xs);
+    margin-left: 0;
+    color: var(--color-text);
+    line-height: 1.7;
+    max-width: none;
+  }
+</style>
