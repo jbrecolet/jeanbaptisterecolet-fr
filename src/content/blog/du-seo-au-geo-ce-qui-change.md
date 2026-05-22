@@ -1,7 +1,6 @@
 ---
 title: "Du SEO au GEO : ce qui change vraiment"
 description: "SEO et GEO ne s'opposent pas mais leurs signaux divergent radicalement. Corrélations mesurées, données 2026 et pratiques concrètes pour naviguer entre les deux."
-excerpt: "Les backlinks ont une corrélation de 0,12 avec la visibilité dans les LLMs. Les citations éditoriales atteignent 0,61. Ce n'est pas une nuance, c'est un retournement de priorité."
 tldr: "Le SEO reste la fondation : 54,5 % des citations AIO viennent de pages classées organiquement. Mais 83 % viennent d'en dehors du top 10 Google. Les signaux GEO les plus forts (citations éditoriales, brand search volume) sont quasi-neutres en SEO classique."
 pubDate: 2026-05-20
 cover: "seo-geo-content-managers.webp"
