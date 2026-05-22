@@ -6,6 +6,28 @@ const posts = await getCollection('blog', ({ data }) => !data.draft);
 const sortedPosts = posts.sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
+
+const getExcerpt = (entry) => {
+  if (entry.data.excerpt) return entry.data.excerpt;
+  const paragraphs = (entry.body ?? '').split('\n\n').filter(p => {
+    const t = p.trim();
+    return (
+      t &&
+      !t.startsWith('#') &&
+      !t.startsWith('---') &&
+      !t.startsWith('<') &&
+      !t.startsWith('|') &&
+      !t.startsWith('-') &&
+      !t.startsWith('*')
+    );
+  });
+  const first = paragraphs[0]
+    ?.replace(/\*\*/g, '')
+    .replace(/\*/g, '')
+    .replace(/_/g, '')
+    .trim();
+  return first || entry.data.description;
+};
 ---
 
 <BaseLayout
@@ -36,7 +58,7 @@ const sortedPosts = posts.sort(
               <h3 class="article-card__title">
                 <a href={`/blog/${post.id}`}>{post.data.title}</a>
               </h3>
-              <p class="article-card__desc">{post.data.excerpt ?? post.data.description}</p>
+              <p class="article-card__desc">{getExcerpt(post)}</p>
             </div>
           </li>
         ))}
@@ -89,7 +111,14 @@ const sortedPosts = posts.sort(
   .article-card__title { margin: 0; }
   .article-card__title a { text-decoration: none; color: inherit; }
   .article-card__title a:hover { color: var(--color-accent); }
-  .article-card__desc { color: var(--color-muted); font-size: 0.9375rem; }
+  .article-card__desc {
+    color: var(--color-muted);
+    font-size: 0.9375rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 
   @media (max-width: 900px) {
     .article-grid { grid-template-columns: repeat(2, 1fr); }
