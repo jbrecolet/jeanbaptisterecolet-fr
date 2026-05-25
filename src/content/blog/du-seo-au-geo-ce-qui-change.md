@@ -1,6 +1,6 @@
 ---
 title: "Du SEO au GEO : ce qui change vraiment"
-description: "54,5 % des citations dans les AI Overviews viennent de pages classées organiquement. Mais seulement 17 % viennent du top 10. Ce que les données 2026 disent de la frontière entre les deux disciplines."
+description: "54,5 % des citations AIO viennent de pages classées organiquement, mais 17 % seulement du top 10. Ce que les données 2026 disent de la frontière SEO/GEO."
 excerpt: "Le SEO est mort, remplacé par le GEO. C’est en substance ce que nombre d’experts proclament depuis des mois. C’est normal : l’époque est aux phrases choc et aux conclusions souvent hâtives. Mais les chiffres imposent d’être beaucoup plus nuancé."
 tldr: "Le SEO reste le prérequis : sans indexation correcte, pas de visibilité IA même si 83 % des citations LLM viennent de sources hors top 10 Google (BrightEdge, 2026). Ce qui fait la différence : des données chiffrées et sourcées, des experts nommés et une présence off-site."
 pubDate: 2026-05-20
