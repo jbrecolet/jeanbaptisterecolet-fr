@@ -46,7 +46,7 @@ Quelques mois plus tard, nouveaux chiffres : seulement 17 % de ces citations v
 
 Ces deux chiffres ne se contredisent pas. Ils documentent la même réalité sous deux angles différents : les deux disciplines se complètent. Si le SEO aide grandement à être pris en compte par les LLM, il ne garantit pas d’être cité par ces derniers. En clair, il n’est pas mort mais il ne suffit plus.
 
-<aside class="tldr-block"><strong>En bref :</strong> Le SEO reste le prérequis indispensable au GEO, mais ne suffit pas à assurer à lui seul la visibilité dans les LLM. Sur les AI Overviews de Google, seulement 17 % des citations viennent du top 10 organique (BrightEdge, 2026). Sur les moteurs génératifs indépendants, Brandlight (2026) mesure que le chevauchement avec le top organique Google est tombé sous 20 %, tous LLM confondus. Les signaux qui prédisent le mieux la visibilité IA sont les mentions éditoriales (corrélation 0,664) et le <em>brand search volume</em> (0,334), deux métriques quasi-neutres pour le classement SEO classique (Averi.ai / Digital Bloom, 2026).</aside>
+<aside class="tldr-block"><strong>En bref :</strong> Le SEO reste le prérequis indispensable au GEO mais il ne suffit pas à assurer à lui seul la visibilité dans les LLM. Ce qui fait la différence désormais : des données chiffrées et sourcées, des citations d'experts nommés et une stratégie GEO off-site.</aside>
 
 ## Le SEO, point de départ du GEO
 
