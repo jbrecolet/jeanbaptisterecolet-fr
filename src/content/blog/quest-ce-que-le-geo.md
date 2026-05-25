@@ -2,7 +2,7 @@
 title: "Qu'est-ce que le GEO (Generative Engine Optimization) ?"
 description: "Le GEO optimise le contenu pour être cité dans les réponses IA. Définition, données 2026 et les bonnes pratiques qui fonctionnent."
 excerpt: "Novembre 2023. Une équipe de chercheurs de Princeton, IIT Delhi, Georgia Tech et de l'Allen Institute for AI publie une étude qui va changer la face du Search."
-tldr: "Le GEO (Generative Engine Optimization) désigne l'ensemble des pratiques visant à optimiser un contenu pour qu'il soit cité par les IA génératives (ChatGPT, Perplexity, Gemini). En 2026, la clé du succès repose sur trois piliers majeurs : des citations sourcées, l'intégration de données chiffrées précises et une réponse immédiate placée en tête de page."
+tldr: "Le GEO (Generative Engine Optimization) désigne l'ensemble des pratiques visant à optimiser un contenu pour qu'il soit cité par les IA génératives (ChatGPT, Perplexity, Gemini)."
 pubDate: 2026-05-20
 cover: "quest-ce-que-le-geo.webp"
 coverAlt: "Qu'est-ce que le GEO (Generative Engine Optimization) ?"
