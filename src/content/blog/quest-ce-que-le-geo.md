@@ -38,9 +38,9 @@ faq:
       RAG signifie Retrieval-Augmented Generation. Plutôt que de générer une réponse depuis sa mémoire d'entraînement, le modèle décompose la requête, récupère les passages les plus pertinents depuis le web (des chunks de 60 à 300 mots), puis synthétise une réponse avec citations. Un paragraphe autoporteur qui répond directement à une question sera extrait ; un paragraphe qui dépend de son contexte pour avoir du sens sera ignoré.
 ---
 
-Novembre 2023. Une équipe de chercheurs de Princeton, IIT Delhi, Georgia Tech et de l'Allen Institute for AI publie une étude.
+**Novembre 2023. Une équipe de chercheurs de Princeton, IIT Delhi, Georgia Tech et de l'Allen Institute for AI publie une étude.
 
-Selon eux, les moteurs de recherche traditionnels (fondés sur des listes de liens bleus) sont en train de basculer vers des moteurs de réponses génératifs (comme l'interface de ChatGPT ou les Google Overviews).
+Selon eux, les moteurs de recherche traditionnels (fondés sur des listes de liens bleus) sont en train de basculer vers des moteurs de réponses génératifs (comme l'interface de ChatGPT ou les Google Overviews).**
 
 Face à l'émergence rapide des IA génératives, le SEO classique devient insuffisant et l'étude propose alors un cadre théorique et pratique pour optimiser la visibilité des sites web dans ces résumés d'IA.
 
