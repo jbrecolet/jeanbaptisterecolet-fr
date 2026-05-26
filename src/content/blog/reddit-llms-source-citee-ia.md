@@ -26,13 +26,13 @@ faq:
       La stratégie recommandée pour un objectif long terme dure 6 à 8 semaines. Les deux premières semaines sont consacrées à l'observation pure, les semaines 3 à 6 à la contribution non promotionnelle, les semaines 7 et 8 aux premières contributions d'expertise. Le compte est considéré comme crédible à partir de 30 jours d'historique et 300 de karma total.
   - question: "Comment identifier les subreddits déjà cités par les LLMs ?"
     answer: >-
-      La méthode du <em>reverse engineering</em> : lister ses 10 requêtes prioritaires, les poser dans ChatGPT, Perplexity et Google AI Overviews, noter les threads Reddit qui apparaissent dans les réponses. Les subreddits qui reviennent constituent la <em>shortlist</em> opérationnelle. C'est la seule méthode fiable pour ne pas choisir ses cibles par intuition.
+      La méthode du reverse engineering : lister ses 10 requêtes prioritaires, les poser dans ChatGPT, Perplexity et Google AI Overviews, noter les threads Reddit qui apparaissent dans les réponses. Les subreddits qui reviennent constituent la shortlist opérationnelle. C'est la seule méthode fiable pour ne pas choisir ses cibles par intuition.
   - question: "Quels sont les signaux qui déclenchent un ban ou un shadowban ?"
     answer: >-
-      Les principaux déclencheurs : compte de moins de 30 jours qui poste un lien externe, même commentaire copié-collé dans plusieurs subreddits, liens vers un site propriétaire dans le corps d'un post, activité trop intense dans les premiers jours du compte. Le <em>shadowban</em> est silencieux : une vérification régulière depuis un compte déconnecté permet de le détecter.
+      Les principaux déclencheurs : compte de moins de 30 jours qui poste un lien externe, même commentaire copié-collé dans plusieurs subreddits, liens vers un site propriétaire dans le corps d'un post, activité trop intense dans les premiers jours du compte. Le shadowban est silencieux : une vérification régulière depuis un compte déconnecté permet de le détecter.
   - question: "Quelle est la différence entre un post Reddit et un article de blog pour le GEO ?"
     answer: >-
-      Un article de blog est optimisé pour apparaître dans une liste de résultats classés sur Google. Un post Reddit est optimisé pour devenir la réponse canonique d'une question posée par d'autres humains dans une communauté spécifique. Les LLMs extraient des <em>chunks</em> de 60 à 300 mots depuis ces threads : chaque section du post doit fonctionner seule, sans dépendre du contexte environnant.
+      Un article de blog est optimisé pour apparaître dans une liste de résultats classés sur Google. Un post Reddit est optimisé pour devenir la réponse canonique d'une question posée par d'autres humains dans une communauté spécifique. Les LLMs extraient des chunks de 60 à 300 mots depuis ces threads : chaque section du post doit fonctionner seule, sans dépendre du contexte environnant.
   - question: "La stratégie Reddit francophone est-elle viable ?"
     answer: >-
       Particulièrement. Les threads Reddit en français cités par les LLMs sont rares. Les contenus francophones structurés pour l'extraction IA représentent une fraction infime de ce qui existe en anglais. La concurrence est donc bien moindre sur les requêtes francophones que sur les mêmes requêtes en anglais.
@@ -46,7 +46,7 @@ Selon la même étude, 99 % des citations Reddit dans ChatGPT pointent vers des
 
 Dans le cadre d'une stratégie GEO <em>off-site</em> efficace, la présence dans des conversations Reddit s'impose comme une évidence. Voici comment y parvenir.
 
-<aside class="tldr-block"><strong>En bref :</strong> Reddit est la source la plus citée par les IA en 2025 (Semrush, 40,1 % des citations LLM). Une stratégie GEO <em>off-site</em> sur ce canal est donc une aubaine à ne pas manquer. Pour y parvenir, trois règles incontournables : construire un compte crédible avant de poster, structurer ses contributions en <em>Answer Capsule</em> et ne cibler que les subreddits effectivement cités par les LLM.</aside>
+<aside class="tldr-block"><strong>En bref :</strong> Reddit est la source la plus citée par les IA en 2025 (Semrush, 40,1 % des citations LLM). Une stratégie GEO off-site sur ce canal est donc une aubaine à ne pas manquer. Pour y parvenir, trois règles incontournables : construire un compte crédible avant de poster, structurer ses contributions en Answer Capsule et ne cibler que les subreddits effectivement cités par les LLM sur ses requêtes.</aside>
 
 ## Pourquoi les LLM adorent Reddit
 
