@@ -35,7 +35,7 @@ faq:
       Un article de blog est optimisé pour apparaître dans une liste de résultats classés sur Google. Un post Reddit est optimisé pour devenir la réponse canonique d'une question posée par d'autres humains dans une communauté spécifique. Les LLMs extraient des chunks de 60 à 300 mots depuis ces threads : chaque section du post doit fonctionner seule, sans dépendre du contexte environnant.
   - question: "La stratégie Reddit francophone est-elle viable ?"
     answer: >-
-      Oui. Les threads Reddit en français cités par les LLMs sont rares. Les contenus francophones structurés pour l'extraction IA représentent une fraction infime de ce qui existe en anglais. La concurrence est donc bien moindre sur les requêtes francophones que sur les mêmes requêtes en anglais.
+      Oui. Les fils de discussion Reddit en français cités par les LLMs sont rares. Les contenus francophones structurés pour l'extraction IA représentent une fraction infime de ce qui existe en anglais. La concurrence est donc bien moindre sur les requêtes francophones que sur les mêmes requêtes en anglais.
 ---
 
 Une étude Semrush portant sur 150 000 citations LLM révèle que Reddit était la source la plus citée par les IA en 2025, avec une fréquence de 40,1 %. Devant Wikipedia. Devant les grands médias. Devant les sites spécialisés qui ont pourtant passé des années à construire leur autorité SEO.
@@ -157,7 +157,7 @@ Seul GA4 apporte une mesure complémentaire et partielle : les utilisateurs qui
 
 Mais cette limite dans le suivi est, au fond, un moindre mal. Une stratégie GEO sur Reddit se construit sur plusieurs mois, pas en quelques semaines. Les outils suivront.
 
-En revanche, c'est précisément parce que c'est un investissement à long terme qu'il vaut mieux s'y mettre maintenant : la fenêtre est encore largement ouverte, particulièrement en France où l'immense majorité des entreprises se bat encore pour des positions Google. Les <em>threads</em> Reddit en français cités par les LLM sont rares. Celui qui s'installe comme référence sur 5 à 10 requêtes clés dans les bons subreddits prend une avance qui durera des années.
+En revanche, c'est précisément parce que c'est un investissement à long terme qu'il vaut mieux s'y mettre maintenant : la fenêtre est encore largement ouverte, particulièrement en France où l'immense majorité des entreprises se bat encore pour des positions Google. Les fiils de discussion Reddit en français cités par les LLM sont rares. Celui qui s'installe comme référence sur 5 à 10 requêtes clés dans les bons subreddits prend une avance qui durera des années.
 
 ## Sources
 
