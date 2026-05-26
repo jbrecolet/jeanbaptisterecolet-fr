@@ -38,7 +38,7 @@ faq:
       Non. Un contenu approfondi, structuré, sourcé et régulièrement mis à jour sert les deux disciplines. Ce qui change, c'est la hiérarchie des signaux et les métriques de performance. L'indexation technique et l'autorité de domaine restent la voie d'entrée préférentielle pour l'écosystème Google. Les mentions éditoriales et le brand search volume sont les signaux distinctifs du GEO sur les LLM indépendants.
 ---
 
-Le SEO est mort, remplacé par le GEO. C’est en substance ce que nombre d’experts proclament depuis des mois. C’est normal : l’époque est aux phrases choc et aux conclusions souvent hâtives. Mais les chiffres imposent d’être beaucoup plus nuancé.
+<strong>Le SEO est mort, remplacé par le GEO. C’est en substance ce que nombre d’experts proclament depuis des mois. C’est normal : l’époque est aux phrases choc et aux conclusions souvent hâtives. Mais les chiffres imposent d’être beaucoup plus nuancé.</strong>
 
 En septembre 2025, l’entreprise BrightEdge publiait les données de 16 mois de suivi des AI Overviews. Résultat : 54,5 % des citations proviennent des pages classées organiquement dans les SERP. Le SEO nourrit le GEO.
 
@@ -46,7 +46,7 @@ Quelques mois plus tard, nouveaux chiffres : seulement 17 % de ces citations v
 
 Ces deux chiffres ne se contredisent pas. Ils documentent la même réalité sous deux angles différents : les deux disciplines se complètent. Si le SEO aide grandement à être pris en compte par les LLM, il ne garantit pas d’être cité par ces derniers. En clair, il n’est pas mort mais il ne suffit plus.
 
-<aside class="tldr-block"><strong>En bref :</strong> Le SEO reste le prérequis indispensable au GEO mais il ne suffit pas à assurer à lui seul la visibilité dans les LLM. Ce qui fait la différence désormais : des données chiffrées et sourcées, des citations d'experts nommés et une stratégie GEO off-site.</aside>
+<aside class="tldr-block"><strong>En bref :</strong> Le SEO reste le prérequis indispensable au GEO mais il ne suffit pas à assurer à lui seul la visibilité dans les LLM. Ce qui fait la différence désormais : des données chiffrées et sourcées, des citations d'experts nommés et une stratégie GEO <em>off-site</em>.</aside>
 
 ## Le SEO, point de départ du GEO
 
