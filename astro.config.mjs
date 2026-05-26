@@ -3,8 +3,8 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import partytown from '@astrojs/partytown';
 import mdx from '@astrojs/mdx';
+import rehypeExternalLinks from 'rehype-external-links';
 
-// https://astro.build/config
 export default defineConfig({
   site: 'https://jeanbaptisterecolet.fr',
   trailingSlash: 'never',
@@ -18,6 +18,11 @@ export default defineConfig({
     }),
     mdx(),
   ],
+  markdown: {
+    rehypePlugins: [
+      [rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }],
+    ],
+  },
   prefetch: {
     defaultStrategy: 'viewport',
   },
