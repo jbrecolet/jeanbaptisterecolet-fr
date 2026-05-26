@@ -177,8 +177,6 @@ La concurrence pour être cité dans les réponses IA sur des requêtes françai
 
 ## Sources
 
-## Sources
-
 - Aggarwal et al., *«&nbsp;GEO: Generative Engine Optimization&nbsp;»*, Princeton / IIT Delhi / Georgia Tech / Allen AI, présentée à ACM SIGKDD, août 2024. [arxiv.org/abs/2311.09735](https://arxiv.org/abs/2311.09735)
 - The Digital Bloom, *«&nbsp;How Marketers Are Increasing Their GEO Traffic in 2026&nbsp;»*, mai 2026. [thedigitalbloom.com](https://thedigitalbloom.com/learn/geo-traffic-optimization-report-2026/)
 - Semrush, études sur les volumes de citations LLM (Reddit, LinkedIn), 2025-2026. [semrush.com](https://www.semrush.com/blog/track-google-ai-mode-visibility-with-semrush/)
