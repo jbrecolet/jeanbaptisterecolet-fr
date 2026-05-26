@@ -44,7 +44,7 @@ Une surprise ? Pas tant que cela : les LLM valorisent les réponses humaines, 
 
 Selon la même étude, 99 % des citations Reddit dans ChatGPT pointent vers des <em>threads</em> de discussion uniques. Pas des profils de marque. Des conversations. Ce qui est favorisé, et donc cité, c'est l'engagement communautaire authentique.
 
-Dans le cadre d'une stratégie GEO <em>off-site</em> efficace, la présence dans des conversations Reddit s'impose comme une évidence. Voici comment y parvenir.
+Dans le cadre d'une [stratégie GEO *off-site*](/blog/quest-ce-que-le-geo) efficace, la présence dans des conversations Reddit s'impose comme une évidence. Voici comment y parvenir.
 
 <aside class="tldr-block"><strong>En bref :</strong> Reddit est la source la plus citée par les IA en 2025 (Semrush, 40,1 % des citations LLM). Une stratégie GEO off-site sur ce canal est donc une aubaine à ne pas manquer. Pour y parvenir, trois règles incontournables : construire un compte crédible avant de poster, structurer ses contributions en Answer Capsule et ne cibler que les subreddits effectivement cités par les LLM sur ses requêtes.</aside>
 
@@ -68,7 +68,7 @@ Le karma du compte auteur joue aussi : les nouveaux comptes sont dépriorisés 
 
 Sur le format, voici ce qui ressort des études : un titre formulé comme une question, une réponse structurée avec expérience concrète, un ton neutre et factuel et aucun signal promotionnel (qui pourrait trahir la volonté mercantile de l'opération !). De la même manière, la pertinence thématique et la qualité du subreddit comptent davantage que le nombre brut d'upvotes.
 
-Pour les habituel du SEO classique, c'est un virage à 180 degrés. On n'est plus dans une logique de production rapide de contenu optimisé pour des mots-clés mais dans une logique d'investissement à long terme sur un petit ensemble de <em>threads</em> canoniques. Ceux qui deviennent la référence sur une question donnée dans une communauté spécifique.
+Pour les habitués du [SEO classique](/blog/du-seo-au-geo-ce-qui-change), c'est un virage à 180 degrés. On n'est plus dans une logique de production rapide de contenu optimisé pour des mots-clés mais dans une logique d'investissement à long terme sur un petit ensemble de <em>threads</em> canoniques. Ceux qui deviennent la référence sur une question donnée dans une communauté spécifique.
 
 ## Construire un compte Reddit crédible
 
