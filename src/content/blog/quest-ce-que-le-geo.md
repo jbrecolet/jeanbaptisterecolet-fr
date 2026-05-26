@@ -46,7 +46,7 @@ Face à l'émergence rapide des IA génératives, le SEO classique devient insuf
 
 Cette étude sortira sous le titre exact de *« GEO: Generative Engine Optimization »* et sera la pierre fondatrice de cette « nouvelle » discipline. Explications.
 
-<aside class="tldr-block"><strong>En bref :</strong> Le GEO (Generative Engine Optimization) désigne l'ensemble des pratiques visant à optimiser un contenu pour qu'il soit cité par les IA génératives (ChatGPT, Perplexity, Gemini). En 2026, la clé du succès repose sur des citations sourcées, l'intégration de données chiffrées précises, une réponse immédiate placée en tête de page et une stratégie GEO off-site.</aside>
+<aside class="tldr-block"><strong>En bref :</strong> Le GEO (<em>Generative Engine Optimization</em>em>) désigne l'ensemble des pratiques visant à optimiser un contenu pour qu'il soit cité par les IA génératives (ChatGPT, Perplexity, Gemini). En 2026, la clé du succès repose sur des citations sourcées, l'intégration de données chiffrées précises, une réponse immédiate placée en tête de page et une stratégie GEO <em>off-site</em>.</aside>
 
 ## Qu'est-ce que le GEO, précisément ?
 
