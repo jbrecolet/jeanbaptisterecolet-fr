@@ -46,7 +46,7 @@ Selon la même étude, 99 % des citations Reddit dans ChatGPT pointent vers des
 
 Dans le cadre d'une stratégie GEO <em>off-site</em> efficace, la présence dans des conversations Reddit s'impose comme une évidence. Voici comment y parvenir.
 
-<aside class="tldr-block"><strong>En bref :</strong> Reddit est la source la plus citée par les IA en 2025 (Semrush, 40,1 % des citations LLM). Une stratégie GEO <em>off-site</em> sur ce canal est donc une aubaine à ne pas manquer. Pour y parvenir, trois règles incontournables : construire un compte crédible avant de poster, structurer ses contributions en <em>Answer Capsule</em>, et cibler uniquement les subreddits que les LLM citent effectivement sur ses requêtes clés.</aside>
+<aside class="tldr-block"><strong>En bref :</strong> Reddit est la source la plus citée par les IA en 2025 (Semrush, 40,1 % des citations LLM). Une stratégie GEO <em>off-site</em> sur ce canal est donc une aubaine à ne pas manquer. Pour y parvenir, trois règles incontournables : construire un compte crédible avant de poster, structurer ses contributions en <em>Answer Capsule</em> et ne cibler que les subreddits effectivement cités par les LLM.</aside>
 
 ## Pourquoi les LLM adorent Reddit
 
@@ -79,8 +79,11 @@ Sur Reddit, le karma n'est pas qu'un score : c'est la mesure de l'utilité per�
 La stratégie de construction recommandée pour un objectif long terme suit une progression sur 6 à 8 semaines :
 
 - Semaines 1 et 2 : observation pure, <em>upvotes</em> de 5 à 10 posts par jour, aucun commentaire. L'objectif est de rejoindre les communautés cibles sans s'y exposer.
+
 - Semaines 3 et 4 : commentaires courts et honnêtes, questions ouvertes, 3 à 5 interactions par jour pour atteindre 50 de karma.
+
 - Semaines 5 et 6 : premiers posts non promotionnels, participation régulière aux discussions, karma ciblé à 150.
+
 - Semaines 7 et 8 : contribution d'expertise sur des sujets liés au domaine, sans lien ni mention de marque, karma ciblé à 300.
 
 C'est seulement à ce stade que le compte est prêt pour contribuer stratégiquement. La règle communment admise des 80/20 prévaut : 80 % de contenu utile et non promotionnel, 20 % de mentions liées au domaine d'expertise. La promotion masquée est immédiatement détectée par les communautés Reddit et sanctionnée. Oui, ça ne blague pas.
@@ -96,9 +99,13 @@ Par exemple, pour ce qui est du SEO et du marketing digital, certains subreddits
 De manière générale, il existe cinq critères pour identifier un bon subreddit :
 
 - une activité régulière avec au moins 5 nouveaux posts par jour (idéalement)
+
 - une présence récurrente de <em>threads</em> de comparaison type « X vs Y »
+
 - un engagement qualitatif (si possible avec 30 commentaires constructifs)
+
 - modration active avec des règles claires
+
 - la confirmation que les LLM le citent effectivement sur les requêtes cibles, comme évoqué précédemment
 
 Mais ce n'est pas tout.
@@ -114,8 +121,11 @@ Le résumé de 2 à 3 lignes en ouverture est ce que les LLM extraient en priori
 Ensuite, le corps du post doit idéalement reposer sur quatre éléments :
 
 - le contexte personnel en un paragraphe : qui parle, pourquoi cette expérience est pertinente, sans mention de marque ou de produit.
+
 - la réponse structurée avec sous-titres en gras et listes hiérarchiques : les LLM aiment les structures claires pour extraire des passages précis.
+
 - les chiffres sourcés et datés : un post avec trois statistiques attribuées à des sources identifiables se fait citer plus souvent qu'un post bien argumenté sans données.
+
 - les comparaisons explicites : les passages de type « X fait A, Y fait B, Z fait C » sont particulièrement bien extraits par les modèles génératifs.
 
 La conclusion, enfin, doit prendre la forme d'une question ouverte (on évite tout ce qui ressemble à un coup de pub' ou à une offre promotionnelle !) à l'attention de la communauté.
@@ -127,11 +137,16 @@ En résumé, il faut se positionner comme un intervenant qui partage une expéri
 Sept erreurs reviennent systématiquement dans les stratégies Reddit qui échouent :
 
 - Le compte fraîchement créé qui poste immédiatement : les filtres automatiques font remonter l'ancienneté du compte comme signal de fiabilité. Un compte de 5 jours avec un post contenant un lien externe sera supprimé automatiquement dans la plupart des subreddits actifs.
+
 - Le <em>shadowban</em> silencieux : Reddit peut bannir un compte sans en informer son propriétaire. Les posts sont visibles depuis le compte banni mais invisibles pour les autres. Une vérification régulière depuis un compte déconnecté, ou via reddit.com/r/ShadowBan/, permet de détecter la situation. Un compte sous le coup d'un <em>shadowban</em> n'a pas d'autre choix que d'être abandonné.
 - Le <em>cross-posting</em> agressif : publier le même post dans plusieurs subreddits sans adaptation est détecté instantanément. Chaque subreddit a sa propre « culture », ses normes de format, son niveau de technicité attendu : un post adapté à r/SEO ne fonctionnera pas tel quel dans r/digital\_marketing, par exemple.
+
 - Les liens dans le corps du post : la présence d'un lien externe dans le corps d'un post est l'un des signaux les plus fréquemment sanctionnés par les filtres automatiques et les modérateurs. Les liens appartiennent aux commentaires, et seulement quand la question posée le justifie légitimement.
+
 - La disparition post-publication : publier puis ne pas répondre aux commentaires pendant deux semaines envoie un signal d'absence d'engagement. Reddit et les LLM valorisent la continuité : répondre dans les 24 heures aux commentaires booste l'engagement du <em>thread</em> et sa probabilité d'être <em>crawlé</em> et cité.
+
 - La fixation sur les gros subreddits : un subreddit comme r/marketing avec 1,5 million de membres noiera tout post dans le bruit. r/SEO avec 250 000 membres engagés, plus cité par les LLM sur les requêtes marketing, produira plus de visibilité dans les IA.
+
 - La promotion masquée : un post structuré comme « j'ai testé 10 outils et cet outil est de loin le meilleur » quand l'outil en question est lié à l'auteur : Reddit voit immédiatement le conflit d'intérêt et la sanction tombe.
 
 ## Mesurer la visibilité IA issue de Reddit
