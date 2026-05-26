@@ -120,7 +120,7 @@ Des informations à prendre en compte, donc, puisque le trafic des recommandatio
 
 Comme évoqué plus haut, le GEO ne se limite pas à l'optimisation du contenu publié sur son propre site. Les sources tierces jouent un rôle majeur dans les citations IA, et deux plateformes dominent les analyses disponibles.
 
-Reddit concentrait 40,1 % des citations LLM en 2025 selon Semrush, sur un corpus de 150 000 citations analysées. Rien d'étonnant : Google verse 60 millions de dollars par an à Reddit pour un accès structuré à ses données, et OpenAI a signé un accord similaire en 2024. Le format question-réponse de Reddit, filtré par les *upvotes* communautaires, correspond structurellement à ce que les LLM cherchent lors de la récupération en temps réel.
+[Reddit](/blog/reddit-llms-source-citee-ia) concentrait 40,1 % des citations LLM en 2025 concentrait 40,1 % des citations LLM en 2025 selon Semrush, sur un corpus de 150 000 citations analysées. Rien d'étonnant : Google verse 60 millions de dollars par an à Reddit pour un accès structuré à ses données, et OpenAI a signé un accord similaire en 2024. Le format question-réponse de Reddit, filtré par les *upvotes* communautaires, correspond structurellement à ce que les LLM cherchent lors de la récupération en temps réel.
 
 LinkedIn est la deuxième source la plus citée par les moteurs IA devant Wikipedia, YouTube et les grands médias d'actualité, selon une étude portant sur 325 000 *prompts* envoyés à ChatGPT Search, Google AI Mode et Perplexity en 2026. 11 % des réponses IA contiennent en moyenne une citation LinkedIn. À noter que les articles de 500 à 2 000 mots offrent le meilleur ratio de citation sur cette plateforme.
 
