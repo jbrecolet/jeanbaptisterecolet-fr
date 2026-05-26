@@ -50,7 +50,7 @@ Cette étude sortira sous le titre exact de *« GEO: Generative Engine Optimizat
 
 ## Qu'est-ce que le GEO, précisément ?
 
-Le GEO (Generative Engine Optimization que l'on peut traduire par « optimisation pour les moteurs génératifs ») désigne l'ensemble des pratiques visant à optimiser du contenu pour qu'il soit cité, mentionné ou repris dans les réponses des IA génératives comme ChatGPT, Claude, Gemini et consorts.
+Le GEO (<em>Generative Engine Optimization</em> que l'on peut traduire par « optimisation pour les moteurs génératifs ») désigne l'ensemble des pratiques visant à optimiser du contenu pour qu'il soit cité, mentionné ou repris dans les réponses des IA génératives comme ChatGPT, Claude, Gemini et consorts.
 
 La différence fondamentale entre SEO et GEO tient dans le but de cette optimisation.
 
