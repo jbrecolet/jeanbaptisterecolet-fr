@@ -38,7 +38,7 @@ faq:
       Non. Un contenu approfondi, structuré, sourcé et régulièrement mis à jour sert les deux disciplines. Ce qui change, c'est la hiérarchie des signaux et les métriques de performance. L'indexation technique et l'autorité de domaine restent la voie d'entrée préférentielle pour l'écosystème Google. Les mentions éditoriales et le brand search volume sont les signaux distinctifs du GEO sur les LLM indépendants.
 ---
 
-<strong>Le SEO est mort, remplacé par le GEO. C’est en substance ce que nombre d’experts proclament depuis des mois. C’est normal : l’époque est aux phrases choc et aux conclusions souvent hâtives. Mais les chiffres imposent d’être beaucoup plus nuancé.</strong>
+<strong>Le SEO est mort, remplacé par le [GEO](/blog/quest-ce-que-le-geo). C’est en substance ce que nombre d’experts proclament depuis des mois. C’est normal : l’époque est aux phrases choc et aux conclusions souvent hâtives. Mais les chiffres imposent d’être beaucoup plus nuancé.</strong>
 
 En septembre 2025, l’entreprise BrightEdge publiait les données de 16 mois de suivi des AI Overviews. Résultat : 54,5 % des citations proviennent des pages classées organiquement dans les SERP. Le SEO nourrit le GEO.
 
@@ -107,7 +107,7 @@ Nommer les experts avec leur titre et leur affiliation suit la même logique. Pr
 
 Être présent sur les plateformes d’avis (comme Trustpilot) est enfin un levier GEO que le SEO n’avait pas anticipé : Digital Bloom (2026) mesure que les domaines présents sur ces plateformes ont trois fois plus de chances d’être cités par ChatGPT que les autres. Ces sites sont massivement intégrés dans les données d’entraînement des LLM. Ils ne transmettent pas d’autorité de lien comme un *backlink* : ils transmettent un signal de légitimité sociale, la preuve que d’autres utilisateurs, indépendants et identifiés, font confiance à une source. C’est exactement le type de signal qu’un modèle entraîné sur des corpus d’avis et de recommandations a appris à valoriser.
 
-C’est la logique du GEO *off-site* : Reddit, LinkedIn, les forums spécialisés, les médias sectoriels et les plateformes d’avis constituent autant de surfaces où une marque peut exister dans les corpus des LLM indépendamment de son propre site. En SEO, l’*off-page* se mesurait en *backlinks*. En GEO, il se mesure en présence éditoriale et sociale sur les sources que les modèles ont appris à considérer comme fiables.
+C'est la logique du [GEO *off-site*](/blog/reddit-llms-source-citee-ia) : Reddit, LinkedIn, les forums spécialisés, les médias sectoriels et les plateformes d’avis constituent autant de surfaces où une marque peut exister dans les corpus des LLM indépendamment de son propre site. En SEO, l’*off-page* se mesurait en *backlinks*. En GEO, il se mesure en présence éditoriale et sociale sur les sources que les modèles ont appris à considérer comme fiables.
 
 ## Une nouvelle manière de suivre les KPI
 
