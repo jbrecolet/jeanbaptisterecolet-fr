@@ -6,7 +6,7 @@ import mdx from '@astrojs/mdx';
 import rehypeExternalLinks from 'rehype-external-links';
 
 export default defineConfig({
-  site: 'https://jeanbaptisterecolet.fr',
+  site: 'https://www.jeanbaptisterecolet.fr',
   trailingSlash: 'never',
   integrations: [
     sitemap({
