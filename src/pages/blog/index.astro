@@ -1,12 +1,10 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
-
 const posts = await getCollection('blog', ({ data }) => !data.draft);
 const sortedPosts = posts.sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
-
 const getExcerpt = (entry) => {
   if (entry.data.excerpt) return entry.data.excerpt;
   const paragraphs = (entry.body ?? '').split('\n\n').filter(p => {
@@ -29,19 +27,15 @@ const getExcerpt = (entry) => {
   return first || entry.data.description;
 };
 ---
-
 <BaseLayout
   title="Blog - SEO, GEO et Content Management"
   description="Articles, guides et veille sur l'évolution du Search en 2026."
 >
   <section class="section">
-    <header class="page-header">
-  <h1>
-    <span class="page-header__label">Jean-Baptiste Récolet</span>
-    <span class="page-header__title">Blog</span>
-    <span class="page-header__subtitle"><em>SEO, GEO et stratégie de contenu</em></span>
-  </h1>
-    </header>
+    <h1>
+      <span class="page-header__title">Blog</span>
+      <span class="page-header__subtitle"><em>Analyses et méthodes sur le SEO classique, le GEO et la stratégie de contenu.</em></span>
+    </h1>
     {sortedPosts.length === 0 ? (
       <p>Aucun article pour le moment.</p>
     ) : (
@@ -69,16 +63,8 @@ const getExcerpt = (entry) => {
     )}
   </section>
 </BaseLayout>
-
 <style>
   .section { margin-top: var(--space-xl); }
-  .section__intro {
-    margin-bottom: var(--space-lg);
-    color: var(--color-muted);
-    font-size: 1.2rem;
-    max-width: none;
-  }
-
   .article-grid {
     list-style: none;
     padding: 0;
@@ -87,7 +73,6 @@ const getExcerpt = (entry) => {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--space-lg);
   }
-
   .article-card {
     display: flex;
     flex-direction: column;
@@ -95,7 +80,6 @@ const getExcerpt = (entry) => {
     border-top: 1px solid var(--color-rule);
     padding-top: var(--space-md);
   }
-
   .article-card__thumb { display: block; width: 100%; }
   .article-card__thumb img {
     width: 100%;
@@ -122,7 +106,6 @@ const getExcerpt = (entry) => {
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-
   @media (max-width: 900px) {
     .article-grid { grid-template-columns: repeat(2, 1fr); }
   }
