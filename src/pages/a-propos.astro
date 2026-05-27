@@ -48,8 +48,11 @@ const aboutSchema = {
 
     <header class="about__header">
       <div class="about__header-text">
-        <h1>Jean-Baptiste Récolet</h1>
-        <p class="about__lead">Content Manager senior — stratégie éditoriale, SEO &amp; GEO.</p>
+        <h1>
+          <span class="about__name">Jean-Baptiste Récolet</span>
+          <span class="about__role">Content Manager senior</span>
+          <span class="about__subtitle">Stratégie éditoriale, <em>SEO &amp; GEO</em></span>
+        </h1>
       </div>
       <div class="about__header-photo">
         <img
@@ -118,11 +121,30 @@ const aboutSchema = {
     flex: 1;
   }
 
-  .about__lead {
-    font-size: 1.15rem;
+  .about__name {
+    font-weight: 400;
+    font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+    display: block;
+  }
+
+  .about__role {
+    font-weight: 800;
+    font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+    display: block;
+    line-height: 1.15;
+  }
+
+  .about__subtitle {
+    font-weight: 600;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-style: italic;
+    display: block;
     color: var(--color-accent);
-    font-weight: 500;
-    margin-top: var(--space-xs);
+    margin-top: 0.25rem;
+  }
+
+  .about__subtitle em {
+    font-style: italic;
   }
 
   .about__header-photo img {
