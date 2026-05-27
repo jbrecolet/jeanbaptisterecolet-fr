@@ -248,3 +248,24 @@ main {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
 }
+.page-header__label {
+  font-weight: 400;
+  font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+  display: block;
+}
+
+.page-header__title {
+  font-weight: 800;
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+  display: block;
+  line-height: 1.15;
+}
+
+.page-header__subtitle {
+  font-weight: 600;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-style: italic;
+  display: block;
+  color: var(--color-accent);
+  margin-top: 0.25rem;
+}
