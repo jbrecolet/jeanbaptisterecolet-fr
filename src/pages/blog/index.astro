@@ -35,10 +35,13 @@ const getExcerpt = (entry) => {
   description="Articles, guides et veille sur l'évolution du Search en 2026."
 >
   <section class="section">
-    <h1>Blog</h1>
-    <p class="section__intro">
-      Analyses et méthodes sur le SEO classique, le GEO et la stratégie de contenu.
-    </p>
+    <header class="page-header">
+  <h1>
+    <span class="page-header__label">Jean-Baptiste Récolet</span>
+    <span class="page-header__title">Blog</span>
+    <span class="page-header__subtitle"><em>SEO, GEO et stratégie de contenu</em></span>
+  </h1>
+    </header>
     {sortedPosts.length === 0 ? (
       <p>Aucun article pour le moment.</p>
     ) : (
