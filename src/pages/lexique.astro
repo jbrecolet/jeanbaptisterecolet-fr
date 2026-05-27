@@ -508,11 +508,10 @@ const letters = Object.keys(grouped).sort();
   <div class="lexique">
 
     <header class="lexique__header">
-      <h1>
-  <span class="page-header__label">Jean-Baptiste Récolet</span>
-  <span class="page-header__title">Lexique SEO & GEO</span>
-  <span class="page-header__subtitle"><em>89 définitions pour maîtriser le Search génératif</em></span>
-      </h1>
+  <h1>
+    <span class="page-header__title">Lexique SEO & GEO</span>
+    <span class="page-header__subtitle"><em>Définitions des termes, sigles et acronymes essentiels du référencement naturel et de la recherche générative.</em></span>
+  </h1>
       <nav class="lexique__nav" aria-label="Navigation alphabétique">
         {letters.map((letter) => (
           <a href={`#lettre-${letter}`}>{letter}</a>
