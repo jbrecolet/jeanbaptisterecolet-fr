@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
-
 const aboutSchema = {
   '@context': 'https://schema.org',
   '@type': 'AboutPage',
@@ -33,7 +32,6 @@ const aboutSchema = {
   },
 };
 ---
-
 <BaseLayout
   title="À propos — Jean-Baptiste Récolet"
   description="Content Manager senior spécialisé en stratégie éditoriale, SEO et GEO. Journaliste de formation. Expérience chez Lydia Solutions. Certification Content Manager RNCP."
@@ -43,7 +41,6 @@ const aboutSchema = {
     type="application/ld+json"
     set:html={JSON.stringify(aboutSchema)}
   />
-
   <article class="about">
 
     <header class="about__header">
@@ -53,6 +50,9 @@ const aboutSchema = {
           <span class="about__role">Content Manager senior</span>
           <span class="about__subtitle">Stratégie éditoriale, <em>SEO &amp; GEO</em></span>
         </h1>
+        <div class="about__header-actions">
+          <a href="/cv-jean-baptiste-recolet.pdf" download class="about__cv">Télécharger mon CV (PDF)</a>
+        </div>
       </div>
       <div class="about__header-photo">
         <img
@@ -91,9 +91,6 @@ const aboutSchema = {
     </ul>
 
     <h2>Me contacter</h2>
-    <p>
-      <a href="/cv-jean-baptiste-recolet.pdf" download class="about__cv">Télécharger mon CV (PDF)</a>
-    </p>
     <p>
       <a href="mailto:contact@jeanbaptisterecolet.fr">contact@jeanbaptisterecolet.fr</a>
       &nbsp;—&nbsp;
@@ -147,6 +144,31 @@ const aboutSchema = {
     font-style: italic;
   }
 
+  .about__header-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+    flex-wrap: wrap;
+  }
+
+  .about__cv {
+    display: inline-block;
+    padding: 0.55rem 1.1rem;
+    background: var(--color-accent);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    border-radius: var(--radius);
+    white-space: nowrap;
+  }
+
+  .about__cv:hover {
+    opacity: 0.88;
+    text-decoration: none;
+  }
+
   .about__header-photo img {
     width: 160px;
     height: 160px;
@@ -182,29 +204,20 @@ const aboutSchema = {
     border-bottom: none;
   }
 
-  .about__cv {
-    display: inline-block;
-    padding: 0.55rem 1.1rem;
-    background: var(--color-accent);
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.9375rem;
-    border-radius: var(--radius);
-    margin-bottom: var(--space-sm);
-  }
-
-  .about__cv:hover {
-    opacity: 0.88;
-    text-decoration: none;
-  }
-
   @media (max-width: 640px) {
     .about__header {
       flex-direction: column-reverse;
       align-items: center;
       text-align: center;
     }
+
+    .about__header-actions {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
     .about__header-photo img {
       width: 120px;
       height: 120px;
