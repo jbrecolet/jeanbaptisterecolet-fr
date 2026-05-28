@@ -218,12 +218,11 @@ main {
 .site-footer__copy { max-width: var(--max-w-page); margin: var(--space-lg) auto 0; padding: 0 var(--space-md); color: var(--color-muted); font-size: 0.8125rem; }
 
 /* ---------- Home ---------- */
-.hero { padding: var(--space-xl) 0 var(--space-lg); border-bottom: 1px solid var(--color-rule); margin-bottom: var(--space-xl); }
+.hero { padding: var(--space-xl) 0 var(--space-lg); margin-bottom: var(--space-xl); }
 .hero h1 { max-width: 20ch; }
 .hero p { font-size: 1.25rem; color: var(--color-muted); max-width: 50ch; margin-top: var(--space-md); }
 
 .article-card {
-  border-top: 1px solid var(--color-rule);
   padding: var(--space-md) 0;
   display: flex;
   flex-direction: column;
