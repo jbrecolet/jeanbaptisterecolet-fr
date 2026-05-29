@@ -107,7 +107,7 @@ Nommer les experts avec leur titre et leur affiliation suit la même logique. Pr
 
 Être présent sur les plateformes d’avis (comme Trustpilot) est enfin un levier GEO que le SEO n’avait pas anticipé : Digital Bloom (2026) mesure que les domaines présents sur ces plateformes ont trois fois plus de chances d’être cités par ChatGPT que les autres. Ces sites sont massivement intégrés dans les données d’entraînement des LLM. Ils ne transmettent pas d’autorité de lien comme un *backlink* : ils transmettent un signal de légitimité sociale, la preuve que d’autres utilisateurs, indépendants et identifiés, font confiance à une source. C’est exactement le type de signal qu’un modèle entraîné sur des corpus d’avis et de recommandations a appris à valoriser.
 
-C'est la logique du [GEO *off-site*](/blog/reddit-llms-source-citee-ia) : Reddit, LinkedIn, les forums spécialisés, les médias sectoriels et les plateformes d’avis constituent autant de surfaces où une marque peut exister dans les corpus des LLM indépendamment de son propre site. En SEO, l’*off-page* se mesurait en *backlinks*. En GEO, il se mesure en présence éditoriale et sociale sur les sources que les modèles ont appris à considérer comme fiables.
+C'est la logique du [GEO *off-site*](/blog/reddit-llm-source-citee-ia) : Reddit, LinkedIn, les forums spécialisés, les médias sectoriels et les plateformes d’avis constituent autant de surfaces où une marque peut exister dans les corpus des LLM indépendamment de son propre site. En SEO, l’*off-page* se mesurait en *backlinks*. En GEO, il se mesure en présence éditoriale et sociale sur les sources que les modèles ont appris à considérer comme fiables.
 
 ## Une nouvelle manière de suivre les KPI
 
