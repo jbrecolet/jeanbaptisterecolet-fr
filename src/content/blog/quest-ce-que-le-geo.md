@@ -157,7 +157,7 @@ La comparaison des corrélations entre les signaux SEO traditionnels et la visib
 | Backlinks (Volume et autorité) | 0,218 | Averi.ai / Growth Memo, 2026 |
 | Keyword density (Densité de mots-clés) | Inefficace | Princeton, 2023 |
 
-L'enseignement est majeur : les <em>backlinks</em>, signal roi du SEO depuis deux décennies, affichent une corrélation trois fois plus faible avec la visibilité IA que les citations éditoriales (le fait d'être nommé et sourcé dans un article tiers).
+L'enseignement est majeur : les <em>backlinks</em>, signal incontournable du SEO depuis deux décennies, affichent une corrélation trois fois plus faible avec la visibilité IA que les citations éditoriales (le fait d'être nommé et sourcé dans un article tiers).
 
 De même, le volume de recherche sur la marque (<em>brand search volume</em>), qui n'est pas un signal SEO direct, s'avère plus prédictif de la visibilité dans les LLM que la simple autorité technique de son domaine.
 
