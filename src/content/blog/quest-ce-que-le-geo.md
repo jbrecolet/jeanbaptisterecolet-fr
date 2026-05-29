@@ -60,7 +60,7 @@ En GEO, les IA génératives lisent les pages, les synthétisent et donnent une 
 
 Le mécanisme technique sous-jacent est le RAG (<em>Retrieval-Augmented Generation</em>) : plutôt que de générer une réponse depuis sa seule mémoire d'entraînement, le modèle décompose la requête, récupère les passages les plus pertinents depuis le web sous forme de <em>chunks</em> de 60 à 300 mots, puis synthétise une réponse avec citations. Ainsi, un paragraphe autoporteur qui répond directement à une question sera extrait, un paragraphe qui dépend de son contexte pour avoir du sens sera ignoré. C'est cette mécanique qui rend le <em>front-loading</em> et les sections autoporteuses si déterminants en GEO.
 
-Ce processus de découpage en <em>chunks</em> correspond à ce que Google appelle le <em>passage ranking</em> : l'évaluation non plus de la page entière, mais de chaque bloc de texte indépendamment. Un article bien structuré en sections autoporteuses multiplie les surfaces d'extraction, chaque paragraphe pouvant être cité isolément.
+Ce processus de découpage en <em>chunks</em> correspond à ce que Google appelle le <em>passage ranking</em> : l'évaluation non plus de la page entière, mais de chaque bloc de texte indépendamment. Un article bien structuré en sections autoporteuses multiplie les possibilités d'extraction, chaque paragraphe pouvant être cité de manière isolée.
 
 Ce qui amène à la question fatidique, celle que toutes les équipes marketing se posent désormais : comment faire partie des sources citées par les IA ?
 
