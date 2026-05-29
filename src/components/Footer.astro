@@ -64,4 +64,14 @@ const year = new Date().getFullYear();
     font-size: 0.8125rem;
     max-width: none;
   }
+
+  @media (max-width: 640px) {
+   .site-footer__inner {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+  }
+  .site-footer h2 {
+    font-size: 0.75rem;
+  }
+}
 </style>
