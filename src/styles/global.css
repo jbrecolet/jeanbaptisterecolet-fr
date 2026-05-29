@@ -244,7 +244,10 @@ main {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 640px) {
-  .site-header__inner { flex-direction: column; align-items: flex-start; gap: var(--space-sm); }
+  .site-header__inner {
+  flex-wrap: nowrap;
+  padding: var(--space-sm) var(--space-md);
+}
   .site-nav ul { flex-wrap: wrap; gap: var(--space-sm); }
   body { font-size: 1rem; }
 }
