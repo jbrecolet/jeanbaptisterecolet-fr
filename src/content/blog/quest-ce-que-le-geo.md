@@ -60,6 +60,8 @@ En GEO, les IA génératives lisent les pages, les synthétisent et donnent une 
 
 Le mécanisme technique sous-jacent est le RAG (<em>Retrieval-Augmented Generation</em>) : plutôt que de générer une réponse depuis sa seule mémoire d'entraînement, le modèle décompose la requête, récupère les passages les plus pertinents depuis le web sous forme de <em>chunks</em> de 60 à 300 mots, puis synthétise une réponse avec citations. Un paragraphe autoporteur qui répond directement à une question sera extrait ; un paragraphe qui dépend de son contexte pour avoir du sens sera ignoré. C'est cette mécanique qui rend le <em>front-loading</em> et les sections autoporteuses si déterminants en GEO.
 
+Ce processus de découpage en <em>chunks</em> correspond à ce que Google appelle le <em>passage ranking</em> : l'évaluation non plus de la page entière, mais de chaque bloc de texte indépendamment. Un article bien structuré en sections autoporteuses multiplie les surfaces d'extraction, chaque paragraphe pouvant être cité isolément.
+
 Ce qui amène à la question fatidique, celle que toutes les équipes marketing se posent désormais : comment faire partie des sources citées par les IA ?
 
 ## Ce que dit l'étude parue en 2023
@@ -118,7 +120,7 @@ L'autre levier que Google a formalisé dans ses Quality Rater Guidelines est l'<
 
 Enfin, le succès incontestable des Relations Presse. C'est le plus grand écart constaté entre l'efficacité réelle et l'adoption par le marché. Les Relations Presse digitales et le contenu hébergé sur les médias d'autorité représentent 25 % de l'ensemble des citations par les LLM, mais seuls 6 % des marketeurs les exploitent. L'explication est mathématique : 85 % des mentions de marque dans les réponses d'IA proviennent de sites tiers, et non de son propre domaine.
 
-Des informations à prendre en compte, donc, puisque le trafic des recommandations issu des IA génératives (<em>AI referral traffic</em>) enregistre une hausse spectaculaire de +527 % sur un an, selon les données compilées dans le rapport *« How Marketers Are Increasing Their GEO Traffic in 2026 »* de The Digital Bloom (mai 2026). De plus, les analyses d'Adobe Digital Insights et les études d'instituts comme Gartner confirment que ce trafic convertit 4 à 5 fois mieux que le trafic SEO traditionnel. L'internaute qui clique sur une source citée par un LLM arrive sur le site avec une intention d'achat forte.
+Des informations à prendre en compte, donc, puisque le trafic des recommandations issu des IA génératives (<em>AI referral traffic</em>) enregistre une hausse spectaculaire de +527 % sur un an, selon les données compilées dans le rapport *« How Marketers Are Increasing Their GEO Traffic in 2026 »* de The Digital Bloom (mai 2026). Semrush mesure par ailleurs que le visiteur issu d'un LLM vaut en moyenne 4,4 fois plus que le visiteur organique traditionnel en termes de conversion (Semrush, 2025). Adobe Digital Insights confirme de son côté que le trafic <em>AI referral</em> surpasse systématiquement les autres sources sur le taux de rebond, le temps passé et le revenu par visite. L'internaute qui clique sur une source citée par un LLM arrive sur le site avec une intention d'achat forte.
 
 ## Reddit, LinkedIn et le GEO off-site
 
@@ -175,6 +177,10 @@ Ensuite, la mesure des effets du GEO demeure encore floue. En SEO, les KPIs sont
 
 Enfin, les LLM ont tendance à modifier, faire tourner ou remplacer constamment les sources web qu'ils citent pour une seule et même requête au fil du temps : c'est le <em>citation drift</em>. Digital Bloom a mesuré 59,3 % de <em>citation drift</em> mensuel sur les AI Overviews et 54,1 % sur ChatGPT. Les algorithmes cherchent en permanence à injecter la donnée la plus récente, et un article publié il y a 24 heures peut venir déloger une source installée depuis des mois. Résultat : comme en SEO, on ne « possède » jamais sa position dans l'IA. La différence, c'est que le basculement peut se faire en une journée et qu'il n'y a pas de seconde place.
 
+En pratique, un <em>drift</em> mensuel de cet ordre suggère qu'une mise à jour tous les trois mois environ est préférable pour les articles exposés sur des requêtes concurrentielles. Pas une refonte, mais une actualisation des chiffres datés, une vérification des sources citées, et si possible l'ajout d'une donnée récente. C'est le rythme minimal pour rester dans la fenêtre de sélection des LLM.
+
+La structure l'emporte sur la longueur. Un contenu court mais autoporteur, qui répond directement à la requête dès ses premiers mots, sera mécaniquement mieux extrait qu'un article long dont la réponse est enfouie au troisième paragraphe. La longueur ne compense pas l'absence de <em>front-loading</em>.
+
 ## Le GEO en France
 
 Le marché francophone est sous-représenté dans les sources que les LLM citent. Les modèles ont été entraînés massivement sur des données anglophones. Les contenus francophones structurés pour l'extraction IA, avec citations sourcées, données datées et sections autoporteuses, représentent une fraction infime de ce qui existe en anglais.
@@ -185,5 +191,6 @@ La concurrence pour être cité dans les réponses IA sur des requêtes françai
 
 - Aggarwal et al., *«&nbsp;GEO: Generative Engine Optimization&nbsp;»*, Princeton / IIT Delhi / Georgia Tech / Allen AI, présentée à ACM SIGKDD, août 2024. [arxiv.org/abs/2311.09735](https://arxiv.org/abs/2311.09735)
 - The Digital Bloom, *«&nbsp;How Marketers Are Increasing Their GEO Traffic in 2026&nbsp;»*, mai 2026. [thedigitalbloom.com](https://thedigitalbloom.com/learn/geo-traffic-optimization-report-2026/)
-- Semrush, études sur les volumes de citations LLM (Reddit, LinkedIn), 2025-2026. [semrush.com](https://www.semrush.com/blog/track-google-ai-mode-visibility-with-semrush/)
+- Semrush, études sur les volumes de citations LLM (Reddit, LinkedIn) et la valeur du trafic IA, 2025-2026. [semrush.com](https://www.semrush.com/blog/track-google-ai-mode-visibility-with-semrush/)
 - BrightEdge, suivi des Google AI Overviews, 2025. [brightedge.com](https://www.brightedge.com/ai-overviews)
+- Adobe Digital Insights, *«&nbsp;AI-driven traffic surges across industries&nbsp;»*, janvier 2026. [business.adobe.com](https://business.adobe.com/blog/ai-driven-traffic-surges-across-industries)
