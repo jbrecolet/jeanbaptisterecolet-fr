@@ -104,7 +104,7 @@ Pour le reste, le rapport *« How Marketers Are Increasing Their GEO Traffic in 
 
 - Les citations d'experts nommés avec leur titre et affiliation apportent 28 % de visibilité supplémentaire. Intégrer un avis d'expert fournit les ancres relationnelles et techniques (le lien personne-marque-catégorie) que les LLM utilisent pour évaluer la traçabilité d'une affirmation.
 
-- Le <em>front-loading</em> du contenu (donner la réponse immédiatement au début de la page ou de la section) est le signal d'extraction le plus rigoureusement mesuré. L'étude de Growth Memo intégrée au rapport démontre que 44,2 % de toutes les citations par les LLM proviennent exclusivement des premiers 30 % du contenu. Les systèmes de <em>retrieval</em> jugent de la pertinence dès les 200 premiers mots ; l'approche « <em>Answer-first</em> » est donc devenue essentielle.
+- Le <em>front-loading</em> du contenu (donner la réponse immédiatement au début de la page ou de la section) est le signal d'extraction le plus rigoureusement mesuré. L'étude de Growth Memo intégrée au rapport démontre que 44,2 % de toutes les citations par les LLM proviennent exclusivement des premiers 30 % du contenu. Les systèmes de <em>retrieval</em> jugent de la pertinence dès les 200 premiers mots : l'approche « <em>Answer-first</em> » est donc devenue essentielle.
 
 - La présence sur les plateformes tierces et d'avis (comme Reddit, YouTube, Trustpilot...) s'impose comme un canal de distribution majeur. Le rapport rappelle que Reddit est le domaine le plus cité globalement par les IA, et que posséder des millions de mentions de marque sur ces espaces multiplie par quatre les chances d'être cité. C'est le signal de légitimité externe indépendant que l'IA va chercher en priorité.
 
