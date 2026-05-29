@@ -5,7 +5,7 @@ excerpt: "Une étude Semrush portant sur 150 000 citations LLM révèle que Red
 tldr: "Reddit concentrait 40,1 % des citations LLM en 2025. Ce qui est cité, ce sont les threads authentiques, pas les profils de marque. La méthode : cibler les subreddits cités par les IA, structurer ses posts en Answer Capsule, bâtir un historique de compte crédible."
 pubDate: 2026-05-18
 cover: "reddit-llms-source-citee-ia.webp"
-coverAlt: "Reddit et les LLMs : comment devenir une source citée par les IA"
+coverAlt: "Reddit et les LLM : comment devenir une source citée par les IA"
 tags: ["reddit", "geo", "llm", "chatgpt", "perplexity", "citations-ia"]
 category: "Guide"
 tier: "approfondi"
