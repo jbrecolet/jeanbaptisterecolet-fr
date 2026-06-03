@@ -32,8 +32,8 @@ const getExcerpt = (entry) => {
 ---
 
 <BaseLayout
-  title="Jean-Baptiste Récolet - Content Manager SEO & GEO"
-  description="Portfolio et blog de Jean-Baptiste Récolet, Content Manager en région parisienne. Articles, méthodes et veille sur le SEO et le GEO."
+  title="Jean-Baptiste Récolet - Content Manager Brand content, SEO & GEO"
+  description="Portfolio et blog de Jean-Baptiste Récolet, Content Manager en région parisienne. Brand content, méthodes SEO et veille GEO."
 >
   <section class="hero">
     <div class="hero__inner">
@@ -41,11 +41,8 @@ const getExcerpt = (entry) => {
         <h1>
           <span class="hero__name">Jean-Baptiste Récolet</span>
           <span class="hero__role">Content Manager</span>
-          <span class="hero__role"><em>Brand content, SEO & GEO</em></span>
+          <span class="hero__role hero__role--accent"><em>Brand content, SEO & GEO</em></span>
         </h1>
-        <p class="hero__subtitle hero__subtitle--accent">
-          Des contenus lus par les humains, indexés par Google et cités par les IA.
-        </p>
         <a href="/cv-jean-baptiste-recolet.pdf" class="hero__cv" download>
           Télécharger mon CV
         </a>
@@ -53,7 +50,7 @@ const getExcerpt = (entry) => {
       <div class="hero__visual">
         <img
           src="/hero.webp"
-          alt="Jean-Baptiste Récolet, Content Manager SEO/GEO"
+          alt="Jean-Baptiste Récolet, Content Manager Brand content, SEO & GEO"
           width="600"
           height="600"
           loading="eager"
@@ -61,6 +58,11 @@ const getExcerpt = (entry) => {
       </div>
     </div>
   </section>
+
+  <div class="manifeste">
+    <p>À la fois blog éditorial et laboratoire de méthodes SEO/GEO, ce site est le portfolio de certains de mes travaux passés en matière de <em>brand content</em> et de mes études actuelles sur le <em>search</em>.</p>
+    <p>Il est également et avant tout le reflet de ma conception du métier de Content Manager : concevoir et écrire des contenus lus par les humains, indexés par Google et cités par les IA.</p>
+  </div>
 
   <section class="section">
     <h2>Derniers articles</h2>
@@ -116,17 +118,15 @@ const getExcerpt = (entry) => {
   .hero__role {
     font-weight: 800;
     font-size: clamp(2rem, 4vw, 2.75rem);
-    white-space: nowrap;
     display: block;
+    line-height: 1.15;
   }
 
-  .hero__role em {
+  .hero__role--accent em {
     font-style: italic;
     font-weight: 600;
+    color: var(--color-accent);
   }
-
-  .hero__subtitle { margin-top: var(--space-sm); }
-  .hero__subtitle--accent { color: var(--color-accent); }
 
   .hero__cv {
     display: inline-block;
@@ -158,7 +158,24 @@ const getExcerpt = (entry) => {
   @media (max-width: 720px) {
     .hero__inner { grid-template-columns: 1fr; }
     .hero__visual { margin-top: var(--space-md); }
-    .hero__role { white-space: normal; }
+  }
+
+  /* ── Manifeste ── */
+  .manifeste {
+    border-top: 1px solid var(--color-rule);
+    border-bottom: 1px solid var(--color-rule);
+    padding: var(--space-lg) 0;
+    margin: var(--space-lg) 0;
+  }
+
+  .manifeste p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    max-width: none;
+  }
+
+  .manifeste p + p {
+    margin-top: var(--space-sm);
   }
 
   /* ── Sections ── */
