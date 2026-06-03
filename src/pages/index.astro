@@ -102,6 +102,10 @@ const getExcerpt = (entry) => {
 
 <style>
   /* ── Hero ── */
+  .hero {
+    padding-bottom: 0;
+  }
+
   .hero__inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -123,18 +127,18 @@ const getExcerpt = (entry) => {
   }
 
   .hero__role--accent {
-  white-space: nowrap;
-}
+    white-space: nowrap;
+  }
 
-.hero__role--accent em {
-  font-style: italic;
-  font-weight: 600;
-  color: var(--color-accent);
-}
+  .hero__role--accent em {
+    font-style: italic;
+    font-weight: 600;
+    color: var(--color-accent);
+  }
 
-    .hero__cv {
+  .hero__cv {
     display: inline-block;
-    margin-top: var(--space-sm);
+    margin-top: var(--space-md);
     padding: 0.6rem 1.25rem;
     background: var(--color-accent);
     color: #fff;
@@ -162,14 +166,16 @@ const getExcerpt = (entry) => {
   @media (max-width: 720px) {
     .hero__inner { grid-template-columns: 1fr; }
     .hero__visual { margin-top: var(--space-md); }
+    .hero__role--accent { white-space: normal; }
   }
 
   /* ── Manifeste ── */
   .manifeste {
-  border-top: 1px solid var(--color-rule);
-  border-bottom: 1px solid var(--color-rule);
-  padding: var(--space-md) 0;
-  margin: 0.75rem 0;
+    border-top: 1px solid var(--color-rule);
+    border-bottom: 1px solid var(--color-rule);
+    padding: var(--space-md) 0;
+    margin-top: var(--space-sm);
+    margin-bottom: var(--space-sm);
   }
 
   .manifeste p {
