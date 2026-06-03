@@ -122,11 +122,15 @@ const getExcerpt = (entry) => {
     line-height: 1.15;
   }
 
-  .hero__role--accent em {
-    font-style: italic;
-    font-weight: 600;
-    color: var(--color-accent);
-  }
+  .hero__role--accent {
+  white-space: nowrap;
+}
+
+.hero__role--accent em {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--color-accent);
+}
 
   .hero__cv {
     display: inline-block;
@@ -162,10 +166,10 @@ const getExcerpt = (entry) => {
 
   /* ── Manifeste ── */
   .manifeste {
-    border-top: 1px solid var(--color-rule);
-    border-bottom: 1px solid var(--color-rule);
-    padding: var(--space-lg) 0;
-    margin: var(--space-lg) 0;
+  border-top: 1px solid var(--color-rule);
+  border-bottom: 1px solid var(--color-rule);
+  padding: var(--space-md) 0;
+  margin: var(--space-md) 0;
   }
 
   .manifeste p {
