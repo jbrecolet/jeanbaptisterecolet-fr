@@ -87,20 +87,19 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
     <header class="article__header">
       <p class="article__category">{data.category?.toUpperCase()}</p>
       <h1 class="article__title">{data.title}</h1>
-      <p class="article__meta">
-        <time datetime={data.pubDate.toISOString()}>
-          Publié le {dateFmt.format(data.pubDate)}
-        </time>
-        {data.updatedDate && (
-          <>
-            {' · '}
-            <time datetime={data.updatedDate.toISOString()}>
-              Mis à jour le {dateFmt.format(data.updatedDate)}
-            </time>
-          </>
-        )}
-        {' · Par '}<a href="/a-propos">Jean-Baptiste Récolet</a>
-      </p>
+<p class="article__meta">
+  <time datetime={data.pubDate.toISOString()}>
+    Publié le {dateFmt.format(data.pubDate)}
+  </time>
+  {' · Par '}<a href="/a-propos">Jean-Baptiste Récolet</a>
+</p>
+{data.updatedDate && (
+  <p class="article__meta article__meta--updated">
+    <time datetime={data.updatedDate.toISOString()}>
+      Mis à jour le {dateFmt.format(data.updatedDate)}
+    </time>
+  </p>
+)}
     </header>
 
     <div class="article__body">
