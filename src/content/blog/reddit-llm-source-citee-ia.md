@@ -182,3 +182,4 @@ En revanche, c'est précisément parce que c'est un investissement à long terme
 - Profound, *«&nbsp;The Data on Reddit and AI Search&nbsp;»*, 2025. [tryprofound.com](https://www.tryprofound.com/blog/the-data-on-reddit-and-ai-search)
 - Onely, *«&nbsp;LLM-Friendly Content : 12 Tips to Get Cited in AI Answers&nbsp;»*, déc. 2025. [onely.com](https://www.onely.com/blog/llm-friendly-content/)
 - Postiz, *«&nbsp;A Guide to Reddit Karma Requirements and How to Meet Them&nbsp;»*, janv. 2026. [postiz.com](https://postiz.com/blog/reddit-karma-requirements)
+- Adweek, *«&nbsp;YouTube Overtakes Reddit as Go-To Citation Source on AI Search&nbsp;»*, 26 janvier 2026. [adweek.com](https://www.adweek.com/media/youtube-reddit-ai-search-engine-citations/)
