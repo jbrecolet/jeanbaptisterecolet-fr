@@ -195,3 +195,4 @@ La concurrence pour être cité dans les réponses IA sur des requêtes françai
 - BrightEdge, suivi des Google AI Overviews, 2025. [brightedge.com](https://www.brightedge.com/ai-overviews)
 - Adobe Digital Insights, *«&nbsp;AI-driven traffic surges across industries&nbsp;»*, janvier 2026. [business.adobe.com](https://business.adobe.com/blog/ai-driven-traffic-surges-across-industries)
 - Adweek, *«&nbsp;YouTube Overtakes Reddit as Go-To Citation Source on AI Search&nbsp;»*, 26 janvier 2026. [adweek.com](https://www.adweek.com/media/youtube-reddit-ai-search-engine-citations/)
+- Adobe Digital Insights, *«&nbsp;Quarterly AI Traffic Report Q2 2026&nbsp;»*, avril 2026. [business.adobe.com](https://business.adobe.com/resources/sdk/2026-q2-ai-traffic-report.html)
