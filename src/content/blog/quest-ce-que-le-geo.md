@@ -107,7 +107,7 @@ Pour le reste, le rapport *« How Marketers Are Increasing Their GEO Traffic in 
 
 - Le <em>front-loading</em> du contenu (donner la réponse immédiatement au début de la page ou de la section) est le signal d'extraction le plus rigoureusement mesuré. L'étude de Growth Memo intégrée au rapport démontre que 44,2 % de toutes les citations par les LLM proviennent exclusivement des premiers 30 % du contenu. Les systèmes de <em>retrieval</em> jugent de la pertinence dès les 200 premiers mots : l'approche « <em>Answer-first</em> » est donc devenue essentielle.
 
-- La présence sur les plateformes tierces et d'avis (comme Reddit, YouTube, Trustpilot...) s'impose comme un canal de distribution majeur. Le rapport rappelle que Reddit et YouTube dominent les plateformes tierces citées par les IA, YouTube ayant pris la première place dans les citations sociales des LLM en janvier 2026 (Adweek). Posséder des millions de mentions sur ces espaces multiplie par quatre les chances d'être cité. C'est le signal de légitimité externe indépendant que l'IA va chercher en priorité.
+- La présence sur les plateformes tierces et d'avis (comme Reddit, YouTube, Trustpilot...) s'impose comme un canal de distribution majeur. En 2025, Reddit dominait les plateformes tierces citées par les IA avant d'être dépassé par YouTube dans les citations sociales des LLM en janvier 2026 (Adweek). Posséder des millions de mentions sur ces espaces multiplie par quatre les chances d'être cité. C'est le signal de légitimité externe indépendant que l'IA va chercher en priorité.
 
 ## Ce qui change en 2026 avec le GEO
 
