@@ -4,7 +4,7 @@ description: "Reddit est la source la plus citée par les LLMs en 2025. Guide po
 excerpt: "Une étude Semrush portant sur 150 000 citations LLM révèle que Reddit était la source la plus citée par les IA en 2025, avec une fréquence de 40,1 %. Devant Wikipedia. Devant les grands médias."
 tldr: "Reddit concentrait 40,1 % des citations LLM en 2025. Ce qui est cité, ce sont les threads authentiques, pas les profils de marque. La méthode : cibler les subreddits cités par les IA, structurer ses posts en Answer Capsule, bâtir un historique de compte crédible."
 pubDate: 2026-05-18
-updatedDate:
+updatedDate: 2026-06-08
 cover: "reddit-llms-source-citee-ia.webp"
 coverAlt: "Reddit et les LLM : comment devenir une source citée par les IA"
 tags: ["reddit", "geo", "llm", "chatgpt", "perplexity", "citations-ia"]
@@ -41,13 +41,15 @@ faq:
 
 Une étude Semrush portant sur 150 000 citations LLM révèle que Reddit était la source la plus citée par les IA en 2025, avec une fréquence de 40,1 %. Devant Wikipedia. Devant les grands médias. Devant les sites spécialisés qui ont pourtant passé des années à construire leur autorité SEO.
 
+En janvier 2026, YouTube a pris la première place dans les citations sociales des LLM (Adweek, 26 janvier 2026) mais Reddit reste la plateforme la plus citée sur les requêtes conversationnelles, d'avis et de comparaison.
+
 Une surprise ? Pas tant que cela : les LLM valorisent les réponses humaines, validées par une communauté, à une question précise. Et Reddit en regorge.
 
 Selon la même étude, 99 % des citations Reddit dans ChatGPT pointent vers des <em>threads</em> de discussion uniques. Pas des profils de marque. Des conversations. Ce qui est favorisé, et donc cité, c'est l'engagement communautaire authentique.
 
 Dans le cadre d'une [stratégie GEO <em>off-site</em>](/blog/quest-ce-que-le-geo) efficace, la présence dans des conversations Reddit s'impose comme une évidence. Voici comment y parvenir.
 
-<aside class="tldr-block"><strong>En bref :</strong> Reddit est la source la plus citée par les IA en 2025 (Semrush, 40,1 % des citations LLM). Une stratégie GEO <em>off-site</em> sur ce canal est donc une aubaine à ne pas manquer. Pour y parvenir, trois règles incontournables : construire un compte crédible avant de poster, structurer ses contributions en <em>Answer Capsule</em> et ne cibler que les subreddits effectivement cités par les LLM sur ses requêtes.</aside>
+<aside class="tldr-block"><strong>En bref :</strong> Reddit était la source la plus citée par les IA en 2025 (Semrush, 40,1 % des citations LLM) avant d'être dépassé par YouTube début 2026 sur les citations sociales (Adweek). Une stratégie GEO <em>off-site</em> sur ce canal est donc une aubaine à ne pas manquer. Pour y parvenir, trois règles incontournables : construire un compte crédible avant de poster, structurer ses contributions en <em>Answer Capsule</em> et ne cibler que les subreddits effectivement cités par les LLM sur ses requêtes.</aside>
 
 ## Pourquoi les LLM adorent Reddit
 
