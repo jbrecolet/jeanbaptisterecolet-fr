@@ -194,3 +194,4 @@ La concurrence pour être cité dans les réponses IA sur des requêtes françai
 - Semrush, études sur les volumes de citations LLM (Reddit, LinkedIn) et la valeur du trafic IA, 2025-2026. [semrush.com](https://www.semrush.com/blog/track-google-ai-mode-visibility-with-semrush/)
 - BrightEdge, suivi des Google AI Overviews, 2025. [brightedge.com](https://www.brightedge.com/ai-overviews)
 - Adobe Digital Insights, *«&nbsp;AI-driven traffic surges across industries&nbsp;»*, janvier 2026. [business.adobe.com](https://business.adobe.com/blog/ai-driven-traffic-surges-across-industries)
+- Adweek, *«&nbsp;YouTube Overtakes Reddit as Go-To Citation Source on AI Search&nbsp;»*, 26 janvier 2026. [adweek.com](https://www.adweek.com/media/youtube-reddit-ai-search-engine-citations/)
