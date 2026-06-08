@@ -136,7 +136,7 @@ C'est la grande question qui anime les professionnels du secteur : le GEO rempla
 
 Les deux disciplines ne s'opposent pas et ne se substituent pas. Le SEO traditionnel et le GEO obéissent simplement à des logiques distinctes qui se complètent. Les modèles d'IA ne découvrent pas le web par magie : ils s'appuient sur les robots d'indexation et les moteurs de recherche pour récupérer l'information en temps réel (le <em>grounding</em>).
 
-Si un site souffre de faiblesses techniques ou est mal indexé, il n'entrera jamais dans le pipeline de sélection des LLM. En toute logique, c'est encore plus vrai avec l'écosystème de Google. L'institut BrightEdge mesure que 54,5 % des citations dans les Google AI Overviews proviennent de pages classées organiquement dans le Top 10.
+Si un site souffre de faiblesses techniques ou est mal indexé, il n'entrera jamais dans le pipeline de sélection des LLM. En toute logique, c'est encore plus vrai avec l'écosystème de Google. L'institut BrightEdge mesure que 54,5 % des citations dans les Google AI Overviews proviennent de pages indexées par Google, dont 17 %  figurent dans le top 10  sur la même requête. Être indexé aide donc grandement à entrer dans le pipeline des LLM de Google mais figurer en première page ne garantit pas d'en sortir cité.
 
 Ce que les LLM évaluent en priorité, c'est le <em>grounding score</em> d'un contenu : sa capacité à ancrer chaque affirmation dans une source identifiable. Un contenu dont le <em>grounding</em> est solide, c'est un contenu dont chaque donnée est traçable, chaque citation attribuée, chaque chiffre daté. C'est ce critère, plus que l'autorité de domaine, qui détermine si un passage sera extrait ou ignoré lors de la phase de <em>retrieval</em>.
 
