@@ -6,7 +6,7 @@ const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const sorted = allPosts.sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
-const recent = sorted.slice(0, 6);
+const recent = sorted.slice(0, 3);
 
 const getExcerpt = (entry) => {
   if (entry.data.excerpt) return entry.data.excerpt;
