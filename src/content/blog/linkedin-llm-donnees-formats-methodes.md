@@ -46,7 +46,7 @@ La réponse tient en grande partie à une caractéristique que LinkedIn partage 
 
 Et comme les LLM ont été entraînés sur des corpus académiques et journalistiques où la crédibilité d'une affirmation est indissociable de son auteur, un <em>post</em> signé « directeur marketing chez [entreprise identifiable] » enverra logiquement les signaux que les modèles utilisent pour évaluer la fiabilité d'un passage.
 
-L'étude Princeton (Aggarwal et al., KDD'24) mesure en effet +28 % de visibilité IA pour les contenus qui citent des experts identifiés par leur rôle et leur organisation. LinkedIn produit ce signal par défaut, structurellement, sans effort supplémentaire de la part de l'auteur. Du pain béni, donc, pour les LLM mais ce n'est pas la seule raison.
+L'étude Princeton (Aggarwal et al., KDD'24) mesure en effet +28 % de visibilité IA pour les contenus qui citent des experts identifiés par leur rôle et leur organisation, un signal au cœur des [principes du GEO](/blog/quest-ce-que-le-geo). LinkedIn produit ce signal par défaut, structurellement, sans effort supplémentaire de la part de l'auteur. Du pain béni, donc, pour les LLM mais ce n'est pas la seule raison.
 
 LinkedIn, propriété de Microsoft, bénéficie d'une intégration privilégiée dans l'écosystème des LLM. Une partie du contenu public est intégrée aux corpus d'entraînement tandis que l'autre est disponible pour la récupération en temps réel via le <em>RAG</em>. Les articles récents sur des sujets B2B actifs remontent rapidement dans les sources candidates quand un utilisateur pose une question professionnelle à ChatGPT ou Perplexity.
 
