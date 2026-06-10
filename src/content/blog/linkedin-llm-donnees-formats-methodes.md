@@ -5,7 +5,7 @@ excerpt: "Reddit concentre 40 % des citations LLM sur les requêtes du quotidien
 tldr: "LinkedIn est cité dans 11 % des réponses IA (Semrush, mars 2026). ChatGPT et Google AI Mode privilégient les profils individuels (59 %), Perplexity les pages entreprise (59 %). Ce qui est cité : posts et articles publiés régulièrement, sourcés, signés par des experts."
 pubDate: 2026-06-10
 cover: "linkedin-llms-source-citee-ia.webp"
-coverAlt: "LinkedIn et les LLM : comment devenir une source citée par les IA"
+coverAlt: "LinkedIn et les LLM : données, formats et méthodes pour être cité"
 tags: ["linkedin", "geo", "llm", "chatgpt", "perplexity", "citations-ia"]
 category: "Guide"
 tier: "approfondi"
