@@ -105,7 +105,7 @@ Le quatrième principe concerne l'identification de l'auteur. Titre de poste pr�
 
 Travailler son contenu à la fois sur LinkedIn et Reddit, pour ceux qui ciblent à la fois les requêtes B2B et les requêtes conversationnelles, est une stratégie GEO <em>off-site</em> très efficace car les deux plateformes ne couvrent pas les mêmes intentions ni les mêmes LLM dans leurs préférences de sources.
 
-D'un côté, Reddit est massivement cité par Perplexity (24 % de ses citations au T1 2026) et dans une moindre mesure par Google AI Overviews (21 %) sur des requêtes communautaires : retours d'expérience, comparaisons terrain, discussions techniques entre experts. Le format qui fonctionne sur Reddit est conversationnel, écrit à la première personne, ancré dans un vécu concret et non promotionnel.
+D'un côté, [Reddit](/blog/reddit-llm-source-citee-ia) est massivement cité par Perplexity (24 % de ses citations au T1 2026) et dans une moindre mesure par Google AI Overviews (21 %) sur des requêtes communautaires : retours d'expérience, comparaisons terrain, discussions techniques entre experts. Le format qui fonctionne sur Reddit est conversationnel, écrit à la première personne, ancré dans un vécu concret et non promotionnel.
 
 De l'autre, LinkedIn est cité sur des requêtes professionnelles et B2B : tendances sectorielles, analyses d'outils, positionnements d'experts. ChatGPT et Google AI Mode y cherchent des profils individuels crédibles, Perplexity favorise des pages d'entreprise. Le format qui fonctionne est celui de l'article de fond ou du <em>post</em> structuré, signé et avec des données attribuées.
 
