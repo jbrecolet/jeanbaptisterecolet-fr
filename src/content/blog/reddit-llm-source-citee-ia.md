@@ -1,6 +1,6 @@
 ---
 title: "Reddit et les LLM : comment devenir une source citée par les IA"
-description: "Reddit est la source la plus citée par les LLMs en 2025. Guide pour structurer ses posts, cibler les subreddits pertinents et apparaître dans les réponses IA."
+description: "Reddit est la source la plus citée par les LLM en 2025. Guide pour structurer ses posts, cibler les subreddits pertinents et apparaître dans les réponses IA."
 excerpt: "Une étude Semrush portant sur 150 000 citations LLM révèle que Reddit était la source la plus citée par les IA en 2025, avec une fréquence de 40,1 %. Devant Wikipedia. Devant les grands médias."
 tldr: "Reddit concentrait 40,1 % des citations LLM en 2025. Ce qui est cité, ce sont les threads authentiques, pas les profils de marque. La méthode : cibler les subreddits cités par les IA, structurer ses posts en Answer Capsule, bâtir un historique de compte crédible."
 pubDate: 2026-05-18
@@ -13,19 +13,19 @@ tier: "approfondi"
 draft: false
 featured: false
 faq:
-  - question: "Pourquoi Reddit est-il autant cité par les LLMs ?"
+  - question: "Pourquoi Reddit est-il autant cité par les LLM ?"
     answer: >-
-      Deux raisons principales. D'abord, des accords officiels : Google paie Reddit 60 millions de dollars par an pour un accès structuré à ses données, et OpenAI a signé un accord similaire en 2024. Ensuite, le format question-réponse de Reddit correspond exactement à ce que les LLMs cherchent lors de la récupération en temps réel : une réponse humaine à une question précise, filtrée par les upvotes communautaires.
-  - question: "Quels LLMs citent Reddit, et lesquels ne le citent pas ?"
+      Deux raisons principales. D'abord, des accords officiels : Google paie Reddit 60 millions de dollars par an pour un accès structuré à ses données, et OpenAI a signé un accord similaire en 2024. Ensuite, le format question-réponse de Reddit correspond exactement à ce que les LLM cherchent lors de la récupération en temps réel : une réponse humaine à une question précise, filtrée par les upvotes communautaires.
+  - question: "Quels LLM citent Reddit, et lesquels ne le citent pas ?"
     answer: >-
       Perplexity est le plus grand citateur de Reddit (24 % de ses citations au T1 2026), suivi de Google AI Overviews (21 %) et ChatGPT (5 %+). Grok atteint 70 % de citations sociales issues de Reddit. Claude d'Anthropic cite très peu Reddit. Gemini est quasi-absent (0,1 %).
   - question: "Qu'est-ce qu'une Answer Capsule ?"
     answer: >-
-      C'est un format de post Reddit structuré pour maximiser la récupération par les LLMs. Il combine un titre formulé comme une question, un résumé de 2 à 3 lignes en ouverture, un contexte personnel non promotionnel, une réponse structurée avec sous-titres et listes, des chiffres sourcés et datés, et une conclusion ouverte. Ce format se fait citer plus de deux fois plus souvent que les posts non structurés (Onely, déc. 2025).
+      C'est un format de post Reddit structuré pour maximiser la récupération par les LLM. Il combine un titre formulé comme une question, un résumé de 2 à 3 lignes en ouverture, un contexte personnel non promotionnel, une réponse structurée avec sous-titres et listes, des chiffres sourcés et datés, et une conclusion ouverte. Ce format se fait citer plus de deux fois plus souvent que les posts non structurés (Onely, déc. 2025).
   - question: "Combien de temps faut-il pour construire un compte Reddit crédible ?"
     answer: >-
       La stratégie recommandée pour un objectif long terme dure 6 à 8 semaines. Les deux premières semaines sont consacrées à l'observation pure, les semaines 3 à 6 à la contribution non promotionnelle, les semaines 7 et 8 aux premières contributions d'expertise. Le compte est considéré comme crédible à partir de 30 jours d'historique et 300 de karma total.
-  - question: "Comment identifier les subreddits déjà cités par les LLMs ?"
+  - question: "Comment identifier les subreddits déjà cités par les LLM ?"
     answer: >-
       La méthode du reverse engineering : lister ses 10 requêtes prioritaires, les poser dans ChatGPT, Perplexity et Google AI Overviews, noter les threads Reddit qui apparaissent dans les réponses. Les subreddits qui reviennent constituent la shortlist opérationnelle. C'est la seule méthode fiable pour ne pas choisir ses cibles par intuition.
   - question: "Quels sont les signaux qui déclenchent un ban ou un shadowban ?"
@@ -33,10 +33,10 @@ faq:
       Les principaux déclencheurs : compte de moins de 30 jours qui poste un lien externe, même commentaire copié-collé dans plusieurs subreddits, liens vers un site propriétaire dans le corps d'un post, activité trop intense dans les premiers jours du compte. Le shadowban est silencieux : une vérification régulière depuis un compte déconnecté permet de le détecter.
   - question: "Quelle est la différence entre un post Reddit et un article de blog pour le GEO ?"
     answer: >-
-      Un article de blog est optimisé pour apparaître dans une liste de résultats classés sur Google. Un post Reddit est optimisé pour devenir la réponse canonique d'une question posée par d'autres humains dans une communauté spécifique. Les LLMs extraient des chunks de 60 à 300 mots depuis ces threads : chaque section du post doit fonctionner seule, sans dépendre du contexte environnant.
+      Un article de blog est optimisé pour apparaître dans une liste de résultats classés sur Google. Un post Reddit est optimisé pour devenir la réponse canonique d'une question posée par d'autres humains dans une communauté spécifique. Les LLM extraient des chunks de 60 à 300 mots depuis ces threads : chaque section du post doit fonctionner seule, sans dépendre du contexte environnant.
   - question: "La stratégie Reddit francophone est-elle viable ?"
     answer: >-
-      Oui. Les fils de discussion Reddit en français cités par les LLMs sont rares. Les contenus francophones structurés pour l'extraction IA représentent une fraction infime de ce qui existe en anglais. La concurrence est donc bien moindre sur les requêtes francophones que sur les mêmes requêtes en anglais.
+      Oui. Les fils de discussion Reddit en français cités par les LLM sont rares. Les contenus francophones structurés pour l'extraction IA représentent une fraction infime de ce qui existe en anglais. La concurrence est donc bien moindre sur les requêtes francophones que sur les mêmes requêtes en anglais.
 ---
 
 Une étude Semrush portant sur 150 000 citations LLM révèle que Reddit était la source la plus citée par les IA en 2025, avec une fréquence de 40,1 %. Devant Wikipedia. Devant les grands médias. Devant les sites spécialisés qui ont pourtant passé des années à construire leur autorité SEO.
@@ -145,19 +145,19 @@ En résumé, il faut se positionner comme un intervenant qui partage une expéri
 
 Sept erreurs reviennent systématiquement dans les stratégies Reddit qui échouent :
 
-- Le compte fraîchement créé qui poste immédiatement : les filtres automatiques font remonter l'ancienneté du compte comme signal de fiabilité. Un compte de 5 jours avec un post contenant un lien externe sera supprimé automatiquement dans la plupart des subreddits actifs.
+- le compte fraîchement créé qui poste immédiatement : les filtres automatiques font remonter l'ancienneté du compte comme signal de fiabilité. Un compte de 5 jours avec un post contenant un lien externe sera supprimé automatiquement dans la plupart des subreddits actifs.
 
-- Le <em>shadowban</em> silencieux : Reddit peut bannir un compte sans en informer son propriétaire. Les posts sont visibles depuis le compte banni mais invisibles pour les autres. Une vérification régulière depuis un compte déconnecté, ou via reddit.com/r/ShadowBan/, permet de détecter la situation. Un compte sous le coup d'un <em>shadowban</em> n'a pas d'autre choix que d'être abandonné.
+- le <em>shadowban</em> silencieux : Reddit peut bannir un compte sans en informer son propriétaire. Les posts sont visibles depuis le compte banni mais invisibles pour les autres. Une vérification régulière depuis un compte déconnecté, ou via reddit.com/r/ShadowBan/, permet de détecter la situation. Un compte sous le coup d'un <em>shadowban</em> n'a pas d'autre choix que d'être abandonné.
 
-- Le <em>cross-posting</em> agressif : publier le même post dans plusieurs subreddits sans adaptation est détecté instantanément. Chaque subreddit a sa propre « culture », ses normes de format, son niveau de technicité attendu : un post adapté à r/SEO ne fonctionnera pas tel quel dans r/digital\_marketing, par exemple.
+- le <em>cross-posting</em> agressif : publier le même post dans plusieurs subreddits sans adaptation est détecté instantanément. Chaque subreddit a sa propre « culture », ses normes de format, son niveau de technicité attendu : un post adapté à r/SEO ne fonctionnera pas tel quel dans r/digital\_marketing, par exemple.
 
-- Les liens dans le corps du post : la présence d'un lien externe dans le corps d'un post est l'un des signaux les plus fréquemment sanctionnés par les filtres automatiques et les modérateurs. Les liens appartiennent aux commentaires, et seulement quand la question posée le justifie légitimement.
+- les liens dans le corps du post : la présence d'un lien externe dans le corps d'un post est l'un des signaux les plus fréquemment sanctionnés par les filtres automatiques et les modérateurs. Les liens appartiennent aux commentaires, et seulement quand la question posée le justifie légitimement.
 
-- La disparition post-publication : publier puis ne pas répondre aux commentaires pendant deux semaines envoie un signal d'absence d'engagement. Reddit et les LLM valorisent la continuité : répondre dans les 24 heures aux commentaires booste l'engagement du <em>thread</em> et sa probabilité d'être <em>crawlé</em> et cité.
+- la disparition post-publication : publier puis ne pas répondre aux commentaires pendant deux semaines envoie un signal d'absence d'engagement. Reddit et les LLM valorisent la continuité : répondre dans les 24 heures aux commentaires booste l'engagement du <em>thread</em> et sa probabilité d'être <em>crawlé</em> et cité.
 
-- La fixation sur les gros subreddits : un subreddit comme r/marketing avec 1,5 million de membres noiera tout post dans le bruit. r/SEO avec 250 000 membres engagés, plus cité par les LLM sur les requêtes marketing, produira plus de visibilité dans les IA.
+- la fixation sur les gros subreddits : un subreddit comme r/marketing avec 1,5 million de membres noiera tout post dans le bruit. r/SEO avec 250 000 membres engagés, plus cité par les LLM sur les requêtes marketing, produira plus de visibilité dans les IA.
 
-- La promotion masquée : un post structuré comme « j'ai testé 10 outils et cet outil est de loin le meilleur » quand l'outil en question est lié à l'auteur : Reddit voit immédiatement le conflit d'intérêt et la sanction tombe.
+- la promotion masquée : un post structuré comme « j'ai testé 10 outils et cet outil est de loin le meilleur » quand l'outil en question est lié à l'auteur : Reddit voit immédiatement le conflit d'intérêt et la sanction tombe.
 
 ## Mesurer la visibilité IA issue de Reddit
 
