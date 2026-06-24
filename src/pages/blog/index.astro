@@ -1,10 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+
 const posts = await getCollection('blog', ({ data }) => !data.draft);
 const sortedPosts = posts.sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
+
 const getExcerpt = (entry) => {
   if (entry.data.excerpt) return entry.data.excerpt;
   const paragraphs = (entry.body ?? '').split('\n\n').filter(p => {
@@ -27,6 +29,7 @@ const getExcerpt = (entry) => {
   return first || entry.data.description;
 };
 ---
+
 <BaseLayout
   title="Blog - SEO, GEO et Content Management"
   description="Articles, guides et veille sur l'évolution du Search en 2026."
@@ -36,6 +39,7 @@ const getExcerpt = (entry) => {
       <span class="page-header__title">Blog</span>
       <span class="page-header__subtitle"><em>Analyses et guides sur le SEO, le GEO et la stratégie de contenu</em></span>
     </h1>
+
     {sortedPosts.length === 0 ? (
       <p>Aucun article pour le moment.</p>
     ) : (
@@ -63,52 +67,70 @@ const getExcerpt = (entry) => {
     )}
   </section>
 </BaseLayout>
+
 <style>
   .section { margin-top: var(--space-xl); }
+
   .article-grid {
     list-style: none;
     padding: 0;
     max-width: none;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-lg);
-  }
-  .article-card {
     display: flex;
     flex-direction: column;
-    gap: var(--space-sm);
-    padding-top: var(--space-md);
+    gap: var(--space-lg);
   }
-  .article-card__thumb { display: block; width: 100%; }
+
+  .article-card {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: var(--space-lg);
+    padding: var(--space-md) 0;
+    border-bottom: 1px solid var(--color-rule);
+  }
+
+  .article-card:first-child {
+    padding-top: 0;
+  }
+
+  .article-card__thumb {
+    display: block;
+    width: 100%;
+  }
   .article-card__thumb img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
     display: block;
     border-radius: var(--radius);
   }
+
   .article-card__body {
     display: flex;
     flex-direction: column;
     gap: var(--space-xs);
-    flex: 1;
+    justify-content: center;
   }
+
   .article-card__category { font-size: 0.8rem; color: var(--color-accent); font-weight: bold; }
-  .article-card__title { margin: 0; }
+  .article-card__title { margin: 0; font-size: 1.35rem; }
   .article-card__title a { text-decoration: none; color: inherit; }
   .article-card__title a:hover { color: var(--color-accent); }
+
   .article-card__desc {
     color: var(--color-muted);
     font-size: 0.9375rem;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  @media (max-width: 900px) {
-    .article-grid { grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (max-width: 600px) {
-    .article-grid { grid-template-columns: 1fr; }
+
+  @media (max-width: 700px) {
+    .article-card {
+      grid-template-columns: 1fr;
+    }
+    .article-card__thumb img {
+      height: 200px;
+    }
   }
 </style>
