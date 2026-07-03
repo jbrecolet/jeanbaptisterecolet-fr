@@ -140,7 +140,7 @@ Pour aller plus loin sur les formats et méthodes qui fonctionnent sur Reddit : 
 
 ### LinkedIn, pour les marques B2B
 
-Pour les marques B2B, développer sa réputation sur LinkedIn est presque un incontournable et Peec AI classe la plateforme parmi les domaines les plus cités par les LLM, aux côtés de Reddit.
+Pour les marques B2B, [développer sa réputation sur LinkedIn](/blog/linkedin-llm-source-citee-ia) est presque un incontournable et Peec AI classe la plateforme parmi les domaines les plus cités par les LLM, aux côtés de Reddit.
 
 Rien d'étonnant : un LLM peut y trouver des profils de dirigeants, des expertises individuelles, des publications récentes et des prises de position sur le métier… Exactement ce dont les IA raffolent pour mesurer la crédibilité d'une marque, d'une source ou d'une information.
 
