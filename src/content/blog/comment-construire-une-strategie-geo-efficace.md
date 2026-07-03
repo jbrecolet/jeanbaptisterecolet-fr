@@ -1,5 +1,5 @@
 ---
-title: "Comment construire une stratégie GEO efficace ? Le guide 2026"
+title: "Comment construire une stratégie GEO efficace ?"
 description: "Audit de visibilité, contenu extractible, plateformes off-site, médias : le guide sourcé pour construire une stratégie GEO efficace et être cité par les LLM."
 excerpt: "En 2025, ChatGPT traitait 2,5 milliards de requêtes par jour pour 9 % des requêtes numériques mondiales. En 2026, c'est 17 % (First Page Sage, avril 2026). La question n'est pas de savoir quand les IA vont concurrencer les moteurs de recherche classiques : le basculement est déjà là."
 tldr: "Une stratégie GEO efficace repose sur trois piliers : un site dont le contenu est extractible par les LLM, une présence off-site construite sur les bonnes sources selon son secteur et une bonne réputation externe."
@@ -221,6 +221,8 @@ En conclusion, la meilleure stratégie GEO commence donc bien avant le contenu :
 
 ## Sources
 
+## Sources
+
 - Aggarwal, P. et al. (2024). *«&nbsp;GEO: Generative Engine Optimization&nbsp;»*. KDD '24. arXiv:2311.09735. [arxiv.org/abs/2311.09735](https://arxiv.org/abs/2311.09735)
 - Kim, S. et al. (2026). *«&nbsp;SAGEO Arena: A Realistic Environment for Evaluating Search-Augmented Generative Engine Optimization&nbsp;»*. arXiv:2602.12187. [arxiv.org/abs/2602.12187](https://arxiv.org/abs/2602.12187)
 - Peec AI (2026). *«&nbsp;Top domains cited by AI search: Analysis based on 30M sources&nbsp;»*. [peec.ai/blog/top-domains-cited-by-ai-search-analysis-based-on-30m-sources](https://peec.ai/blog/top-domains-cited-by-ai-search-analysis-based-on-30m-sources)
@@ -231,4 +233,4 @@ En conclusion, la meilleure stratégie GEO commence donc bien avant le contenu :
 - ALM Corp (2026). *«&nbsp;Query Fan-Out Impact: Complete 2026 Guide to AI Search Rankings&nbsp;»*. [almcorp.com/blog/the-query-fan-out-impact/](https://almcorp.com/blog/the-query-fan-out-impact/)
 - ALM Corp (2026). *«&nbsp;Google AI Overview Citations From Top-10 Pages Dropped From 76% to 38%&nbsp;»*. [almcorp.com/blog/google-ai-overview-citations-drop-top-ranking-pages-2026/](https://almcorp.com/blog/google-ai-overview-citations-drop-top-ranking-pages-2026/)
 - Google Search Central (juin 2026). *«&nbsp;Introducing Search Generative AI performance reports in Search Console&nbsp;»*. [developers.google.com/search/blog/2026/06/gen-ai-performance-reports](https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports)
-- Ouest-France / Les Échos / Le Monde (29 juin 2026). Courrier Google aux éditeurs de presse français : déploiement AI Overviews et AI Mode en France avant le 23 septembre 2026.
+- Cyril Petit, Ouest-France (29 juin 2026). *«&nbsp;Info Ouest-France. Recherches sur Google : Overviews, la fonction de résumés par IA, sera lancée en France cet été 2026&nbsp;»*. [ouest-france.fr](https://www.ouest-france.fr/high-tech/google/info-ouest-france-recherches-sur-google-la-fonctionnalite-de-resumes-ai-overviews-sera-lancee-en-france-cet-ete-2026-4d41cfa0-73bd-11f1-a0e7-4fa27dc4c816). Confirmé par Thomas Pontiroli, Les Échos, 29 juin 2026. [lesechos.fr](https://www.lesechos.fr/tech-medias/hightech/google-va-finalement-lancer-sa-recherche-assistee-par-ia-en-france-2239773) et Aude Dassonville et Alexandre Piquard, Le Monde, 30 juin 2026. [lemonde.fr](https://www.lemonde.fr/pixels/article/2026/06/30/google-va-finalement-lancer-ses-fonctionnalites-ia-sur-son-moteur-de-recherche-en-france-cet-ete_6717014_4408996.html)
