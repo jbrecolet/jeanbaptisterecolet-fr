@@ -132,7 +132,7 @@ L'analyse Peec AI portant sur 30 millions de sources citées par ChatGPT, Gemini
 
 Car ce qui intéresse les LLM sur Reddit, c'est précisément ce qui ne se contrôle pas : les avis sans détour de vrais utilisateurs, les comparaisons directes, les retours d'expérience parfois à chaud. Sur des questions comme « quelle solution choisir ? » ou « quelle marque éviter ? », c'est la source de choix pour les IA.
 
-Comment savoir si sa marque a intérêt à travailler sa réputation sur Reddit ? C'est simple : il suffit de vérifier si un ou plusieurs *subreddits* actifs discutent déjà du domaine d'activité, du produit ou du problème que l'entreprise résout.
+Comment savoir si sa marque a intérêt à [travailler sa réputation sur Reddit](/blog/reddit-llm-source-citee-ia) ? C'est simple : il suffit de vérifier si un ou plusieurs *subreddits* actifs discutent déjà du domaine d'activité, du produit ou du problème que l'entreprise résout.
 
 Les marques tech, SaaS, finance personnelle ou e-commerce ont presque toujours plusieurs *subreddits* dédiés où les utilisateurs comparent, recommandent, déconseillent. Une PME industrielle qui vend de l'outillage pour les professionnels peut également y trouver un terrain pertinent si un *subreddit* existe sur ce secteur ou cette gamme de produits spécifiques mais c'est souvent plus rare. Le cas échéant, il vaut mieux concentrer ses ressources ailleurs.
 
