@@ -136,8 +136,6 @@ Comment savoir si sa marque a intérêt à travailler sa réputation sur Reddit 
 
 Les marques tech, SaaS, finance personnelle ou e-commerce ont presque toujours plusieurs *subreddits* dédiés où les utilisateurs comparent, recommandent, déconseillent. Une PME industrielle qui vend de l'outillage pour les professionnels peut également y trouver un terrain pertinent si un *subreddit* existe sur ce secteur ou cette gamme de produits spécifiques mais c'est souvent plus rare. Le cas échéant, il vaut mieux concentrer ses ressources ailleurs.
 
-Pour aller plus loin sur les formats et méthodes qui fonctionnent sur Reddit : [Reddit et les LLM : comment devenir une source citée par les IA](/blog/reddit-llm-source-citee-ia).
-
 ### LinkedIn, pour les marques B2B
 
 Pour les marques B2B, [développer sa réputation sur LinkedIn](/blog/linkedin-llm-source-citee-ia) est presque un incontournable et Peec AI classe la plateforme parmi les domaines les plus cités par les LLM, aux côtés de Reddit.
@@ -147,8 +145,6 @@ Rien d'étonnant : un LLM peut y trouver des profils de dirigeants, des expertis
 Pour cela, pas de secret. Ce qui fonctionne, c'est la régularité et la cohérence thématique. Un dirigeant ou un expert actif depuis des années sur un sujet précis, suivi par une audience qualifiée, produit des signaux qui relient une expertise à une personne, une entreprise et un marché. Des signaux qui attirent en toute logique l'attention des IA, portés par les formats de contenu de la plateforme : les articles ancrent des sujets de fond et continuent d'exister longtemps dans l'écosystème de citation et les *posts* créent de la fraîcheur. La formule gagnante, en somme.
 
 Pour les marques B2C, en revanche, LinkedIn pèse beaucoup moins dans la balance GEO : leur audience cible n'y cherche tout simplement pas le même type d'information. Au moment de choisir entre deux modèles de chaussures de sport, les futurs acheteurs n'ont pas besoin de la déclaration du PDG à l'occasion des résultats du dernier exercice fiscal.
-
-Pour aller plus loin sur les données et formats qui fonctionnent sur LinkedIn : [LinkedIn et les LLM : données, formats et méthodes pour être cité](/blog/linkedin-llm-source-citee-ia).
 
 ### Wikipedia, le cas particulier
 
