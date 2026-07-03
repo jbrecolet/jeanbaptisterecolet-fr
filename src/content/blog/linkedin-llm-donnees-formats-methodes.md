@@ -32,7 +32,7 @@ faq:
       Perplexity cite les pages entreprise dans 59 % de ses citations LinkedIn, contre 41 % pour les profils individuels. Une page entreprise active, avec des publications régulières, un contenu structuré et des données sourcées, est donc une surface pertinente pour Perplexity spécifiquement. Mais aucune étude ne mesure encore l'impact d'une stratégie combinée page + profils individuels sur la visibilité globale dans les trois plateformes simultanément.
 ---
 
-Reddit concentre 40 % des citations LLM sur les requêtes du quotidien (savoir quel VPN choisir, avoir un avis sur un frigo ou encore comment négocier une augmentation). En revanche, sur les requêtes plus professionnelles et orientées B2B (« quel CRM pour ma PME ? », « comment préparer sa stratégie de contenu pour les AI Overviews ? »), c'est bien LinkedIn qui s'impose.
+<strong>Reddit concentre 40 % des citations LLM sur les requêtes du quotidien (savoir quel VPN choisir, avoir un avis sur un frigo ou encore comment négocier une augmentation). En revanche, sur les requêtes plus professionnelles et orientées B2B (« quel CRM pour ma PME ? », « comment préparer sa stratégie de contenu pour les AI Overviews ? »), c'est bien LinkedIn qui s'impose.</strong>
 
 C'est ce qu'a révélé Semrush, en janvier et février 2026, après avoir analysé 325 000 <em>prompts</em> envoyés à ChatGPT Search, Google AI Mode et Perplexity. Dans les réponses générées, 89 000 URLs LinkedIn ont été identifiées, faisant du réseau social la deuxième source toutes plateformes confondues (juste derrière Reddit) mais devant YouTube et l'ensemble des grands médias.
 
