@@ -59,7 +59,7 @@ En apparence simpliste, cette méthode donne des résultats souvent éclairants 
 
 Cela peut s'expliquer par plusieurs raisons : un site qui ne donne pas assez d'infos à extraire ou qui ne facilite pas l'extraction de ces infos par les LLM, une présence *off-site* inexistante (ou a minima insuffisante) ou une réputation sur internet suffisamment négative pour que les LLM préfèrent citer d'autres marques à la place.
 
-Lorsque l'on sait que 94 % des acheteurs B2B utilisent désormais un LLM à un moment ou un autre de leur processus d'achat, pour comparer les offres, évaluer les alternatives et jauger la fiabilité d'une marque (6sense, 2025, n=3 986), on mesure aisément le préjudice de ne pas apparaître dans les réponses des IA.
+Lorsque l'on sait que 94 % des acheteurs B2B utilisent désormais un LLM à un moment ou un autre de leur processus d'achat, pour comparer les offres, évaluer les alternatives et jauger la fiabilité d'une marque (6sense, 2025), on mesure aisément le préjudice de ne pas apparaître dans les réponses des IA.
 
 ## Étape 2 : rendre son site extractible par les LLM
 
