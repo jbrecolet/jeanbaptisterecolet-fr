@@ -25,7 +25,7 @@ faq:
     answer: "Optimiser l'existant d'abord. Un contenu déjà indexé, avec des preuves chiffrées sourcées et une structure extractible (answer-first, titres formulés comme des questions), progresse plus vite en visibilité GEO qu'un contenu nouveau sans historique de signal."
 ---
 
-<strong>En 2025, ChatGPT captait 9 % des requêtes numériques mondiales et traitait 2,5 milliards de requêtes par jour. En 2026, c'est 17 % (First Page Sage, avril 2026). La question n'est pas de savoir quand les IA vont concurrencer les moteurs de recherche classiques : le basculement est déjà là.</strong>
+<strong>En 2025, ChatGPT captait 9 % des requêtes numériques mondiales et traitait 2,5 milliards de requêtes par jour. En 2026, c'est 17 % (First Page Sage, avril 2026). La question n'est donc pas de savoir si les IA vont concurrencer les moteurs de recherche classiques : le basculement est déjà là.</strong>
 
 Et si le GEO - l'ensemble des pratiques visant à maximiser la visibilité d'un contenu dans les réponses générées par les IA - est une discipline encore jeune et susceptible d'évoluer, il est déjà possible de poser les bases d'une stratégie efficace pour être cité par les LLM. Voici comment.
 
