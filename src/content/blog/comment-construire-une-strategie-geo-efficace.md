@@ -100,7 +100,7 @@ La logique est simple : un LLM privilégiera un chiffre daté et sourcé, sans p
 
 C'est ce que les chercheurs Aggarwal et al. avaient déjà mesuré en 2024 : les pages qui intègrent des citations directes (*quotation addition*) ou des statistiques sourcées (*statistics addition*) améliorent leur *information gain* (soit la probabilité d'être sélectionnées comme source dans une réponse générée) de respectivement +41 % et +34 % par rapport à une page sans preuve chiffrée. Le *grounding score* (la capacité d'un passage à ancrer une affirmation dans une source vérifiable) est devenu l'un des critères implicites de sélection des LLM modernes.
 
-Là encore, une annonce comme « Notre solution améliore significativement la productivité » n'apporte rien d'exploitable alors qu'une phrase comme « 68 % des équipes utilisatrices réduisent leur temps de traitement de plus de trois heures par semaine (étude interne, 2026) » donne au modèle une donnée précise, vérifiable et attribuable. Exactement ce qu'il cherche pour étayer une réponse comparative.
+Là encore, une annonce comme « Notre solution améliore significativement la productivité » n'apporte rien d'exploitable alors qu'une phrase comme « 68 % des équipes qui utilisent notre solution réduisent leur temps de traitement de plus de trois heures par semaine (étude interne, 2026) » donne au modèle une donnée précise, vérifiable et attribuable. Exactement ce qu'il cherche pour étayer une réponse comparative.
 
 ### Associer un auteur identifié à chaque contenu
 
