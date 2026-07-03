@@ -2,7 +2,7 @@
 title: "Comment construire une stratégie GEO efficace ?"
 description: "Audit de visibilité, contenu extractible, plateformes off-site, médias : le guide sourcé pour construire une stratégie GEO efficace et être cité par les LLM."
 excerpt: "En 2025, ChatGPT traitait 2,5 milliards de requêtes par jour pour 9 % des requêtes numériques mondiales. En 2026, c'est 17 % (First Page Sage, avril 2026). Quand les IA vont concurrencer les moteurs de recherche ? Le basculement est déjà là."
-tldr: "Une stratégie GEO efficace repose sur trois piliers : un site dont le contenu est extractible par les LLM, une présence off-site construite sur les bonnes sources selon son secteur et une bonne réputation externe."
+tldr: "Une stratégie GEO efficace repose sur trois piliers : un site dont le contenu est extractible par les LLM, une présence off-site construite sur les plateformes pertinentes selon son secteur et une bonne réputation externe."
 pubDate: 2026-07-02
 tags: ["GEO", "stratégie GEO", "LLM", "SEO", "visibilité IA", "off-site"]
 category: "Guide"
