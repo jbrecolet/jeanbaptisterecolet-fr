@@ -221,8 +221,6 @@ En conclusion, la meilleure stratégie GEO commence donc bien avant le contenu :
 
 ## Sources
 
-## Sources
-
 - Aggarwal, P. et al. (2024). *«&nbsp;GEO: Generative Engine Optimization&nbsp;»*. KDD '24. arXiv:2311.09735. [arxiv.org/abs/2311.09735](https://arxiv.org/abs/2311.09735)
 - Kim, S. et al. (2026). *«&nbsp;SAGEO Arena: A Realistic Environment for Evaluating Search-Augmented Generative Engine Optimization&nbsp;»*. arXiv:2602.12187. [arxiv.org/abs/2602.12187](https://arxiv.org/abs/2602.12187)
 - Peec AI (2026). *«&nbsp;Top domains cited by AI search: Analysis based on 30M sources&nbsp;»*. [peec.ai/blog/top-domains-cited-by-ai-search-analysis-based-on-30m-sources](https://peec.ai/blog/top-domains-cited-by-ai-search-analysis-based-on-30m-sources)
