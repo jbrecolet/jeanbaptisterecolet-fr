@@ -1,7 +1,7 @@
 ---
 title: "Comment construire une stratégie GEO efficace ?"
 description: "Audit de visibilité, contenu extractible, plateformes off-site, médias : le guide sourcé pour construire une stratégie GEO efficace et être cité par les LLM."
-excerpt: "En 2025, ChatGPT traitait 2,5 milliards de requêtes par jour pour 9 % des requêtes numériques mondiales. En 2026, c'est 17 % (First Page Sage, avril 2026). Quand les IA vont concurrencer les moteurs de recherche ? Le basculement est déjà là."
+excerpt: "En 2025, ChatGPT traitait 2,5 milliards de requêtes par jour pour 9 % des requêtes numériques mondiales. En 2026, c'est 17 % (First Page Sage, avril 2026)."
 tldr: "Une stratégie GEO efficace repose sur trois piliers : un site dont le contenu est extractible par les LLM, une présence off-site construite sur les plateformes pertinentes selon son secteur et une bonne réputation externe."
 pubDate: 2026-07-02
 tags: ["GEO", "stratégie GEO", "LLM", "SEO", "visibilité IA", "off-site"]
@@ -25,7 +25,7 @@ faq:
     answer: "Optimiser l'existant d'abord. Un contenu déjà indexé, avec des preuves chiffrées sourcées et une structure extractible (answer-first, titres formulés comme des questions), progresse plus vite en visibilité GEO qu'un contenu nouveau sans historique de signal."
 ---
 
-<strong>En 2025, ChatGPT captait 9 % des requêtes numériques mondiales et traitait 2,5 milliards de requêtes par jour. En 2026, c'est 17 % (First Page Sage, avril 2026). La question n'est donc pas de savoir si les IA vont concurrencer les moteurs de recherche classiques : le basculement est déjà là.</strong>
+<strong>En 2025, ChatGPT captait 9 % des requêtes numériques mondiales et traitait 2,5 milliards de requêtes par jour. En 2026, c'est 17 % (First Page Sage, avril 2026). La question n'est donc pas de savoir si les IA vont un jour concurrencer les moteurs de recherche classiques : le basculement est déjà là.</strong>
 
 Et si le GEO - l'ensemble des pratiques visant à maximiser la visibilité d'un contenu dans les réponses générées par les IA - est une discipline encore jeune et susceptible d'évoluer, il est déjà possible de poser les bases d'une stratégie efficace pour être cité par les LLM. Voici comment.
 
