@@ -126,7 +126,7 @@ Attention néanmoins, chaque plateforme fonctionne selon sa propre logique, son 
 
 ### Reddit, si des *subreddits* actifs parlent de son secteur
 
-Reddit est un forum communautaire organisé en milliers de sous-espaces thématiques (les *subreddits*) où les utilisateurs échangent en toute franchise sur leurs expériences, leurs problèmes, leurs choix et leurs déceptions. C'est précisément cette absence de filtre qui en fait une mine d'or pour les LLM : on y trouve le langage réel, authentique, des utilisateurs, pas celui des fiches produit mâtinées de *tone of voice* marketing.
+Reddit est un forum communautaire organisé en milliers de sous-espaces thématiques (les *subreddits*) où les utilisateurs échangent en toute franchise sur leurs expériences, leurs problèmes, leurs choix et leurs déceptions. C'est précisément cette absence de filtre qui en fait une mine d'or pour les LLM : on y trouve le langage réel, authentique, des utilisateurs, loin des fiches produit mâtinées de *tone of voice* marketing.
 
 L'analyse Peec AI portant sur 30 millions de sources citées par ChatGPT, Gemini, Perplexity, Google AI Mode et les AI Overviews classe Reddit comme le domaine le plus cité, présent sur les cinq plateformes testées. Ce n'est ainsi pas un hasard si Google a signé en février 2024 un accord d'accès au contenu Reddit évalué à environ 60 millions de dollars par an (Reuters, février 2024) et qu'OpenAI a annoncé un partenariat similaire en mai 2024 pour intégrer le contenu Reddit dans ChatGPT en temps réel.
 
