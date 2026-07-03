@@ -112,7 +112,7 @@ Un article publié sans auteur visible, ou signé « L'équipe [marque] », n'of
 
 Enfin, dernier point : implémenter un fichier *llms.txt* et les schémas Schema.org qui conviennent. Le premier est un fichier texte placé à la racine du site qui indique aux LLM les pages prioritaires à explorer et leur fonction, un peu comme un *sitemap* simplifié pensé pour les *crawlers* IA plutôt que pour les moteurs de recherche classiques. Les seconds (FAQPage, Article, Organization…) structurent les données d'une page pour les rendre directement compréhensibles par une machine.
 
-Oui, en mai 2026, Google a bien affirmé que ces fichiers sont inutiles pour apparaître dans les résultats des IA. Mais, Google ne parlait que de son écosystème (AI Overviews, AI Mode) et, depuis, certaines de leurs équipes en interne ont donné des signaux contradictoires sur le sujet. N'oublions pas non plus que Google n'a aucun intérêt à pousser les marques à optimiser pour les moteurs génératifs concurrents.
+Oui, en mai 2026, Google a bien affirmé que ces fichiers sont inutiles pour apparaître dans les résultats des IA. Mais, Google ne parlait que de son écosystème (AI Overviews, AI Mode) et n’oublions pas que Google n'a aucun intérêt à pousser les marques à optimiser pour les moteurs génératifs concurrents.
 
 En clair : les ajouter ne peut être que bénéfique. Un fichier *llms.txt* et des schémas FAQPage ou Article bien renseignés ne coûtent rien à mettre en place et ne desservent personne (même sur les moteurs où leur effet sur la citation reste à prouver), Anthropic et OpenAI les recommandent pour leurs propres agents et Microsoft a confirmé que les données structurées aident ses LLM à interpréter le contenu. Aucune raison donc de ne pas le faire.
 
