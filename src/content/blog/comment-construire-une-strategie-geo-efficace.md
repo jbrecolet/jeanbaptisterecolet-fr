@@ -5,7 +5,7 @@ excerpt: "En 2025, ChatGPT traitait 2,5 milliards de requêtes par jour pour 9 %
 tldr: "Une stratégie GEO efficace repose sur trois piliers : un site dont le contenu est extractible par les LLM, une présence off-site construite sur les bonnes sources selon son secteur et une bonne réputation externe."
 pubDate: 2026-07-02
 tags: ["GEO", "stratégie GEO", "LLM", "SEO", "visibilité IA", "off-site"]
-category: "GEO"
+category: "Guide"
 tier: "pilier"
 cover: "comment-construire-strategie-geo.webp"
 coverAlt: "Équipe marketing en train de construire une stratégie GEO"
