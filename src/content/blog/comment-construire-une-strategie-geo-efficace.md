@@ -171,7 +171,9 @@ Là encore, la seule variable que l'on contrôle reste la qualité de ce que l'o
 | Local / retail | Google Business Profile |
 | Finance / assurance | Trustpilot, avis régulés |
 
-Enfin, si une bonne note sur une seule plateforme est utile, une réputation globale cohérente sur plusieurs sources du même secteur est structurellement plus forte pour les LLM : elle crée exactement la cohérence multi-source que les IA valorisent. À l'inverse, des notes médiocres répétées sur plusieurs plateformes ne se contentent pas de freiner la citation : elles peuvent nourrir une image négative que le LLM reprendra telle quelle dans sa réponse. Ce que l'on veut évidemment éviter.
+Enfin, si une bonne note sur une seule plateforme est utile, une réputation globale cohérente sur plusieurs sources du même secteur est structurellement plus forte pour les LLM : elle crée exactement la cohérence multi-source que les IA valorisent. 
+
+À l'inverse, des notes médiocres répétées sur plusieurs plateformes ne se contentent pas de freiner la citation : elles peuvent nourrir une image négative que le LLM reprendra telle quelle dans sa réponse. Ce que l'on veut évidemment éviter.
 
 ## Étape 4 : construire une présence dans les médias
 
