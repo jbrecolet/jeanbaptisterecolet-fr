@@ -181,7 +181,7 @@ En effet, les médias apportent ce que les LLM valorisent particulièrement : un
 
 Comme on l'a vu précédemment, sur les requêtes comparatives, les modèles génératifs ne s'arrêtent pas aux discours officiels. Ils cherchent des sources capables de confirmer ou de nuancer ce qu'une marque dit d'elle-même. Une marque qui n'existe qu'à travers son site web uniquement paraît ainsi peu fiable. Un peu comme un CV sans la moindre référence vérifiable.
 
-Pour les entreprises, trois leviers permettent de travailler cette facette du GEO autant que possible :
+Pour les entreprises, trois leviers permettent de travailler cet aspect du GEO autant que possible :
 
 * Produire des données propriétaires d'abord. Les baromètres, études internes, *benchmarks* sectoriels sont la matière première des articles de presse. Les journalistes cherchent de la donnée fraîche et les LLM aussi. Un chiffre original et sourcé a bien plus de chances d'être repris qu'un communiqué de presse générique de plus.
 
