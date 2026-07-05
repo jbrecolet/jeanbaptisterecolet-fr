@@ -90,7 +90,7 @@ L'étude SAGEO Arena (Kim et al., *arXiv:2602.12187*, 2026) mesure que les passa
 
 Concrètement, si un H2 s'intitule « Comment réduire son délai de traitement ? », la première phrase qui suit doit y répondre directement : l'argumentation, les nuances et le contexte viendront ensuite.
 
-Par exemple, « Réduire son délai de traitement passe d'abord par l'automatisation du tri initial des dossiers, qui élimine en moyenne 40 % du temps de qualification manuelle » est une réponse immédiatement citable par les LLM car elle contient la réponse, un mécanisme et une preuve chiffrée en une seule phrase.
+Par exemple, « Automatiser le tri initial des dossiers réduit en moyenne de 40 % le temps de traitement. » est une réponse immédiatement citable par les LLM car elle contient la réponse, un mécanisme et une preuve chiffrée en une seule phrase.
 
 ### Donner des chiffres et des sources
 
