@@ -201,7 +201,7 @@ Il n'est pas encore possible d'avoir les données concernant les clics ou les re
 
 Pour les autres moteurs (ChatGPT, Perplexity, Claude) en revanche, le test manuel reste incontournable. Sur chacun de ces outils, on relance à intervalle régulier les mêmes trois types de requêtes : définition, comparaison et alternatives. Pour chaque test, on note si la marque est citée, à quelle position, si les informations sont exactes et quelles sources semblent alimenter la réponse.
 
-Enfin, un dernier indicateur indirect mais accessible à tous : la progression des recherches de marque dans Google Search Console. Quand ces recherches augmentent sans campagne de notoriété parallèle, c'est souvent le signe que les LLM génèrent du trafic non attribué, ce que le secteur appelle le *dark traffic*. Un indicateur pas encore parfait mais c'est toujours ça de pris en attendant la démocratisation du suivi des KPI IA qui viendra forcément un jour.
+Enfin, un dernier indicateur indirect mais accessible à tous : la progression des recherches de marque dans Google Search Console. Quand ces recherches augmentent sans campagne de notoriété parallèle, c'est souvent le signe que les LLM génèrent du trafic non attribué, ce que le secteur appelle le *dark traffic*. Un indicateur pas encore parfait mais c'est toujours ça de pris en attendant la démocratisation du suivi des KPI IA qui viendra forcément avec le temps.
 
 ## Ce que la meilleure stratégie GEO ne peut pas compenser
 
