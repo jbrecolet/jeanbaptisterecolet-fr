@@ -29,7 +29,7 @@ faq:
 
 Et si le GEO - l'ensemble des pratiques visant à maximiser la visibilité d'un contenu dans les réponses générées par les IA - est une discipline encore jeune et susceptible d'évoluer, il est déjà possible de poser les bases d'une stratégie efficace pour être cité par les LLM. Voici comment.
 
-<aside class="tldr-block"><strong>En bref :</strong> Une stratégie GEO efficace repose sur trois piliers : un site dont le contenu est extractible par les LLM, une présence <em>off-site</em> construite sur les plateformes adéquates selon son secteur et une bonne réputation externe.</aside>
+<aside class="tldr-block"><strong>En bref :</strong> Une stratégie GEO efficace repose principalement sur trois piliers : un site dont le contenu est facilement extractible par les LLM, une présence <em>off-site</em> construite sur les plateformes adéquates selon son secteur et une bonne réputation externe.</aside>
 
 ## Du SEO au GEO : pourquoi la méthode change
 
@@ -39,9 +39,9 @@ C'est ce que les chercheurs Aggarwal et al. ont expliqué à la conférence KDD 
 
 Une marque dont le site est solide mais qui n'est mentionnée nulle part ailleurs envoie ainsi un signal faible pour les LLM. Et face à un concurrent présent sur plusieurs sources indépendantes, elle sera systématiquement reléguée au second plan, même si son contenu éditorial est meilleur.
 
-Pour autant, le SEO n'est pas devenu inutile et reste même la base de toute stratégie GEO. Un site mal structuré, lent ou non indexé n'a aucune chance d'être sélectionné comme source par un LLM, exactement comme il n'a aucune chance de ranker sur Google.
+Pour autant, le SEO n'est pas devenu inutile et reste même la base de toute stratégie GEO. Un site web mal structuré, lent ou non indexé n'a aucune chance d'être sélectionné comme source par un LLM, exactement comme il n'a aucune chance de ranker sur Google.
 
-Les fondamentaux techniques de la discipline demeurent la condition d'entrée. Vitesse de chargement, balisage correct, contenu indexable, maillage interne cohérent : un bon SEO crée les conditions pour être crawlé et compris. Le GEO crée les conditions pour être cité. En résumé, ce qui change, c'est ce qu'il faut construire au-delà de ces fondamentaux.
+Vitesse de chargement, balisage correct, contenu indexable, maillage interne cohérent : un bon SEO crée les conditions pour être crawlé et compris. Le GEO crée les conditions pour être cité. En résumé, ce qui change, c'est ce qu'il faut construire au-delà de ces fondamentaux.
 
 ## Étape 1 : auditer ce que les LLM disent déjà
 
@@ -205,15 +205,15 @@ Enfin, un dernier indicateur indirect mais accessible à tous : la progression d
 
 ## Ce que la meilleure stratégie GEO ne peut pas compenser
 
-Un produit défaillant, un service client aux abonnés absents, une promesse commerciale qui ne tient pas : tout cela génère des signaux négatifs sur des plateformes à forte autorité pour les LLM (Trustpilot, Reddit…) qui sont publics, indexables et citables.
+Un produit qui déçoit, un service client aux abonnés absents, une promesse commerciale non tenue : tout cela génère des signaux négatifs sur des plateformes à forte autorité pour les LLM (Trustpilot, Reddit…), des plateformes qui sont publiques, indexables et citables.
 
-De fait, aucune optimisation *on-site*, aucune campagne de relations presse, aucun travail de fond sur LinkedIn ne pourra contrebalancer une série d'avis négatifs détaillée ou un fil Reddit documentant des problèmes récurrents.
+De fait, aucune optimisation *on-site*, aucune campagne de relations presse, aucun travail de fond sur LinkedIn ne pourra contrebalancer une série d'avis négatifs détaillés ou un fil Reddit qui énumère les nombreux problèmes d'un produit.
 
-À la différence du SEO, où un site bien optimisé peut ranker correctement même si le produit ou le service est médiocre, le GEO ne laisse pas beaucoup de place à la façade. Les LLM croisent trop de sources indépendantes pour qu'elle tienne longtemps.
+À la différence du SEO, où un site bien optimisé peut ranker correctement même si le produit ou le service est médiocre, le GEO ne laisse pas beaucoup de place aux fausses promesses marketing. Les LLM croisent trop de sources indépendantes pour qu'elles tiennent bien longtemps.
 
 Ainsi, sur des requêtes comparatives, un modèle peut non seulement ignorer une marque, mais également la déconseiller si les signaux externes sont trop souvent négatifs.
 
-En conclusion, la meilleure stratégie GEO commence donc bien avant le contenu : par un produit ou un service dont les utilisateurs parlent en bien, même imparfaitement, même sans avoir été sollicités.
+En conclusion, la meilleure stratégie GEO commence donc bien avant le contenu : par un produit ou un service dont les utilisateurs parlent en bien, même sans avoir été sollicités.
 
 ## Sources
 
