@@ -33,7 +33,7 @@ Et si le GEO - l'ensemble des pratiques visant à maximiser la visibilité d'un 
 
 ## Du SEO au GEO : pourquoi la méthode change
 
-Une IA générative ne lit pas un site web comme un internaute ni ne le parcourt comme un moteur de recherche. À la place, elle croise des signaux provenant de diverses sources (site officiel, médias, plateformes d'avis, forums, réseaux professionnels…) et en extrait une représentation globale qui lui semble crédible, dont elle se servira pour répondre aux questions qu'on lui pose.
+Une IA générative ne lit pas un site web comme un internaute ni ne le parcourt comme un moteur de recherche. À la place, elle croise des signaux provenant de diverses sources (site officiel, médias, plateformes d'avis, forums, réseaux professionnels…), en extrait une représentation globale qui lui semble crédible et s'en sert pour répondre aux questions qu'on lui pose.
 
 C'est ce que les chercheurs Aggarwal et al. ont expliqué à la conférence KDD 2024 (*arXiv:2311.09735*) : la visibilité dans les moteurs génératifs dépend moins de l'optimisation SEO d'une page que de la capacité du modèle à trouver des signaux convergents sur l'entité en question, que ce soit une entreprise, une marque ou une personne.
 
