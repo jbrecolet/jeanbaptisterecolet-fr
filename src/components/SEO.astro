@@ -20,12 +20,16 @@ const {
   type = 'website',
   publishedTime,
   modifiedTime,
-  author = 'Jean-Baptiste Recolet',
+  author = 'Jean-Baptiste Récolet',
   tags = [],
 } = Astro.props;
 
-const siteName = 'Jean-Baptiste Recolet';
-const fullTitle = title.includes(siteName) ? title : `${title} — ${siteName}`;
+const siteName = 'Jean-Baptiste Récolet';
+const articleSuffix = 'JB Récolet';
+
+const suffix = type === 'article' ? articleSuffix : siteName;
+const fullTitle = title.includes(siteName) ? title : `${title} · ${suffix}`;
+
 const absoluteImage = new URL(image, Astro.site).href;
 ---
 
