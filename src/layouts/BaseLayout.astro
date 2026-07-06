@@ -18,7 +18,7 @@ const props = Astro.props;
 const personSchema = {
   '@context': 'https://schema.org',
   '@type': 'Person',
-  name: 'Jean-Baptiste Recolet',
+  name: 'Jean-Baptiste Récolet',
   jobTitle: 'Content Manager spécialisé SEO et GEO',
   url: 'https://www.jeanbaptisterecolet.fr',
   email: 'mailto:contact@jeanbaptisterecolet.fr',
@@ -41,14 +41,14 @@ const personSchema = {
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Jean-Baptiste Recolet',
+  name: 'Jean-Baptiste Récolet',
   alternateName: 'GEO et SEO en français',
   url: 'https://www.jeanbaptisterecolet.fr',
   inLanguage: 'fr-FR',
   description:
     'Site éditorial francophone sur le GEO, la transition SEO → GEO et les méthodes pour Content Managers.',
-  author: { '@type': 'Person', name: 'Jean-Baptiste Recolet' },
-  publisher: { '@type': 'Person', name: 'Jean-Baptiste Recolet' },
+  author: { '@type': 'Person', name: 'Jean-Baptiste Récolet' },
+  publisher: { '@type': 'Person', name: 'Jean-Baptiste Récolet' },
 };
 ---
 <!doctype html>
@@ -104,7 +104,7 @@ const websiteSchema = {
     <link
       rel="alternate"
       type="application/rss+xml"
-      title="Jean-Baptiste Recolet — Articles"
+      title="Jean-Baptiste Récolet — Articles"
       href="/rss.xml"
     />
     <slot name="head" />
