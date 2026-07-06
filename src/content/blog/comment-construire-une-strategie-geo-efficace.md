@@ -12,7 +12,7 @@ coverAlt: "Équipe marketing en train de construire une stratégie GEO"
 draft: false
 faq:
   - question: "Le SEO nuit-il à une stratégie GEO ?"
-    answer: "Non, il en est la base. Un contenu bien structuré, avec des entités nommées claires et des preuves sourcées, franchit plus facilement la phase de document ranking qui précède la génération. Le SEO alimente le GEO, il ne le remplace pas."
+    answer: "Non, il en est la base. Un site bien indexé, techniquement solide et dont le contenu est structuré en sections claires crée les conditions idéales pour être crawlé et donc compris par les LLM. Le SEO alimente le GEO, il ne le remplace pas."
   - question: "Comment mesurer sa visibilité dans les IA sans outil dédié ?"
     answer: "Depuis le 3 juin 2026, Google Search Console propose des rapports dédiés à la visibilité dans ses fonctionnalités IA (AI Overviews, AI Mode, Discover), permettant de voir quelles pages apparaissent dans les réponses génératives de Google et comment cette visibilité évolue dans le temps. Le déploiement reste en accès limité et les données de clics ne sont pas encore disponibles. Pour les autres moteurs (ChatGPT, Perplexity, Claude), le test manuel reste incontournable : lancer à intervalle régulier des requêtes de définition, comparatives et alternatives, et noter si la marque est citée, à quelle position et avec quelles sources. La progression des recherches de marque dans GSC sans campagne de notoriété parallèle est aussi un indicateur indirect utile, ce que le secteur appelle le dark traffic."
   - question: "Une TPE sans notoriété peut-elle être citée par les LLM ?"
