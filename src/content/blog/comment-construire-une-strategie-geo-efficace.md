@@ -181,7 +181,7 @@ Une bonne stratégie GEO ne se joue pas uniquement sur son site web. Après les 
 
 En effet, les médias apportent ce que les LLM valorisent particulièrement : une crédibilité externe poussée par des journalistes identifiables et qui signent leur information, une audience établie et le plus souvent une forte autorité de domaine.
 
-Comme on l'a vu précédemment, sur les requêtes comparatives, les modèles génératifs ne s'arrêtent pas aux discours officiels. Ils cherchent des sources capables de confirmer ou de nuancer ce qu'une marque dit d'elle-même. Une marque qui n'existe qu'à travers son site web uniquement paraît ainsi peu fiable. Un peu comme un CV sans la moindre référence vérifiable.
+Sur les requêtes comparatives, les modèles génératifs ne s'arrêtent pas aux discours officiels. Ils cherchent des sources capables de confirmer ou de nuancer ce qu'une marque dit d'elle-même. Une marque qui n'existe qu'à travers son site web uniquement paraît ainsi peu fiable. Un peu comme un CV sans la moindre référence vérifiable.
 
 Pour les entreprises, trois leviers permettent de travailler cet aspect du GEO autant que possible :
 
