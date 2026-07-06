@@ -195,15 +195,15 @@ Encore faut-il avoir une actualité qui le justifie, évidemment.
 
 ## Étape 5 : mesurer régulièrement sa présence dans les LLM
 
-L'audit de départ pour mesurer sa visibilité dans les LLM est indispensable ? En toute logique, le suivi après avoir déployé sa stratégie GEO l'est tout autant.
+L'audit de départ pour mesurer sa visibilité dans les LLM est indispensable ? Assez logiquement, le suivi après avoir déployé sa stratégie GEO l'est tout autant.
 
 La bonne nouvelle, c'est que depuis le 3 juin 2026, Google Search Console propose des rapports dédiés à la visibilité dans ses fonctionnalités IA (AI Overviews, AI Mode, Discover). Pour la première fois, il est possible de voir quelles pages apparaissent dans les réponses génératives de Google, dans quels pays, sur quels appareils et comment cette visibilité évolue dans le temps.
 
-Il n'est pas encore possible d'avoir les données concernant les clics ou les requêtes pour l'instant et le déploiement reste en accès limité mais quand on sait que Google s'est engagé à enfin déployer les AI Overviews et AI Mode en France avant le 23 septembre 2026 (courrier aux éditeurs de presse du 29 juin 2026, révélé par Ouest-France et confirmé par Les Échos et Le Monde), on ne peut que saluer l'initiative.
+Il n'est pas encore possible d'avoir les données concernant les clics ou les requêtes pour l'instant et le déploiement reste en accès limité. Mais quand on sait que Google s'est engagé à enfin déployer les AI Overviews et AI Mode en France avant le 23 septembre 2026, on ne peut que saluer l'initiative.
 
-Pour les autres moteurs (ChatGPT, Perplexity, Claude) en revanche, le test manuel reste incontournable. Sur chacun de ces outils, on relance à intervalle régulier les mêmes trois types de requêtes : définition, comparaison et alternatives. Pour chaque test, on note si la marque est citée, à quelle position, si les informations sont exactes et quelles sources semblent alimenter la réponse.
+Pour les autres moteurs (ChatGPT, Perplexity, Claude) en revanche, le test à la main reste incontournable. Sur chacun de ces outils, on relance à intervalle régulier les mêmes trois types de requêtes : définition, comparaison et alternatives. Pour chaque test, on note si la marque est citée, à quelle position, si les informations sont exactes et quelles sources semblent alimenter la réponse.
 
-Enfin, un dernier indicateur indirect mais accessible à tous : la progression des recherches de marque dans Google Search Console. Quand ces recherches augmentent sans campagne de notoriété parallèle, c'est souvent le signe que les LLM génèrent du trafic non attribué, ce que le secteur appelle le *dark traffic*. Un indicateur pas encore parfait mais c'est toujours ça de pris en attendant la démocratisation du suivi des KPI IA qui viendra forcément avec le temps.
+Enfin, un dernier indicateur indirect existe : la progression des recherches de marque dans Google Search Console. Quand ces recherches augmentent sans une campagne de notoriété en parallèle, c'est souvent le signe que les LLM génèrent du trafic non attribué, ce que le secteur appelle le *dark traffic*. Un indicateur loin d'être parfait mais c'est toujours ça de pris en attendant la démocratisation du suivi des KPI IA, qui viendra forcément avec le temps.
 
 ## Ce que la meilleure stratégie GEO ne peut pas compenser
 
