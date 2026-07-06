@@ -177,7 +177,7 @@ Enfin, si une bonne note sur une seule plateforme est utile, une réputation glo
 
 ## Étape 4 : construire une présence dans les médias
 
-On l'a compris, une bonne stratégie GEO ne se joue pas uniquement sur son site web. Après les plateformes externes, l'autre pendant du GEO *off-site* se joue dans les médias.
+Une bonne stratégie GEO ne se joue pas uniquement sur son site web. Après les plateformes externes, l'autre pendant du GEO *off-site* se joue dans les médias.
 
 En effet, les médias apportent ce que les LLM valorisent particulièrement : une crédibilité externe poussée par des journalistes identifiables et qui signent leur information, une audience établie et le plus souvent une forte autorité de domaine.
 
