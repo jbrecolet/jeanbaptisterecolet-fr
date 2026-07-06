@@ -29,7 +29,7 @@ faq:
 
 Et si le GEO - l'ensemble des pratiques visant à maximiser la visibilité d'un contenu dans les réponses générées par les IA - est une discipline encore jeune et susceptible d'évoluer, il est déjà possible de poser les bases d'une stratégie efficace pour être cité par les LLM. Voici comment.
 
-<aside class="tldr-block"><strong>En bref :</strong> Une stratégie GEO efficace repose principalement sur trois piliers : un site dont le contenu est facilement extractible par les LLM, une présence <em>off-site</em> construite sur les plateformes adéquates selon son secteur et une bonne réputation externe.</aside>
+<aside class="tldr-block"><strong>En bref :</strong> Une stratégie GEO efficace repose principalement sur trois piliers : un site dont le contenu est facilement extractible par les LLM, une présence <em>off-site</em> construite sur les plateformes adéquates, en fonction de son secteur et une bonne réputation externe.</aside>
 
 ## Du SEO au GEO : pourquoi la méthode change
 
