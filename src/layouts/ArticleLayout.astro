@@ -52,13 +52,22 @@ const faqSchema = data.faq && data.faq.length > 0
     }
   : null;
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.jeanbaptisterecolet.fr' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.jeanbaptisterecolet.fr/blog' },
+    { '@type': 'ListItem', position: 3, name: data.title, item: url },
+  ],
+};
+
 const dateFmt = new Intl.DateTimeFormat('fr-FR', {
   day: 'numeric',
   month: 'long',
   year: 'numeric',
 });
 ---
-
 <BaseLayout
   title={data.title}
   description={data.description}
@@ -71,9 +80,8 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
   {faqSchema && (
     <script is:inline slot="head" type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   )}
-
+  <script is:inline slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <article class="article">
-
     {data.cover && (
       <figure class="cover-figure">
         <img
@@ -83,7 +91,6 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
         />
       </figure>
     )}
-
     <header class="article__header">
       <p class="article__category">{data.category?.toUpperCase()}</p>
       <h1 class="article__title">{data.title}</h1>
@@ -101,11 +108,9 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
   </p>
 )}
     </header>
-
     <div class="article__body">
       <slot />
     </div>
-
     {data.faq && data.faq.length > 0 && (
       <>
         <hr class="faq-divider" />
@@ -122,10 +127,8 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
         </section>
       </>
     )}
-
   </article>
 </BaseLayout>
-
 <style>
   .cover-figure {
     margin: 0 0 var(--space-lg);
@@ -137,28 +140,23 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
     border-radius: var(--radius);
     display: block;
   }
-
   .article__header {
     margin-bottom: var(--space-lg);
   }
-
   .faq-divider {
     border: none;
     border-top: 2px solid var(--color-rule);
     margin: var(--space-lg) 0 0;
     max-width: var(--max-w-text);
   }
-
   .faq-block {
     max-width: var(--max-w-text);
     padding-top: var(--space-md);
   }
-
   .faq-block h2 {
     margin-top: 0;
     margin-bottom: var(--space-md);
   }
-
   .faq-block dt {
     font-weight: 600;
     font-family: var(--font-serif);
@@ -166,7 +164,6 @@ const dateFmt = new Intl.DateTimeFormat('fr-FR', {
     margin-top: var(--space-md);
     color: var(--color-text);
   }
-
   .faq-block dd {
     margin-top: var(--space-xs);
     margin-left: 0;
