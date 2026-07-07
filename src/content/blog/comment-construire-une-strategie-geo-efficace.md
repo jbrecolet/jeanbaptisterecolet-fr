@@ -205,7 +205,15 @@ Pour les autres moteurs (ChatGPT, Perplexity, Claude) en revanche, le test à la
 
 Enfin, un dernier indicateur indirect existe : la progression des recherches de marque dans Google Search Console. Quand ces recherches augmentent sans une campagne de notoriété en parallèle, c'est souvent le signe que les LLM génèrent du trafic non attribué, ce que le secteur appelle le *dark traffic*. Un indicateur loin d'être parfait mais c'est toujours ça de pris en attendant la démocratisation du suivi des KPI IA, qui viendra forcément avec le temps.
 
-## Ce que la meilleure stratégie GEO ne peut pas compenser
+## Ce que la meilleure stratégie GEO ne peut pas faire
+
+Toute stratégie GEO, aussi efficace soit-elle, se heurte à deux problèmes. Premièrement, ce qui fonctionne sur un LLM en termes d'optimisation n'est pas assuré de fonctionner aussi efficacement sur les autres.
+
+Selon Digital Bloom, seulement 11 % des domaines sont cités à la fois par ChatGPT et Perplexity, par exemple. Chaque modèle a ses propres biais de sources, liés à ses données d'entraînement et à son architecture de RAG : là où ChatGPT valorise Reddit et les contenus à fort volume de partage, Gemini exploite naturellement son écosystème Google (AI Overviews, YouTube). Quant à Perplexity, en accès temps réel quasi permanent, il va privilégier les sources récentes et les médias à forte autorité.
+
+Ainsi, une marque bien positionnée sur un LLM peut être totalement absente des réponses des deux autres. Construire une visibilité cohérente sur l'ensemble des moteurs génératifs reste donc, à ce jour, extrêmement difficile. À la place, il faudra déterminer sur quelle IA on souhaite apparaître, en fonction de la popularité (fluctuante) de cette dernière, de son secteur d'activité et des ressources disponibles pour maintenir une présence sur plusieurs moteurs simultanément.
+
+Deuxième limitation : une bonne stratégie GEO ne peut pas compenser un mauvais produit ou service.
 
 Un produit qui déçoit, un service client aux abonnés absents, une promesse commerciale non tenue : tout cela génère des signaux négatifs sur des plateformes à forte autorité pour les LLM (Trustpilot, Reddit…), des plateformes qui sont publiques, indexables et citables.
 
