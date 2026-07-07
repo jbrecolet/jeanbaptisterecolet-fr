@@ -27,6 +27,7 @@ export default defineConfig({
     defaultStrategy: 'viewport',
   },
   build: {
+    format: 'file',
     inlineStylesheets: 'auto',
   },
   experimental: {
