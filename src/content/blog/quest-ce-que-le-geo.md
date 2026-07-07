@@ -131,7 +131,7 @@ Comme évoqué plus haut, le GEO ne se limite pas à l'optimisation du contenu p
 
 Et même si YouTube a dépassé la plateforme dans les citations sociales des LLM en janvier 2026 (Adweek), Reddit reste structurellement très présent dans les réponses IA sur les requêtes conversationnelles et professionnelles.
 
-LinkedIn est la deuxième source la plus citée par les moteurs IA devant Wikipedia, YouTube et les grands médias d'actualité, selon une étude portant sur 325 000 <em>prompts</em> envoyés à ChatGPT Search, Google AI Mode et Perplexity en 2026. 11 % des réponses IA contiennent en moyenne une citation LinkedIn. À noter que les articles de 500 à 2 000 mots offrent le meilleur ratio de citation sur cette plateforme.
+[LinkedIn](/blog/linkedin-llm-donnees-formats-methodes) est la deuxième source la plus citée par les moteurs IA devant Wikipedia, YouTube et les grands médias d'actualité, selon une étude portant sur 325 000 prompts envoyés à ChatGPT Search, Google AI Mode et Perplexity en 2026. Avec 11 % des réponses IA qui contiennent en moyenne une citation LinkedIn.
 
 ## La relation complexe entre SEO et GEO
 
