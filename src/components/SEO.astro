@@ -12,10 +12,12 @@ export interface Props {
   tags?: string[];
 }
 
+const cleanUrl = Astro.url.href.replace(/\.html$/, '');
+
 const {
   title,
   description,
-  canonical = Astro.url.href,
+  canonical = cleanUrl,
   image = '/og-default.png',
   type = 'website',
   publishedTime,
@@ -26,10 +28,8 @@ const {
 
 const siteName = 'Jean-Baptiste Récolet';
 const articleSuffix = 'JB Récolet';
-
 const suffix = type === 'article' ? articleSuffix : siteName;
 const fullTitle = title.includes(siteName) ? title : `${title} | ${suffix}`;
-
 const absoluteImage = new URL(image, Astro.site).href;
 ---
 
