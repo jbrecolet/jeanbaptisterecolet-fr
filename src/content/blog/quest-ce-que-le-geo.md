@@ -174,7 +174,7 @@ Les IA génératives sont de plus en plus nombreuses et leurs modèles évoluent
 
 Les données d'entraînement des IA changent, les mécanismes de récupération (RAG) évoluent, les usages se diversifient : on ne peut jamais garantir que ce qui fonctionne aujourd'hui fonctionnera dans un an ou même 6 mois.
 
-De plus, optimiser son contenu pour un LLM ne garantit pas de visibilité sur les autres. Selon Digital Bloom, seulement 11 % des domaines sont cités à la fois par ChatGPT et Perplexity. Construire une stratégie GEO qui fonctionne pour toutes les IA génératives est à l'heure actuelle extrêmement compliqué.
+De plus, optimiser son contenu pour un LLM ne garantit pas de visibilité sur les autres. Selon Digital Bloom, seulement 11 % des domaines sont cités à la fois par ChatGPT et Perplexity. [Construire une stratégie GEO](/blog/comment-construire-une-strategie-geo-efficace) qui fonctionne pour toutes les IA génératives est à l'heure actuelle extrêmement compliqué.
 
 Ensuite, la mesure des effets du GEO demeure encore floue. En SEO, les KPIs sont clairement cernés (impressions, CTR, trafic organique...) et les outils largement répandus et maîtrisés (Google Search Console, Google Analytics...). En GEO, le succès se mesure en visibilité, en citations dans les réponses IA (et non en clics), et les outils spécialisés sont encore récents, coûteux et pas encore généralisés.
 
