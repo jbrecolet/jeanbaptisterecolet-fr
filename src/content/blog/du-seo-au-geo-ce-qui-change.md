@@ -93,6 +93,8 @@ Enfin, et c'est probablement là que la rupture est la plus nette : la sacro-sai
 
 Attention néanmoins : la fracture entre classement organique et citation IA n'est pas uniforme selon la plateforme. Sur les AI Overviews de Google spécifiquement, le lien avec le SEO reste mesurable : BrightEdge (sept. 2025) mesure que 54,5 % des citations AIO viennent de pages classées organiquement quelque part dans l'index. Mais seulement 17 % de ces mêmes citations viennent du top 10 sur la même requête (BrightEdge, 2026).
 
+ALM Corp, à partir de données Ahrefs, mesure une érosion plus nette encore sur la durée : la corrélation entre position Top 10 et citation dans un AI Overview est passée de 76 % à 38 % en l'espace d'un an (ALM Corp, 2026). Sur l'écosystème Google, cette érosion progresse donc dans le temps.
+
 Sur les IA génératives indépendantes, la séparation est plus radicale : Brandlight (2026) mesure, tous LLM confondus, que le chevauchement entre les premiers liens organiques Google et les sources effectivement citées est tombé sous 20 %, contre environ 70 % en 2024. Dans quatre cas sur cinq, le moteur génératif choisit une source qui ne figure pas en première page Google.
 
 ## Écrire pour le GEO : ce qui change concrètement
@@ -148,3 +150,4 @@ Ces trois limites sont inhérentes à une discipline qui a seulement deux ans d'
 - Growth Memo / Kevin Indig, *«&nbsp;State of AI Search Optimization 2026&nbsp;»*, janv. 2026. [growth-memo.com](https://www.growth-memo.com/p/state-of-ai-search-optimization-2026)
 - StatCounter, parts de marché mondiales des moteurs de recherche, avril 2026. [gs.statcounter.com](https://gs.statcounter.com/search-engine-market-share)
 - About Chromebooks, *«&nbsp;Google Search Statistics&nbsp;»*, 2026. [aboutchromebooks.com](https://www.aboutchromebooks.com/google-search-statistics/)
+- ALM Corp, *«&nbsp;Google AI Overview Citations From Top-10 Pages Dropped From 76% to 38%&nbsp;»*, 2026. [almcorp.com](https://almcorp.com/blog/google-ai-overview-citations-drop-top-ranking-pages-2026/)
